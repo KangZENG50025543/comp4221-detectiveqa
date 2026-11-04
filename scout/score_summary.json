@@ -1,0 +1,24 @@
+{
+  "scored_utc": "2026-10-13T03:38:41.394868+00:00",
+  "answers_sha256": "9a380e35ea3ffedf6d423827226e586106b22251f9bee551ec601f80589b4100",
+  "totals": {
+    "musique": {
+      "correct": 5,
+      "total": 9,
+      "mean_token_f1": 0.5555555555555556,
+      "abstentions_counted_wrong": 3
+    },
+    "detectbench": {
+      "correct": 4,
+      "total": 6,
+      "mean_token_f1": null,
+      "abstentions_counted_wrong": 2
+    },
+    "quality": {
+      "correct": 5,
+      "total": 5,
+      "mean_token_f1": null,
+      "abstentions_counted_wrong": 0
+    }
+  }
+}

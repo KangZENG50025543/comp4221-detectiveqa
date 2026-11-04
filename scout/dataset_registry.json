@@ -1,0 +1,123 @@
+{
+  "scope": "Complementary evaluation candidates; not replacement of DetectiveQA; existing formal protocol unchanged",
+  "audit_date": "2026-10-13",
+  "candidate_datasets": [
+    {
+      "id": "musique",
+      "role": "跨材料证据链、关键证据是否找齐",
+      "local_split_counts": {
+        "dev": 2417
+      },
+      "source": {
+        "dataset": "MuSiQue-Ans dev",
+        "origin": "community mirror, not verified as author-maintained",
+        "repository": "dgslibisey/MuSiQue",
+        "revision": "c8f4f8c9465fb69d31a8eae894c3fd509c4ca321",
+        "url": "https://huggingface.co/datasets/dgslibisey/MuSiQue/resolve/c8f4f8c9465fb69d31a8eae894c3fd509c4ca321/musique_ans_v1.0_dev.jsonl",
+        "file": "raw/musique/musique_ans_v1.0_dev.jsonl",
+        "bytes": 30439728,
+        "sha256": "15fa63794d18a94ce12411aca6e2327e65b6e83b0b1490efab3f1962e48abf3b",
+        "mirror_lfs_sha256": "15fa63794d18a94ce12411aca6e2327e65b6e83b0b1490efab3f1962e48abf3b",
+        "matches_mirror_lfs": true,
+        "official_origin": "https://github.com/StonyBrookNLP/musique",
+        "official_archive_available": false,
+        "official_download_failure": "Google Drive quota exceeded; HTML response retained in raw/musique_official_v1.0.zip.part",
+        "byte_identity_to_official_archive_verified": false,
+        "downloaded_utc": "2026-10-13T03:24:34.934352+00:00"
+      },
+      "sources": [
+        "https://github.com/StonyBrookNLP/musique",
+        "https://arxiv.org/abs/2108.00573"
+      ],
+      "evidence_labels": "native supporting paragraph flags and decomposition",
+      "decision": "conditional pilot after provenance and semantic review; not quality-certified",
+      "license_note": "Official repository declares CC BY 4.0; downloaded community mirror byte identity to official archive remains unverified",
+      "limits": [
+        "local dev questions have 17-20 paragraphs, not universally 20",
+        "50-candidate retrieval is not native without building a new corpus",
+        "selected sample contains broken bridges and shortcut questions"
+      ]
+    },
+    {
+      "id": "quality",
+      "role": "长文章理解、人物动机、全局语气",
+      "local_split_counts": {
+        "dev": 2086,
+        "test": 2128,
+        "train": 2523
+      },
+      "unique_articles": 381,
+      "local_labeled_questions": 4609,
+      "revision": "f84977c40dbfef70c9cab48037b7becfc8e45f73",
+      "version": "1.0.1",
+      "sources": [
+        "https://github.com/nyu-mll/quality",
+        "https://aclanthology.org/2022.naacl-main.391/"
+      ],
+      "evidence_labels": null,
+      "decision": "suitable for a development pilot; sampled ambiguity requires human review",
+      "license_note": "Retain per-article license metadata; do not assume one license covers every source text",
+      "limits": [
+        "official test labels not publicly present in downloaded data",
+        "hard reflects original speed-validation procedure, not a guarantee of current model difficulty",
+        "no native evidence-span gold for automatic evidence recall"
+      ]
+    },
+    {
+      "id": "detectbench",
+      "role": "短题隐含线索、常识和参考解释质量；干扰版本可作压力测试候选",
+      "local_split_counts": {
+        "dev": 1765,
+        "test-distract": 300,
+        "test-hard": 300,
+        "test": 1196,
+        "train": 367
+      },
+      "base_rows_excluding_hard_distract": 3328,
+      "revision": "02b77fab23143e6268b30c44b82cba6f0c5ea3b5",
+      "version": "eng_v1.3",
+      "sources": [
+        "https://github.com/MikeGu721/DetectBench",
+        "https://aclanthology.org/2024.findings-emnlp.11/"
+      ],
+      "evidence_labels": "free-text clue_graph/reasoning_process, not source offsets",
+      "decision": "hold outside formal scored pool pending review; raw data retained",
+      "license_note": "No explicit dataset license confirmed in downloaded repository",
+      "limits": [
+        "README split counts differ from checked files",
+        "dev physical line 1063 contains two concatenated JSON objects; recovered only in memory",
+        "test-distract has 11 records containing 38 empty option entries",
+        "test-hard and test-distract must not be counted as independent new stories",
+        "sample includes missing testimony, answer leakage and incorrect reference arithmetic"
+      ]
+    }
+  ],
+  "researched_not_downloaded_or_tested_this_run": [
+    {
+      "id": "hotpotqa",
+      "reported_scale": "113k questions",
+      "role": "更大规模的百科问答、句子级证据检索",
+      "sources": [
+        "https://hotpotqa.github.io/"
+      ]
+    },
+    {
+      "id": "narrativeqa",
+      "reported_scale": "46,765 questions over 1,572 stories",
+      "role": "书籍/剧本的开放式叙事问答",
+      "limits": "全文下载可用性尚未逐项检查；问题基于摘要创作，须区分摘要任务与全文任务；无原文证据金标",
+      "sources": [
+        "https://github.com/google-deepmind/narrativeqa",
+        "https://aclanthology.org/Q18-1023/"
+      ]
+    },
+    {
+      "id": "babilong",
+      "role": "控制干扰文本长度与证据位置的压力测试",
+      "limits": "合成事实嵌入长文本，不代表真实小说推理；长度变体不算独立新故事",
+      "sources": [
+        "https://github.com/booydar/babilong"
+      ]
+    }
+  ]
+}

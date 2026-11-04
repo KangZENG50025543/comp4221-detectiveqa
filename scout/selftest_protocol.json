@@ -1,0 +1,19 @@
+{
+  "purpose": "Exploratory quality gate by the current conversation assistant; not a formal model benchmark",
+  "selection_before_reading_candidate_samples": true,
+  "seed_string": "COMP4221-scout-20261013-4221",
+  "selection_order": "Sort each requested stratum by SHA256(seed_string + ':' + dataset_name + ':' + source_question_id), take fixed counts below; no replacement based on answers or performance",
+  "datasets": {
+    "musique": {"split": "dev", "counts": {"2hop": 3, "3hop": 3, "4hop": 3}, "total": 9},
+    "detectbench": {"split": "dev", "total": 6},
+    "quality": {"split": "dev", "counts": {"hard": 3, "non_hard": 2}, "distinct_articles": true, "total": 5}
+  },
+  "input_allowlist": "Question, ordinary context, options where applicable, source paragraph indices/titles. No answers, gold evidence, decomposition, explanations, validation votes, or supporting flags.",
+  "tools": "Local reading/search within supplied contexts allowed. No internet answer lookup or other agents solving sampled questions.",
+  "commitment": "Save all 20 predictions with concise evidence and uncertainty before reading any sample gold answers; record SHA256 and UTC time before scoring.",
+  "scoring": "Multiple choice exact option match; MuSiQue normalized exact match and token F1 against provided answer and aliases. Missing answers remain wrong; ambiguous questions retained in denominator and separately flagged.",
+  "contamination_disclosure": "Research papers and dataset documentation were consulted beforehand and may show examples. Public material may also occur in pretraining. Record any noticed sample overlap; this is not a contamination-free evaluation.",
+  "model": "Current conversation assistant; exact backend model ID unverified",
+  "external_model_api_calls": 0,
+  "formal_project_protocol_changed": false
+}

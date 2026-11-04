@@ -1,0 +1,27 @@
+{
+  "prepared_utc": "2026-10-13T03:26:58.593270+00:00",
+  "selection_protocol_sha256": "126e214b0c607ff1da813b94e12ffbc0d2ba386574d3f2e9b11e4d2bae36cf03",
+  "inputs_sha256": "dc5d60306df61ca09eda41d622b10870a103a0d8fc30182f88da5adf6a3e6a58",
+  "sample_ids": [
+    "musique:2hop__20256_74481",
+    "musique:2hop__648648_173389",
+    "musique:2hop__785711_63853",
+    "musique:3hop2__368986_89048_66294",
+    "musique:3hop1__248929_160713_77246",
+    "musique:3hop1__210639_147339_51423",
+    "musique:4hop1__89530_624859_355213_203322",
+    "musique:4hop3__39836_29339_508306_70744",
+    "musique:4hop1__638988_17130_70784_79935",
+    "detectbench:3267",
+    "detectbench:109",
+    "detectbench:1706",
+    "detectbench:1289",
+    "detectbench:1795",
+    "detectbench:3772",
+    "quality:51256_MZNDC998_6",
+    "quality:62382_O6HCHTPL_3",
+    "quality:99905_QYORRUOH_10",
+    "quality:20041_E0WD00T4_1",
+    "quality:20006_VZW02G1T_7"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "seed": 4224,
+  "question_ids": [
+    "zh-human-121-1",
+    "zh-human-79-0",
+    "zh-human-137-5",
+    "zh-human-140-5",
+    "zh-human-151-0",
+    "zh-human-145-2",
+    "zh-human-136-2",
+    "zh-human-134-4",
+    "zh-human-198-8",
+    "zh-human-126-2",
+    "zh-human-144-1",
+    "zh-human-150-1",
+    "zh-human-203-2",
+    "zh-human-241-0",
+    "zh-human-252-0",
+    "zh-human-128-5",
+    "zh-human-117-3",
+    "zh-human-219-5",
+    "zh-human-121-2",
+    "zh-human-79-4"
+  ],
+  "selected_before_test_inference": true,
+  "ratings_completed": false
+}

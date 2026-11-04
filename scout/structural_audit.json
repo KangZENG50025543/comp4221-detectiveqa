@@ -1,0 +1,1255 @@
+{
+  "definitions": {
+    "qa_count": "DetectBench JSONL rows; QuALITY flattened questions, not article-set rows.",
+    "duplicates": "Exact strings; no lowercasing or whitespace normalization. Occurrences minus unique hashes.",
+    "independence": "Exact unique contexts are a structural proxy, not proof of independent stories. DetectBench test-hard/test-distract are variants and excluded from base split totals.",
+    "length": "Unicode Python string characters and whitespace-delimited words; neither is model tokens.",
+    "evidence": "Only aggregate schema/nonempty checks. Free-text evidence has no standardized offsets to range-check."
+  },
+  "datasets": {
+    "detectbench": {
+      "splits": {
+        "dev": {
+          "qa_count": 1765,
+          "unique_context_texts": 1765,
+          "missing_ids": 0,
+          "duplicate_id_occurrences": 0,
+          "duplicate_question_text_occurrences": 38,
+          "duplicate_question_options_occurrences": 2,
+          "empty_questions": 0,
+          "empty_options_lists": 0,
+          "empty_option_entries": 0,
+          "option_count_histogram": {
+            "4": 1765
+          },
+          "empty_contexts": 0,
+          "context_lengths": {
+            "characters": {
+              "n": 1765,
+              "min": 416,
+              "median": 1048,
+              "mean": 1056.6747875354108,
+              "p95": 1565,
+              "max": 1973
+            },
+            "whitespace_words": {
+              "n": 1765,
+              "min": 71,
+              "median": 180,
+              "mean": 180.67025495750707,
+              "p95": 271,
+              "max": 319
+            }
+          },
+          "unique_context_lengths": {
+            "characters": {
+              "n": 1765,
+              "min": 416,
+              "median": 1048,
+              "mean": 1056.6747875354108,
+              "p95": 1565,
+              "max": 1973
+            },
+            "whitespace_words": {
+              "n": 1765,
+              "min": 71,
+              "median": 180,
+              "mean": 180.67025495750707,
+              "p95": 271,
+              "max": 319
+            }
+          },
+          "duplicate_complete_input_occurrences": 0,
+          "file": "raw\\detectbench_official\\DetectBench_eng_v1.3\\dev.jsonl",
+          "container_rows": 1765,
+          "jsonl_nonstandard_lines": [
+            {
+              "physical_line": 1063,
+              "error": "Extra data",
+              "column": 1730,
+              "recovered_objects": 2
+            }
+          ],
+          "schema": {
+            "id": {
+              "int": 1765
+            },
+            "context": {
+              "str": 1765
+            },
+            "options": {
+              "list": 1765
+            },
+            "answer": {
+              "int": 1765
+            },
+            "clue_graph": {
+              "dict": 1765
+            },
+            "question": {
+              "str": 1765
+            }
+          },
+          "question_schema": {
+            "id": {
+              "int": 1765
+            },
+            "context": {
+              "str": 1765
+            },
+            "options": {
+              "list": 1765
+            },
+            "answer": {
+              "int": 1765
+            },
+            "clue_graph": {
+              "dict": 1765
+            },
+            "question": {
+              "str": 1765
+            }
+          },
+          "label_check": {
+            "present": 1765,
+            "integer_type": 1765,
+            "out_of_zero_based_option_range": 0
+          },
+          "option_quality": {
+            "records_with_empty_option": 0,
+            "gold_points_to_empty_option": 0,
+            "records_with_exact_duplicate_options": 10,
+            "records_with_trimmed_duplicate_options": 10
+          },
+          "evidence": {
+            "present_rows": 1765,
+            "dict_rows": 1765,
+            "nested_schema": {
+              "evidence": {
+                "str": 1765
+              },
+              "multi_hop_reasoning": {
+                "str": 1765
+              }
+            },
+            "empty_dict_rows": 0,
+            "empty_string_fields": 0,
+            "offset_range_check": "not applicable: observed free-text fields"
+          }
+        },
+        "test-distract": {
+          "qa_count": 300,
+          "unique_context_texts": 300,
+          "missing_ids": 300,
+          "duplicate_id_occurrences": 0,
+          "duplicate_question_text_occurrences": 0,
+          "duplicate_question_options_occurrences": 0,
+          "empty_questions": 0,
+          "empty_options_lists": 0,
+          "empty_option_entries": 38,
+          "option_count_histogram": {
+            "4": 281,
+            "7": 9,
+            "5": 4,
+            "9": 1,
+            "3": 2,
+            "15": 1,
+            "6": 2
+          },
+          "empty_contexts": 0,
+          "context_lengths": {
+            "characters": {
+              "n": 300,
+              "min": 14512,
+              "median": 49501.0,
+              "mean": 65793.48,
+              "p95": 147095,
+              "max": 355926
+            },
+            "whitespace_words": {
+              "n": 300,
+              "min": 2196,
+              "median": 8122.5,
+              "mean": 10646.573333333334,
+              "p95": 24506,
+              "max": 59307
+            }
+          },
+          "unique_context_lengths": {
+            "characters": {
+              "n": 300,
+              "min": 14512,
+              "median": 49501.0,
+              "mean": 65793.48,
+              "p95": 147095,
+              "max": 355926
+            },
+            "whitespace_words": {
+              "n": 300,
+              "min": 2196,
+              "median": 8122.5,
+              "mean": 10646.573333333334,
+              "p95": 24506,
+              "max": 59307
+            }
+          },
+          "duplicate_complete_input_occurrences": 0,
+          "file": "raw\\detectbench_official\\DetectBench_eng_v1.3\\test-distract.jsonl",
+          "container_rows": 300,
+          "jsonl_nonstandard_lines": [],
+          "schema": {
+            "context": {
+              "str": 300
+            },
+            "question": {
+              "str": 300
+            },
+            "options": {
+              "list": 300
+            },
+            "answer": {
+              "int": 300
+            },
+            "reasoning_process": {
+              "dict": 300
+            }
+          },
+          "question_schema": {
+            "context": {
+              "str": 300
+            },
+            "question": {
+              "str": 300
+            },
+            "options": {
+              "list": 300
+            },
+            "answer": {
+              "int": 300
+            },
+            "reasoning_process": {
+              "dict": 300
+            }
+          },
+          "label_check": {
+            "present": 300,
+            "integer_type": 300,
+            "out_of_zero_based_option_range": 0
+          },
+          "option_quality": {
+            "records_with_empty_option": 11,
+            "gold_points_to_empty_option": 0,
+            "records_with_exact_duplicate_options": 12,
+            "records_with_trimmed_duplicate_options": 12
+          },
+          "evidence": {
+            "present_rows": 300,
+            "dict_rows": 300,
+            "nested_schema": {
+              "evidence": {
+                "str": 300
+              },
+              "logical_jump": {
+                "str": 300
+              }
+            },
+            "empty_dict_rows": 0,
+            "empty_string_fields": 0,
+            "offset_range_check": "not applicable: observed free-text fields"
+          }
+        },
+        "test-hard": {
+          "qa_count": 300,
+          "unique_context_texts": 300,
+          "missing_ids": 0,
+          "duplicate_id_occurrences": 0,
+          "duplicate_question_text_occurrences": 5,
+          "duplicate_question_options_occurrences": 0,
+          "empty_questions": 0,
+          "empty_options_lists": 0,
+          "empty_option_entries": 0,
+          "option_count_histogram": {
+            "4": 300
+          },
+          "empty_contexts": 0,
+          "context_lengths": {
+            "characters": {
+              "n": 300,
+              "min": 421,
+              "median": 1203.0,
+              "mean": 1533.4466666666667,
+              "p95": 2846,
+              "max": 4536
+            },
+            "whitespace_words": {
+              "n": 300,
+              "min": 72,
+              "median": 210.5,
+              "mean": 263.18333333333334,
+              "p95": 480,
+              "max": 780
+            }
+          },
+          "unique_context_lengths": {
+            "characters": {
+              "n": 300,
+              "min": 421,
+              "median": 1203.0,
+              "mean": 1533.4466666666667,
+              "p95": 2846,
+              "max": 4536
+            },
+            "whitespace_words": {
+              "n": 300,
+              "min": 72,
+              "median": 210.5,
+              "mean": 263.18333333333334,
+              "p95": 480,
+              "max": 780
+            }
+          },
+          "duplicate_complete_input_occurrences": 0,
+          "file": "raw\\detectbench_official\\DetectBench_eng_v1.3\\test-hard.jsonl",
+          "container_rows": 300,
+          "jsonl_nonstandard_lines": [],
+          "schema": {
+            "id": {
+              "int": 300
+            },
+            "context": {
+              "str": 300
+            },
+            "options": {
+              "list": 300
+            },
+            "answer": {
+              "int": 300
+            },
+            "clue_graph": {
+              "dict": 300
+            },
+            "question": {
+              "str": 300
+            }
+          },
+          "question_schema": {
+            "id": {
+              "int": 300
+            },
+            "context": {
+              "str": 300
+            },
+            "options": {
+              "list": 300
+            },
+            "answer": {
+              "int": 300
+            },
+            "clue_graph": {
+              "dict": 300
+            },
+            "question": {
+              "str": 300
+            }
+          },
+          "label_check": {
+            "present": 300,
+            "integer_type": 300,
+            "out_of_zero_based_option_range": 0
+          },
+          "option_quality": {
+            "records_with_empty_option": 0,
+            "gold_points_to_empty_option": 0,
+            "records_with_exact_duplicate_options": 2,
+            "records_with_trimmed_duplicate_options": 2
+          },
+          "evidence": {
+            "present_rows": 300,
+            "dict_rows": 300,
+            "nested_schema": {
+              "evidence": {
+                "str": 300
+              },
+              "multi_hop_reasoning": {
+                "str": 300
+              }
+            },
+            "empty_dict_rows": 0,
+            "empty_string_fields": 0,
+            "offset_range_check": "not applicable: observed free-text fields"
+          }
+        },
+        "test": {
+          "qa_count": 1196,
+          "unique_context_texts": 1196,
+          "missing_ids": 0,
+          "duplicate_id_occurrences": 0,
+          "duplicate_question_text_occurrences": 25,
+          "duplicate_question_options_occurrences": 1,
+          "empty_questions": 0,
+          "empty_options_lists": 0,
+          "empty_option_entries": 0,
+          "option_count_histogram": {
+            "4": 1196
+          },
+          "empty_contexts": 0,
+          "context_lengths": {
+            "characters": {
+              "n": 1196,
+              "min": 418,
+              "median": 1036.0,
+              "mean": 1046.6446488294314,
+              "p95": 1564,
+              "max": 1901
+            },
+            "whitespace_words": {
+              "n": 1196,
+              "min": 66,
+              "median": 177.0,
+              "mean": 178.80183946488293,
+              "p95": 269,
+              "max": 319
+            }
+          },
+          "unique_context_lengths": {
+            "characters": {
+              "n": 1196,
+              "min": 418,
+              "median": 1036.0,
+              "mean": 1046.6446488294314,
+              "p95": 1564,
+              "max": 1901
+            },
+            "whitespace_words": {
+              "n": 1196,
+              "min": 66,
+              "median": 177.0,
+              "mean": 178.80183946488293,
+              "p95": 269,
+              "max": 319
+            }
+          },
+          "duplicate_complete_input_occurrences": 0,
+          "file": "raw\\detectbench_official\\DetectBench_eng_v1.3\\test.jsonl",
+          "container_rows": 1196,
+          "jsonl_nonstandard_lines": [],
+          "schema": {
+            "id": {
+              "int": 1196
+            },
+            "context": {
+              "str": 1196
+            },
+            "options": {
+              "list": 1196
+            },
+            "answer": {
+              "int": 1196
+            },
+            "clue_graph": {
+              "dict": 1196
+            },
+            "question": {
+              "str": 1196
+            }
+          },
+          "question_schema": {
+            "id": {
+              "int": 1196
+            },
+            "context": {
+              "str": 1196
+            },
+            "options": {
+              "list": 1196
+            },
+            "answer": {
+              "int": 1196
+            },
+            "clue_graph": {
+              "dict": 1196
+            },
+            "question": {
+              "str": 1196
+            }
+          },
+          "label_check": {
+            "present": 1196,
+            "integer_type": 1196,
+            "out_of_zero_based_option_range": 0
+          },
+          "option_quality": {
+            "records_with_empty_option": 0,
+            "gold_points_to_empty_option": 0,
+            "records_with_exact_duplicate_options": 9,
+            "records_with_trimmed_duplicate_options": 9
+          },
+          "evidence": {
+            "present_rows": 1196,
+            "dict_rows": 1196,
+            "nested_schema": {
+              "evidence": {
+                "str": 1196
+              },
+              "multi_hop_reasoning": {
+                "str": 1196
+              }
+            },
+            "empty_dict_rows": 0,
+            "empty_string_fields": 0,
+            "offset_range_check": "not applicable: observed free-text fields"
+          }
+        },
+        "train": {
+          "qa_count": 367,
+          "unique_context_texts": 367,
+          "missing_ids": 0,
+          "duplicate_id_occurrences": 0,
+          "duplicate_question_text_occurrences": 11,
+          "duplicate_question_options_occurrences": 0,
+          "empty_questions": 0,
+          "empty_options_lists": 0,
+          "empty_option_entries": 0,
+          "option_count_histogram": {
+            "4": 367
+          },
+          "empty_contexts": 0,
+          "context_lengths": {
+            "characters": {
+              "n": 367,
+              "min": 354,
+              "median": 1045,
+              "mean": 1053,
+              "p95": 1540,
+              "max": 1820
+            },
+            "whitespace_words": {
+              "n": 367,
+              "min": 59,
+              "median": 181,
+              "mean": 180.53405994550408,
+              "p95": 269,
+              "max": 311
+            }
+          },
+          "unique_context_lengths": {
+            "characters": {
+              "n": 367,
+              "min": 354,
+              "median": 1045,
+              "mean": 1053,
+              "p95": 1540,
+              "max": 1820
+            },
+            "whitespace_words": {
+              "n": 367,
+              "min": 59,
+              "median": 181,
+              "mean": 180.53405994550408,
+              "p95": 269,
+              "max": 311
+            }
+          },
+          "duplicate_complete_input_occurrences": 0,
+          "file": "raw\\detectbench_official\\DetectBench_eng_v1.3\\train.jsonl",
+          "container_rows": 367,
+          "jsonl_nonstandard_lines": [],
+          "schema": {
+            "id": {
+              "int": 367
+            },
+            "context": {
+              "str": 367
+            },
+            "options": {
+              "list": 367
+            },
+            "answer": {
+              "int": 367
+            },
+            "clue_graph": {
+              "dict": 367
+            },
+            "question": {
+              "str": 367
+            }
+          },
+          "question_schema": {
+            "id": {
+              "int": 367
+            },
+            "context": {
+              "str": 367
+            },
+            "options": {
+              "list": 367
+            },
+            "answer": {
+              "int": 367
+            },
+            "clue_graph": {
+              "dict": 367
+            },
+            "question": {
+              "str": 367
+            }
+          },
+          "label_check": {
+            "present": 367,
+            "integer_type": 367,
+            "out_of_zero_based_option_range": 0
+          },
+          "option_quality": {
+            "records_with_empty_option": 0,
+            "gold_points_to_empty_option": 0,
+            "records_with_exact_duplicate_options": 1,
+            "records_with_trimmed_duplicate_options": 1
+          },
+          "evidence": {
+            "present_rows": 367,
+            "dict_rows": 367,
+            "nested_schema": {
+              "evidence": {
+                "str": 367
+              },
+              "multi_hop_reasoning": {
+                "str": 367
+              }
+            },
+            "empty_dict_rows": 0,
+            "empty_string_fields": 0,
+            "offset_range_check": "not applicable: observed free-text fields"
+          }
+        }
+      },
+      "cross_split_exact_overlap": {
+        "dev vs test-distract": {
+          "question_options": 0,
+          "questions": 0,
+          "complete_inputs": 0,
+          "ids": 0,
+          "contexts": 0
+        },
+        "dev vs test-hard": {
+          "question_options": 0,
+          "questions": 5,
+          "complete_inputs": 0,
+          "ids": 0,
+          "contexts": 0
+        },
+        "dev vs test": {
+          "question_options": 1,
+          "questions": 13,
+          "complete_inputs": 0,
+          "ids": 0,
+          "contexts": 0
+        },
+        "dev vs train": {
+          "question_options": 0,
+          "questions": 9,
+          "complete_inputs": 0,
+          "ids": 0,
+          "contexts": 0
+        },
+        "test-distract vs test-hard": {
+          "question_options": 0,
+          "questions": 0,
+          "complete_inputs": 0,
+          "ids": 0,
+          "contexts": 0
+        },
+        "test-distract vs test": {
+          "question_options": 0,
+          "questions": 0,
+          "complete_inputs": 0,
+          "ids": 0,
+          "contexts": 0
+        },
+        "test-distract vs train": {
+          "question_options": 0,
+          "questions": 0,
+          "complete_inputs": 0,
+          "ids": 0,
+          "contexts": 0
+        },
+        "test-hard vs test": {
+          "question_options": 1,
+          "questions": 2,
+          "complete_inputs": 0,
+          "ids": 0,
+          "contexts": 0
+        },
+        "test-hard vs train": {
+          "question_options": 0,
+          "questions": 2,
+          "complete_inputs": 0,
+          "ids": 0,
+          "contexts": 0
+        },
+        "test vs train": {
+          "question_options": 1,
+          "questions": 3,
+          "complete_inputs": 0,
+          "ids": 0,
+          "contexts": 0
+        }
+      },
+      "base_split_totals": {
+        "qa_rows": 3328,
+        "unique_question_texts": 3231,
+        "unique_exact_contexts": 3328
+      }
+    },
+    "quality": {
+      "splits": {
+        "dev": {
+          "qa_count": 2086,
+          "unique_context_texts": 115,
+          "missing_ids": 0,
+          "duplicate_id_occurrences": 0,
+          "duplicate_question_text_occurrences": 8,
+          "duplicate_question_options_occurrences": 0,
+          "empty_questions": 0,
+          "empty_options_lists": 0,
+          "empty_option_entries": 0,
+          "option_count_histogram": {
+            "4": 2086
+          },
+          "empty_contexts": 0,
+          "context_lengths": {
+            "characters": {
+              "n": 230,
+              "min": 11075,
+              "median": 27056.0,
+              "mean": 24306.591304347825,
+              "p95": 32534,
+              "max": 34150
+            },
+            "whitespace_words": {
+              "n": 230,
+              "min": 1801,
+              "median": 4728.0,
+              "mean": 4121.773913043478,
+              "p95": 5736,
+              "max": 5967
+            }
+          },
+          "unique_context_lengths": {
+            "characters": {
+              "n": 115,
+              "min": 11075,
+              "median": 27056,
+              "mean": 24306.591304347825,
+              "p95": 32534,
+              "max": 34150
+            },
+            "whitespace_words": {
+              "n": 115,
+              "min": 1801,
+              "median": 4728,
+              "mean": 4121.773913043478,
+              "p95": 5736,
+              "max": 5967
+            }
+          },
+          "duplicate_complete_input_occurrences": 0,
+          "file": "raw\\quality\\QuALITY.v1.0.1.htmlstripped.dev",
+          "container_rows": 230,
+          "jsonl_nonstandard_lines": [],
+          "schema": {
+            "article_id": {
+              "str": 230
+            },
+            "set_unique_id": {
+              "str": 230
+            },
+            "batch_num": {
+              "str": 230
+            },
+            "writer_id": {
+              "str": 230
+            },
+            "source": {
+              "str": 230
+            },
+            "title": {
+              "str": 230
+            },
+            "year": {
+              "int": 190,
+              "str": 38,
+              "NoneType": 2
+            },
+            "author": {
+              "str": 230
+            },
+            "topic": {
+              "str": 230
+            },
+            "article": {
+              "str": 230
+            },
+            "questions": {
+              "list": 230
+            },
+            "url": {
+              "str": 230
+            },
+            "license": {
+              "str": 230
+            }
+          },
+          "question_schema": {
+            "question": {
+              "str": 2086
+            },
+            "question_unique_id": {
+              "str": 2086
+            },
+            "options": {
+              "list": 2086
+            },
+            "writer_label": {
+              "int": 2086
+            },
+            "gold_label": {
+              "int": 2086
+            },
+            "validation": {
+              "list": 2086
+            },
+            "speed_validation": {
+              "list": 2086
+            },
+            "difficult": {
+              "int": 2086
+            }
+          },
+          "unique_article_ids": 115,
+          "duplicate_set_unique_id_occurrences": 0,
+          "label_check": {
+            "gold_present": 2086,
+            "gold_out_of_one_based_option_range": 0,
+            "writer_present": 2086,
+            "writer_out_of_one_based_option_range": 0
+          },
+          "evidence": {
+            "supporting_chunk_annotations": "no dedicated supporting paragraph/sentence/offset field in observed schema; validation metadata is not gold chunk evidence"
+          }
+        },
+        "test": {
+          "qa_count": 2128,
+          "unique_context_texts": 116,
+          "missing_ids": 0,
+          "duplicate_id_occurrences": 0,
+          "duplicate_question_text_occurrences": 11,
+          "duplicate_question_options_occurrences": 0,
+          "empty_questions": 0,
+          "empty_options_lists": 0,
+          "empty_option_entries": 0,
+          "option_count_histogram": {
+            "4": 2128
+          },
+          "empty_contexts": 0,
+          "context_lengths": {
+            "characters": {
+              "n": 232,
+              "min": 10271,
+              "median": 28436.5,
+              "mean": 24723.060344827587,
+              "p95": 32933,
+              "max": 34472
+            },
+            "whitespace_words": {
+              "n": 232,
+              "min": 1802,
+              "median": 4864.0,
+              "mean": 4184.474137931034,
+              "p95": 5574,
+              "max": 6004
+            }
+          },
+          "unique_context_lengths": {
+            "characters": {
+              "n": 116,
+              "min": 10271,
+              "median": 28436.5,
+              "mean": 24723.060344827587,
+              "p95": 32933,
+              "max": 34472
+            },
+            "whitespace_words": {
+              "n": 116,
+              "min": 1802,
+              "median": 4864.0,
+              "mean": 4184.474137931034,
+              "p95": 5574,
+              "max": 6004
+            }
+          },
+          "duplicate_complete_input_occurrences": 0,
+          "file": "raw\\quality\\QuALITY.v1.0.1.htmlstripped.test",
+          "container_rows": 232,
+          "jsonl_nonstandard_lines": [],
+          "schema": {
+            "article_id": {
+              "str": 232
+            },
+            "set_unique_id": {
+              "str": 232
+            },
+            "batch_num": {
+              "str": 232
+            },
+            "writer_id": {
+              "str": 232
+            },
+            "source": {
+              "str": 232
+            },
+            "title": {
+              "str": 232
+            },
+            "year": {
+              "int": 182,
+              "str": 50
+            },
+            "author": {
+              "str": 232
+            },
+            "topic": {
+              "str": 232
+            },
+            "article": {
+              "str": 232
+            },
+            "questions": {
+              "list": 232
+            },
+            "url": {
+              "str": 232
+            },
+            "license": {
+              "str": 232
+            }
+          },
+          "question_schema": {
+            "question": {
+              "str": 2128
+            },
+            "question_unique_id": {
+              "str": 2128
+            },
+            "options": {
+              "list": 2128
+            },
+            "difficult": {
+              "int": 2128
+            }
+          },
+          "unique_article_ids": 116,
+          "duplicate_set_unique_id_occurrences": 0,
+          "label_check": {
+            "gold_present": 0,
+            "gold_out_of_one_based_option_range": 0,
+            "writer_present": 0,
+            "writer_out_of_one_based_option_range": 0
+          },
+          "evidence": {
+            "supporting_chunk_annotations": "no dedicated supporting paragraph/sentence/offset field in observed schema; validation metadata is not gold chunk evidence"
+          }
+        },
+        "train": {
+          "qa_count": 2523,
+          "unique_context_texts": 150,
+          "missing_ids": 0,
+          "duplicate_id_occurrences": 0,
+          "duplicate_question_text_occurrences": 9,
+          "duplicate_question_options_occurrences": 0,
+          "empty_questions": 0,
+          "empty_options_lists": 0,
+          "empty_option_entries": 0,
+          "option_count_histogram": {
+            "4": 2523
+          },
+          "empty_contexts": 0,
+          "context_lengths": {
+            "characters": {
+              "n": 300,
+              "min": 10600,
+              "median": 27308.0,
+              "mean": 24348.853333333333,
+              "p95": 32474,
+              "max": 35286
+            },
+            "whitespace_words": {
+              "n": 300,
+              "min": 1804,
+              "median": 4751.5,
+              "mean": 4165.873333333333,
+              "p95": 5539,
+              "max": 5965
+            }
+          },
+          "unique_context_lengths": {
+            "characters": {
+              "n": 150,
+              "min": 10600,
+              "median": 27308.0,
+              "mean": 24348.853333333333,
+              "p95": 32382,
+              "max": 35286
+            },
+            "whitespace_words": {
+              "n": 150,
+              "min": 1804,
+              "median": 4751.5,
+              "mean": 4165.873333333333,
+              "p95": 5525,
+              "max": 5965
+            }
+          },
+          "duplicate_complete_input_occurrences": 0,
+          "file": "raw\\quality\\QuALITY.v1.0.1.htmlstripped.train",
+          "container_rows": 300,
+          "jsonl_nonstandard_lines": [],
+          "schema": {
+            "article_id": {
+              "str": 300
+            },
+            "set_unique_id": {
+              "str": 300
+            },
+            "batch_num": {
+              "str": 300
+            },
+            "writer_id": {
+              "str": 300
+            },
+            "source": {
+              "str": 300
+            },
+            "title": {
+              "str": 300
+            },
+            "year": {
+              "int": 250,
+              "str": 44,
+              "NoneType": 6
+            },
+            "author": {
+              "str": 300
+            },
+            "topic": {
+              "str": 300
+            },
+            "article": {
+              "str": 300
+            },
+            "questions": {
+              "list": 300
+            },
+            "url": {
+              "str": 300
+            },
+            "license": {
+              "str": 300
+            }
+          },
+          "question_schema": {
+            "question": {
+              "str": 2523
+            },
+            "question_unique_id": {
+              "str": 2523
+            },
+            "options": {
+              "list": 2523
+            },
+            "writer_label": {
+              "int": 2523
+            },
+            "gold_label": {
+              "int": 2523
+            },
+            "validation": {
+              "list": 2523
+            },
+            "speed_validation": {
+              "list": 2523
+            },
+            "difficult": {
+              "int": 2523
+            }
+          },
+          "unique_article_ids": 150,
+          "duplicate_set_unique_id_occurrences": 0,
+          "label_check": {
+            "gold_present": 2523,
+            "gold_out_of_one_based_option_range": 0,
+            "writer_present": 2523,
+            "writer_out_of_one_based_option_range": 0
+          },
+          "evidence": {
+            "supporting_chunk_annotations": "no dedicated supporting paragraph/sentence/offset field in observed schema; validation metadata is not gold chunk evidence"
+          }
+        }
+      },
+      "cross_split_exact_overlap": {
+        "dev vs test": {
+          "question_options": 0,
+          "questions": 4,
+          "article_ids": 0,
+          "complete_inputs": 0,
+          "ids": 0,
+          "contexts": 0
+        },
+        "dev vs train": {
+          "question_options": 0,
+          "questions": 2,
+          "article_ids": 0,
+          "complete_inputs": 0,
+          "ids": 0,
+          "contexts": 0
+        },
+        "test vs train": {
+          "question_options": 0,
+          "questions": 2,
+          "article_ids": 0,
+          "complete_inputs": 0,
+          "ids": 0,
+          "contexts": 0
+        }
+      },
+      "base_split_totals": {
+        "qa_rows": 6737,
+        "unique_question_texts": 6701,
+        "unique_exact_contexts": 381
+      }
+    }
+  },
+  "musique": {
+    "status": "audited community mirror dev only; not byte-verified against official ZIP",
+    "source_manifest": "musique_mirror_manifest.json",
+    "file": "raw\\musique\\musique_ans_v1.0_dev.jsonl",
+    "schema": {
+      "id": {
+        "str": 2417
+      },
+      "paragraphs": {
+        "list": 2417
+      },
+      "question": {
+        "str": 2417
+      },
+      "question_decomposition": {
+        "list": 2417
+      },
+      "answer": {
+        "str": 2417
+      },
+      "answer_aliases": {
+        "list": 2417
+      },
+      "answerable": {
+        "bool": 2417
+      }
+    },
+    "paragraph_schema": {
+      "idx": {
+        "int": 48315
+      },
+      "title": {
+        "str": 48315
+      },
+      "paragraph_text": {
+        "str": 48315
+      },
+      "is_supporting": {
+        "bool": 48315
+      }
+    },
+    "decomposition_schema": {
+      "id": {
+        "int": 6404
+      },
+      "question": {
+        "str": 6404
+      },
+      "answer": {
+        "str": 6404
+      },
+      "paragraph_support_idx": {
+        "int": 6404
+      }
+    },
+    "qa_count": 2417,
+    "jsonl_nonstandard_lines": [],
+    "duplicate_id_occurrences": 0,
+    "duplicate_question_text_occurrences": 5,
+    "unique_context_sequences": 2417,
+    "unique_paragraph_texts": 21100,
+    "paragraph_count_histogram": {
+      "20": 2401,
+      "19": 9,
+      "18": 5,
+      "17": 2
+    },
+    "support_count_histogram": {
+      "2": 1252,
+      "3": 760,
+      "4": 405
+    },
+    "decomposition_count_histogram": {
+      "2": 1252,
+      "3": 760,
+      "4": 405
+    },
+    "empty_questions": 0,
+    "empty_answers": 0,
+    "empty_paragraph_texts": 0,
+    "answerable_true_count": 2417,
+    "context_lengths": {
+      "characters": {
+        "n": 2417,
+        "min": 3485,
+        "median": 9873,
+        "mean": 10082.688043028547,
+        "p95": 14525,
+        "max": 20635
+      },
+      "whitespace_words": {
+        "n": 2417,
+        "min": 554,
+        "median": 1618,
+        "mean": 1652.2606537029376,
+        "p95": 2429,
+        "max": 3206
+      }
+    },
+    "paragraph_lengths": {
+      "characters": {
+        "n": 48315,
+        "min": 100,
+        "median": 431,
+        "mean": 503.44528614301976,
+        "p95": 1125,
+        "max": 2010
+      },
+      "whitespace_words": {
+        "n": 48315,
+        "min": 20,
+        "median": 72,
+        "mean": 82.65577977853668,
+        "p95": 182,
+        "max": 299
+      }
+    },
+    "support_index_out_of_range": 0,
+    "support_index_missing_from_paragraph_idx": 0,
+    "duplicate_paragraph_idx_records": 0,
+    "paragraph_idx_not_sequence_records": 0,
+    "support_flag_nonboolean": 0,
+    "decomposition_ref_to_non_support_flag": 0
+  }
+}

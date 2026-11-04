@@ -1,0 +1,256 @@
+{
+  "dataset_revision": "001e5c590ddeb6c83083c55fa10b0b8b3dcba2ed",
+  "raw_annotation_files": 24,
+  "raw_questions": 154,
+  "eligible_questions": 141,
+  "eligible_books": 23,
+  "exclusions": 13,
+  "file_checks": [
+    {
+      "book": 27,
+      "status": "parsed",
+      "actual_paragraphs": 2938,
+      "annotated_paragraphs": 2938,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\27-埃及十字架之谜-埃勒里奎因.txt"
+    },
+    {
+      "book": 79,
+      "status": "parsed",
+      "actual_paragraphs": 4315,
+      "annotated_paragraphs": 4315,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\79-有翼之暗-麻耶雄嵩.txt"
+    },
+    {
+      "book": 117,
+      "status": "parsed",
+      "actual_paragraphs": 2097,
+      "annotated_paragraphs": 2097,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\117-阳光下的罪恶-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 118,
+      "status": "parsed",
+      "actual_paragraphs": 2884,
+      "annotated_paragraphs": 2884,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\118-顺水推舟-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 121,
+      "status": "parsed",
+      "actual_paragraphs": 2586,
+      "annotated_paragraphs": 2586,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\121-山核桃大街谋杀案-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 124,
+      "status": "parsed",
+      "actual_paragraphs": 3276,
+      "annotated_paragraphs": 3276,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\124-怪钟疑案-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 126,
+      "status": "parsed",
+      "actual_paragraphs": 2339,
+      "annotated_paragraphs": 2339,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\126-万圣节前夜的谋杀-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 128,
+      "status": "parsed",
+      "actual_paragraphs": 2218,
+      "annotated_paragraphs": 2218,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\128-帷幕-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 134,
+      "status": "parsed",
+      "actual_paragraphs": 2958,
+      "annotated_paragraphs": 2958,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\134-谋杀启事-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 136,
+      "status": "parsed",
+      "actual_paragraphs": 2819,
+      "annotated_paragraphs": 2819,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\136-命案目睹记-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 137,
+      "status": "parsed",
+      "actual_paragraphs": 2734,
+      "annotated_paragraphs": 2734,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\137-破镜谋杀案-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 140,
+      "status": "parsed",
+      "actual_paragraphs": 2265,
+      "annotated_paragraphs": 2265,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\140-沉睡谋杀案-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 142,
+      "status": "parsed",
+      "actual_paragraphs": 3476,
+      "annotated_paragraphs": 3476,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\142-烟囱别墅之谜-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 144,
+      "status": "parsed",
+      "actual_paragraphs": 3213,
+      "annotated_paragraphs": 3213,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\144-七面钟之谜-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 145,
+      "status": "parsed",
+      "actual_paragraphs": 2648,
+      "annotated_paragraphs": 2648,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\145-控方证人-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 149,
+      "status": "duplicate",
+      "duplicate_of": 117
+    },
+    {
+      "book": 150,
+      "status": "parsed",
+      "actual_paragraphs": 2572,
+      "annotated_paragraphs": 2572,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\150-怪屋-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 151,
+      "status": "parsed",
+      "actual_paragraphs": 3319,
+      "annotated_paragraphs": 3309,
+      "count_matches": false,
+      "source": "data\\raw\\novel_data_zh\\151-三只瞎老鼠-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 198,
+      "status": "parsed",
+      "actual_paragraphs": 2998,
+      "annotated_paragraphs": 2998,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\198-ABC谋杀案-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 203,
+      "status": "parsed",
+      "actual_paragraphs": 2504,
+      "annotated_paragraphs": 2504,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\203-牙医谋杀案-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 209,
+      "status": "parsed",
+      "actual_paragraphs": 2989,
+      "annotated_paragraphs": 2989,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\209-清洁女工之死-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 219,
+      "status": "parsed",
+      "actual_paragraphs": 2508,
+      "annotated_paragraphs": 2508,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\219-字母袖扣谋杀案-苏菲·汉娜.txt"
+    },
+    {
+      "book": 241,
+      "status": "parsed",
+      "actual_paragraphs": 3271,
+      "annotated_paragraphs": 3271,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\241-悬崖上的谋杀-阿加莎克里斯蒂.txt"
+    },
+    {
+      "book": 252,
+      "status": "parsed",
+      "actual_paragraphs": 2714,
+      "annotated_paragraphs": 2714,
+      "count_matches": true,
+      "source": "data\\raw\\novel_data_zh\\252-奉命谋杀-阿加莎克里斯蒂.txt"
+    }
+  ],
+  "eligible_per_book": {
+    "27": 6,
+    "79": 5,
+    "117": 5,
+    "118": 5,
+    "121": 5,
+    "124": 5,
+    "126": 5,
+    "128": 6,
+    "134": 5,
+    "136": 6,
+    "137": 7,
+    "140": 6,
+    "142": 6,
+    "144": 5,
+    "145": 6,
+    "150": 6,
+    "151": 6,
+    "198": 9,
+    "203": 10,
+    "209": 8,
+    "219": 5,
+    "241": 7,
+    "252": 7
+  },
+  "dev_questions": 20,
+  "test_questions": 100,
+  "dev_books": [
+    27,
+    142,
+    124,
+    209,
+    118
+  ],
+  "test_books": [
+    121,
+    79,
+    137,
+    140,
+    151,
+    145,
+    136,
+    134,
+    198,
+    126,
+    144,
+    150,
+    203,
+    241,
+    252,
+    128,
+    117,
+    219
+  ],
+  "source_text_checks": "UTF-8, contiguous unique paragraph IDs, existing reveal and explicit-clue paragraphs; no semantic validation claim",
+  "human_semantic_audit_completed": false,
+  "model_inference_on_test": false
+}

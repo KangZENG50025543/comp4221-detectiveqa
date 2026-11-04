@@ -1,0 +1,13 @@
+{"qid": "zh-human-27-5", "reason": ["invalid_options"]}
+{"qid": "zh-human-118-5", "reason": ["clue_at_or_after_reveal"]}
+{"qid": "zh-human-118-6", "reason": ["clue_at_or_after_reveal"]}
+{"qid": "zh-human-121-3", "reason": ["clue_at_or_after_reveal"]}
+{"qid": "zh-human-124-4", "reason": ["clue_at_or_after_reveal"]}
+{"qid": "zh-human-126-5", "reason": ["clue_at_or_after_reveal"]}
+{"qid": "zh-human-134-3", "reason": ["invalid_clue_position", "clue_at_or_after_reveal"]}
+{"qid": "zh-human-149-0", "reason": ["duplicate_annotation_file"], "duplicate_of": 117}
+{"qid": "zh-human-149-1", "reason": ["duplicate_annotation_file"], "duplicate_of": 117}
+{"qid": "zh-human-149-2", "reason": ["duplicate_annotation_file"], "duplicate_of": 117}
+{"qid": "zh-human-149-3", "reason": ["duplicate_annotation_file"], "duplicate_of": 117}
+{"qid": "zh-human-149-4", "reason": ["duplicate_annotation_file"], "duplicate_of": 117}
+{"qid": "zh-human-219-3", "reason": ["clue_at_or_after_reveal"]}

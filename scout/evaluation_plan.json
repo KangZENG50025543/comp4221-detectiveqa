@@ -1,0 +1,45 @@
+{
+  "status": "proposed_next_steps_not_run_or_frozen",
+  "objective": "Test whether findings transfer across evidence retrieval, narrative understanding, and explanation reliability; avoid tuning to one benchmark",
+  "existing_protocol_modified": false,
+  "steps": [
+    "Keep original DetectiveQA study as one axis; pilot MuSiQue and QuALITY as complementary axes, not pooled replacement data.",
+    "Resolve MuSiQue original-file provenance and review entity bridges. Keep DetectBench outside formal scoring until quality criteria and annotations are reviewed.",
+    "Define dataset-specific input adapters and metrics on development material. Retain source paragraph IDs. Never put answers, supporting flags or decompositions into ordinary prompts.",
+    "Two students independently assess each review item with a third adjudicating disagreements; rotate roles, blind system identity/output correctness where possible, and record real contributions.",
+    "Freeze common method and dataset adapters before final comparisons. When claiming transfer, do not retune method on the target dataset's final scores.",
+    "Construct future holdouts by novel/article and variants, check shared atomic questions/documents for multi-hop data. Candidate audit samples and previously exposed DetectiveQA test samples must be disclosed and excluded from any claim of fresh blind validation.",
+    "Report each dataset separately, with paired method differences, uncertainty and per-document clustering where applicable. Report disagreements and full denominators; do not remove questions merely because a model misses them.",
+    "Measure runtime, token counts, actual API cost and evidence coverage where labels support it. Verify pricing and total projected cost before expanding paid runs within the recorded CNY100-300 budget."
+  ],
+  "proposed_metrics": {
+    "detectiveqa": [
+      "answer accuracy",
+      "annotated clue coverage under existing cutoff rules",
+      "human evidence sufficiency and explanation validity"
+    ],
+    "musique": [
+      "answer normalized EM/token F1",
+      "support paragraph precision/recall/F1",
+      "all-required-supports-covered rate",
+      "2/3/4-hop breakdown"
+    ],
+    "quality": [
+      "answer accuracy by hard/non-hard",
+      "article-grouped uncertainty",
+      "human evidence sufficiency and alternative-option support"
+    ],
+    "optional_reliability_direction": [
+      "unsupported-assertion rate on human-reviewed items",
+      "coverage versus accuracy when abstention is allowed",
+      "closed-book or reduced-evidence controls where feasible"
+    ]
+  },
+  "comparability_limits": [
+    "Accuracy and token F1 measure different outputs and must not be indiscriminately averaged.",
+    "English supplemental datasets versus Chinese DetectiveQA change language, domain and length together; score differences do not isolate any one cause.",
+    "MuSiQue has 17-20 supplied paragraphs in the local dev file. A 50-candidate condition requires separately defined corpus construction; do not silently manufacture an equivalent to the original 50-chunk experiment.",
+    "Answer agreement is not proof of valid reasoning. LLM judges are aids, not human gold annotations.",
+    "All proposed controls, formal model runs, student ratings, split changes and cost estimates remain unperformed in this audit."
+  ]
+}

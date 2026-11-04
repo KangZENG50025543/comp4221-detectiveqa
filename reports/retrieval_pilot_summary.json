@@ -1,0 +1,62 @@
+{
+  "scope": "development pipeline pilot, not held-out research results",
+  "questions": 3,
+  "books": 3,
+  "test_questions_run": 0,
+  "paid_api_requests": 0,
+  "answer_accuracy": null,
+  "elapsed_seconds": 15.457189400010975,
+  "torch_version": "2.9.1+cu128",
+  "precision": "float16 weights, float32 normalized vectors and scores",
+  "cuda": "12.8",
+  "embedding_peak_allocated_bytes": 1250264576,
+  "reranker_peak_allocated_bytes": 1199741440,
+  "protocol_sha256": "0e174e7c9bd4616b202a15ec11481902d314ae294be282a092f6f80920bdf840",
+  "split_sha256": "1a7beaedac87a963bc20574a15be09473a924ba7436d11ad8e5bdabeb24f2184",
+  "aggregate_evidence_metrics": {
+    "A": {
+      "full_paragraph_recall": 0.39814814814814814,
+      "mean_paragraph_character_coverage": 0.39814814814814814,
+      "all_explicit_evidence_covered": 0.0
+    },
+    "B": {
+      "full_paragraph_recall": 0.5185185185185185,
+      "mean_paragraph_character_coverage": 0.5185185185185185,
+      "all_explicit_evidence_covered": 0.0
+    },
+    "C": {
+      "full_paragraph_recall": 0.28703703703703703,
+      "mean_paragraph_character_coverage": 0.28703703703703703,
+      "all_explicit_evidence_covered": 0.0
+    }
+  },
+  "stages": [
+    {
+      "qid": "zh-human-27-1",
+      "prefix_paragraphs": 1880,
+      "chunks": 190,
+      "dense_seconds": 2.7150516000110656,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.12117810000199825,
+      "rerank_C_seconds": 0.47102439997252077
+    },
+    {
+      "qid": "zh-human-142-4",
+      "prefix_paragraphs": 3316,
+      "chunks": 215,
+      "dense_seconds": 2.900490100000752,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.09794229999533854,
+      "rerank_C_seconds": 0.4495632000034675
+    },
+    {
+      "qid": "zh-human-124-0",
+      "prefix_paragraphs": 610,
+      "chunks": 38,
+      "dense_seconds": 0.48484580000513233,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.09460809998563491,
+      "rerank_C_seconds": 0.34982880001189187
+    }
+  ]
+}

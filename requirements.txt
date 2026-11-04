@@ -1,0 +1,7 @@
+# Install the CUDA wheel separately, using scripts/setup.ps1.
+transformers==4.57.6
+huggingface-hub==0.36.0
+numpy==2.2.6
+requests==2.32.5
+sentencepiece==0.2.1
+safetensors==0.6.2

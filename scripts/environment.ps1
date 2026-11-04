@@ -1,0 +1,13 @@
+$dqRoot = Split-Path -Parent $PSScriptRoot
+$env:HF_HOME = Join-Path $dqRoot 'cache/huggingface'
+$env:HF_HUB_CACHE = Join-Path $env:HF_HOME 'hub'
+$env:HF_DATASETS_CACHE = Join-Path $env:HF_HOME 'datasets'
+$env:HF_HUB_DISABLE_TELEMETRY = '1'
+$env:PIP_CACHE_DIR = Join-Path $dqRoot 'cache/pip'
+$env:TORCH_HOME = Join-Path $dqRoot 'cache/torch'
+$env:TEMP = Join-Path $dqRoot 'cache/tmp'
+$env:TMP = $env:TEMP
+$env:PYTHONUTF8 = '1'
+$env:TOKENIZERS_PARALLELISM = 'false'
+$env:PYTHONPATH = Join-Path $dqRoot 'src'
+$dqPython = Join-Path $dqRoot '.venv/Scripts/python.exe'
