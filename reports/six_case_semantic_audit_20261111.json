@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-11",
+  "scope": "Posthoc AI semantic audit of six deliberately selected development cases; not independent blind answering or human ratings",
+  "source_run": "dev_retrieval_20261111_01",
+  "review_process": "Primary assistant read all six ordinary questions and relevant source passages. Two agents reviewed book 209 and 118 pairs; a third independently reviewed all six. No external plot knowledge was used to establish findings.",
+  "correction_to_earlier_interpretation": "The earlier capacity calculation was correct: all specified gold paragraphs fit into five fixed chunks. But missing specified gold paragraphs does not establish missing necessary evidence or an actual wrong answer. The six cases must not be described as six demonstrated semantic retrieval failures.",
+  "cases": [
+    {
+      "qid": "zh-human-124-0",
+      "topic": "谁可能拿走旅行钟",
+      "primary_finding": "confirmed_reference_person_error_and_uncertain_unique_answer",
+      "gold_recall_C": 0.75,
+      "missing_gold_pids": [218],
+      "selected_evidence_pids": [293, 306, 311, 312, 313, 314, 315, 594, 600, 602, 603, 604, 607],
+      "finding_CN": "参考解析把返回屋中拿手套的人写成佩玛繻；原文311—315明示是希拉，604—607的指代也指向那个女孩。C已经保留这些材料。原文602仅提出佩玛繻可能拿钟，603随即追问未知的动机；题目问动机，标注却依靠机会和错认的人物推断。漏掉218不是主要问题，其否认其他钟的内容也有相关替代材料。",
+      "answer_assessment": "不能确认原答案A唯一成立，也不据此自动改成B；实际谁有动机仍需修订题意/原标注复核。",
+      "selection_failure_established": false,
+      "recommended_scoring_status": "hold_for_annotation_adjudication_in_future_answer_metrics",
+      "suggested_new_answer": null
+    },
+    {
+      "qid": "zh-human-209-1",
+      "topic": "韦瑟比太太的反应",
+      "primary_finding": "core_evidence_present_but_options_ambiguous",
+      "gold_recall_C": 0.75,
+      "missing_gold_pids": [901],
+      "selected_evidence_pids": [874, 876, 877, 879, 882, 886],
+      "finding_CN": "C已保留握手突然绷紧、起初否认记得死者、女儿提醒及嫌恶的核心材料；漏掉901的拒谈不是证明A所不可替代的证据。但题目没有明确区分表面反应与内心态度，好奇、避谈等选项也有文本支持。",
+      "answer_assessment": "A可作一种解释；不据此证明其他选项皆错。",
+      "selection_failure_established": false,
+      "recommended_scoring_status": "hold_for_option_ambiguity_adjudication_in_future_answer_metrics",
+      "suggested_new_answer": null
+    },
+    {
+      "qid": "zh-human-27-0",
+      "topic": "安德鲁过去的生活",
+      "primary_finding": "sufficient_alternative_evidence_despite_incomplete_gold_recall",
+      "gold_recall_C": 0.5,
+      "missing_gold_pids": [174, 178],
+      "selected_evidence_pids": [139, 142, 148, 150],
+      "finding_CN": "C保留购买昂贵鱼子酱及142对其过去奢侈生活的直接判断，足以支持B。漏掉买书、现金存放习惯并不妨碍识别这道选择题的答案；金标集合不是唯一或最小的充分证据集合。",
+      "answer_assessment": "现有选段支持B；50%标注召回不代表只能获得一半作答依据。",
+      "selection_failure_established": false,
+      "recommended_scoring_status": "retain_original_answer_and_metrics_with_semantic_sufficiency_note",
+      "suggested_new_answer": null
+    },
+    {
+      "qid": "zh-human-209-3",
+      "topic": "谁不可能在车站推人",
+      "primary_finding": "explicit_answer_inside_allowed_prefix_and_nonexhaustive_gold",
+      "gold_recall_C": 0.0,
+      "missing_gold_pids": [1489, 1490],
+      "selected_evidence_pids": [2894],
+      "finding_CN": "所选2894直接指出罗宾当时不可能在车站，足以支持D。它在现有2975截断线之前，所以程序并未越界，但用于推理评测的语义截断有问题。1489/1490是有效的时间推理路线，却不是唯一能提供答案的材料。",
+      "answer_assessment": "D有直接支持；答对不能证明完成了原定时间推理。",
+      "selection_failure_established": false,
+      "recommended_scoring_status": "hold_for_reveal_boundary_review_in_future_reasoning_metrics",
+      "earliest_answer_reveal_established": false,
+      "suggested_new_cutoff": null,
+      "suggested_new_answer": null
+    },
+    {
+      "qid": "zh-human-118-0",
+      "topic": "罗利拜访伊诺克的目的",
+      "primary_finding": "real_explanatory_context_gap_with_imperfect_gold_mapping",
+      "gold_recall_C": 0.0,
+      "missing_gold_pids": [759, 1005, 1032, 1246],
+      "selected_evidence_pids": [777, 787, 992, 994, 1236, 1240, 1243],
+      "useful_unselected_pids": [1244, 1246, 1248, 1250, 1252, 1254, 1259],
+      "finding_CN": "C的第一名chunk89在1243结束，保留了询问为何拜访的提问，却漏掉相邻chunk90、91的动机解释。两块都在原候选池中，重排名次分别18、15。另有777可替代gold759的面熟背景；gold1032只写离开等待，参考理由中的律师顾虑在1252才明确。因此0%召回也不能说完全没有相关证据。",
+      "answer_assessment": "C可能由线索或排除法选出，但具体目的解释不完整；没有实际回答模型输出，不能断言它已经答错。",
+      "selection_failure_established": "explanatory_context_gap_yes_actual_answer_failure_unmeasured",
+      "recommended_scoring_status": "retain_original_metrics_and_test_context_continuity_without_gold_features",
+      "suggested_new_answer": null
+    },
+    {
+      "qid": "zh-human-118-2",
+      "topic": "影响继承财产的秘密",
+      "primary_finding": "sufficient_direct_evidence_despite_missing_background_gold",
+      "gold_recall_C": 0.6666666666666666,
+      "missing_gold_pids": [79],
+      "selected_evidence_pids": [859, 869, 873, 875, 880, 885, 887],
+      "finding_CN": "C已经明确保留第一任丈夫身份、假死或仍在世的说法，以及再婚和遗产影响，足以支持B。遗漏的79是旧遗嘱背景，并非识别秘密不可缺少的段落。",
+      "answer_assessment": "现有选段直接支持B；未发现答案标注错误。",
+      "selection_failure_established": false,
+      "recommended_scoring_status": "retain_original_answer_and_metrics_with_semantic_sufficiency_note",
+      "suggested_new_answer": null
+    }
+  ],
+  "preservation": "Original data, answers, split, protocol and baseline metrics remain unchanged. Recommended hold statuses are audit findings, not an implemented change to the old evaluation runner or a rescored benchmark.",
+  "limits": [
+    "These six were selected because candidate coverage was complete but final gold recall was incomplete, so defect frequencies do not estimate dataset-wide rates.",
+    "AI agreement does not substitute for genuine human review.",
+    "No new answer accuracy was measured; the next experiment only changes context selection under a fixed five-chunk cap.",
+    "No earliest spoiler boundary or corrected unique answer is asserted where it has not been established."
+  ]
+}

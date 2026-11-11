@@ -57,3 +57,13 @@
 !/reports/retrieval_pilot_20261111.json
 !/reports/cross_dataset_retrieval_20261111.json
 !/reports/cross_dataset_selection_20261111.json
+
+# Six-case semantic audit and fixed context-continuity development experiment.
+!/reports/six_case_semantic_audit_20261111.json
+!/reports/六题复核与后续实验_20261111.txt
+!/src/context_continuity.py
+!/scripts/run_context_continuity_pilot.py
+!/tests/test_context_continuity.py
+!/reports/context_continuity_protocol_20261111.json
+!/reports/context_continuity_summary_20261111.json
+!/reports/context_continuity_paired_20261111.json
