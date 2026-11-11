@@ -85,3 +85,8 @@
 !/reports/answer_support_review_20261111.json
 !/reports/answer_agent_registry_20261111.json
 !/reports/answer_responses_lock_20261111.json
+
+# AI-assisted verification code and non-textual status; human decisions remain pending.
+!/scripts/build_assisted_review.py
+!/reports/AI初评与人工复核_20261111.txt
+!/reports/assisted_review_summary_20261111.json

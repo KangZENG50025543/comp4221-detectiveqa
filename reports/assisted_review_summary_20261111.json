@@ -1,0 +1,222 @@
+{
+  "created_utc": "2026-11-11T14:14:51.523764+00:00",
+  "review_mode": "ai_assisted_human_verification",
+  "questions": 12,
+  "responses": 36,
+  "ai_initial_assessment_completed": true,
+  "ai_draft_sha256": "10d957b1b4813dd366f0f59bd9b0b1004af1ea9eadee1614d73a7108f5fb18c3",
+  "changed_items_vs_prior_ai": 4,
+  "changed_rating_fields_vs_prior_ai": 9,
+  "high_priority_items": 23,
+  "human_confirmations": 0,
+  "human_ratings": null,
+  "independent_blind_review": false,
+  "items": [
+    {
+      "item_id": "case01_X",
+      "review_priority": "normal",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case01_Y",
+      "review_priority": "normal",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case01_Z",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case02_X",
+      "review_priority": "high",
+      "changed_from_previous": [
+        "answer_support"
+      ]
+    },
+    {
+      "item_id": "case02_Y",
+      "review_priority": "normal",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case02_Z",
+      "review_priority": "high",
+      "changed_from_previous": [
+        "answer_support"
+      ]
+    },
+    {
+      "item_id": "case03_X",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case03_Y",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case03_Z",
+      "review_priority": "normal",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case04_X",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case04_Y",
+      "review_priority": "normal",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case04_Z",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case05_X",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case05_Y",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case05_Z",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case06_X",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case06_Y",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case06_Z",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case07_X",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case07_Y",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case07_Z",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case08_X",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case08_Y",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case08_Z",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case09_X",
+      "review_priority": "normal",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case09_Y",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case09_Z",
+      "review_priority": "high",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case10_X",
+      "review_priority": "normal",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case10_Y",
+      "review_priority": "high",
+      "changed_from_previous": [
+        "answer_support",
+        "citation_entailment",
+        "possible_question_issue"
+      ]
+    },
+    {
+      "item_id": "case10_Z",
+      "review_priority": "high",
+      "changed_from_previous": [
+        "answer_support",
+        "explanation_support",
+        "citation_entailment",
+        "possible_question_issue"
+      ]
+    },
+    {
+      "item_id": "case11_X",
+      "review_priority": "normal",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case11_Y",
+      "review_priority": "normal",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case11_Z",
+      "review_priority": "normal",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case12_X",
+      "review_priority": "normal",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case12_Y",
+      "review_priority": "normal",
+      "changed_from_previous": []
+    },
+    {
+      "item_id": "case12_Z",
+      "review_priority": "normal",
+      "changed_from_previous": []
+    }
+  ],
+  "note": "AI suggestions are complete, human verification is pending. Prior AI reviews, blank independent-review page, original responses and scores are preserved.",
+  "requested_model": "gpt-6.1-sol",
+  "actual_backend_revision": null,
+  "sampling_parameters": null,
+  "requested_workflow": "One AI prepares assessments; students verify, correct or leave uncertain.",
+  "validation": {
+    "initial_human_confirmations": 0,
+    "per_confirmation_operator_recorded": true,
+    "editing_reopens_confirmation": true,
+    "strict_restore_field_allowlist": true,
+    "synthetic_ui_checks_passed": true,
+    "synthetic_human_ratings_saved": false
+  }
+}

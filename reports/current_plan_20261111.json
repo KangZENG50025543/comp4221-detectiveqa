@@ -1,7 +1,7 @@
 {
-  "updated_utc": "2026-11-11T13:34:27.078528+00:00",
+  "updated_utc": "2026-11-11T14:17:12.116621+00:00",
   "scope": "Development plan update; submitted proposal and formal protocol unchanged",
-  "current_stage": "actual_answer_and_support_diagnostic_completed_human_review_pending",
+  "current_stage": "ai_prefilled_review_ready_for_human_verification",
   "completed": [
     {
       "stage": "retrieval_development",
@@ -38,14 +38,20 @@
       "stage": "single_pass_AI_support_review",
       "responses": 36,
       "human_ratings_completed": 0
+    },
+    {
+      "stage": "single_agent_AI_rereview",
+      "responses": 36,
+      "changed_items": 4,
+      "human_confirmations": 0
     }
   ],
   "next_steps": [
     {
-      "stage": "human_support_review",
+      "stage": "human_verification_of_AI_suggestions",
       "status": "ready_not_completed",
-      "local_entry": "runs/answer_diagnostic_dev_20261111_01/answer_review/answer_review.html",
-      "work": "Two independent reviews and third-person adjudication, rotate roles; record prior exposure rather than claiming false blinding; calibrate support rubric."
+      "local_entry": "runs/answer_diagnostic_dev_20261111_01/answer_review/assisted_20261111_02/verify_ai_review.html",
+      "work": "Students inspect AI suggestions and cited fragments, explicitly confirm or correct each response, or leave uncertain for discussion. Record actual operators and assistance; do not claim independent blind ratings."
     },
     {
       "stage": "reproducible_answer_runner",
@@ -74,5 +80,7 @@
     "overall_spending_cap_cny": 300
   },
   "no_new_formal_test_inference": true,
-  "human_review_ratings": null
+  "human_review_ratings": null,
+  "human_review_mode": "ai_assisted_human_verification",
+  "independent_blind_review": false
 }
