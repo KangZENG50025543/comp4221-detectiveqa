@@ -135,7 +135,7 @@ def make_packet(detective_run, cross_run):
         source = ''.join(f'[{p["pid"]}] {p["text"]}\n\n' for p in c['paragraphs'])
         parts.append(f'<article id="{cid}"><h2>{c["number"]:02} · {names[c["dataset"]]}</h2>'
                      f'<p class="id">{html.escape(c["qid"])}</p><p class="question">{html.escape(c["question"])}</p><ul>{options}</ul>'
-                     '<details><summary>展开本题完整可用材料（小说只含答案揭晓前的安全前缀）</summary>'
+                     '<details><summary>展开本题完整可用材料（小说截到标注揭示位置之前；仍需检查是否提前明示答案）</summary>'
                      f'<pre>{html.escape(source)}</pre></details>'
                      + checkbox_select(cid + '_answerable', '阅读可用材料后，这道题是否可以有根据地作答？')
                      + checkbox_select(cid + '_ambiguous', '题目或选项是否存在歧义、多个可支持的答案？')

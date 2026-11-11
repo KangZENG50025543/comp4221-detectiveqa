@@ -1,0 +1,78 @@
+{
+  "updated_utc": "2026-11-11T13:34:27.078528+00:00",
+  "scope": "Development plan update; submitted proposal and formal protocol unchanged",
+  "current_stage": "actual_answer_and_support_diagnostic_completed_human_review_pending",
+  "completed": [
+    {
+      "stage": "retrieval_development",
+      "questions": 56,
+      "datasets": {
+        "detectiveqa": 20,
+        "musique": 24,
+        "quality": 12
+      }
+    },
+    {
+      "stage": "six_case_semantic_audit",
+      "cases": 6,
+      "reviewer_type": "AI"
+    },
+    {
+      "stage": "fixed_context_continuity_control",
+      "questions": 56,
+      "adopted_as_improvement": false
+    },
+    {
+      "stage": "isolated_answer_diagnostic",
+      "questions": 12,
+      "responses": 36,
+      "conditions": [
+        "A",
+        "C",
+        "N"
+      ],
+      "requested_model": "gpt-6.1-sol",
+      "exact_backend_revision": null
+    },
+    {
+      "stage": "single_pass_AI_support_review",
+      "responses": 36,
+      "human_ratings_completed": 0
+    }
+  ],
+  "next_steps": [
+    {
+      "stage": "human_support_review",
+      "status": "ready_not_completed",
+      "local_entry": "runs/answer_diagnostic_dev_20261111_01/answer_review/answer_review.html",
+      "work": "Two independent reviews and third-person adjudication, rotate roles; record prior exposure rather than claiming false blinding; calibrate support rubric."
+    },
+    {
+      "stage": "reproducible_answer_runner",
+      "status": "not_completed",
+      "work": "Verify available provider/model/version, credentials and live prices; fix prompts, decoding, error/retry rules and budget; run a small development compatibility pilot before scaling."
+    },
+    {
+      "stage": "freeze_evaluation",
+      "status": "not_completed",
+      "work": "Resolve annotation and semantic reveal rules, known exposure at novel/article/component level, scoring/adjudication policy; freeze before final comparisons."
+    },
+    {
+      "stage": "heldout_evaluation",
+      "status": "not_started",
+      "work": "Run frozen comparisons, retain full denominators, report each dataset separately with appropriate grouping and actual costs."
+    }
+  ],
+  "course_dates_from_supplied_overview": {
+    "presentation": "2026-11-24 through 2026-11-26",
+    "final_submission": "2026-12-04"
+  },
+  "financial_state": {
+    "additional_external_answer_api_calls_this_stage": 0,
+    "additional_external_api_spend_cny": 0,
+    "agent_subscription_cost": null,
+    "overall_spending_cap_cny": 300
+  },
+  "no_new_formal_test_inference": true,
+  "human_review_ratings": null
+}

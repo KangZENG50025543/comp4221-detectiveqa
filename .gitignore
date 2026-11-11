@@ -67,3 +67,21 @@
 !/reports/context_continuity_protocol_20261111.json
 !/reports/context_continuity_summary_20261111.json
 !/reports/context_continuity_paired_20261111.json
+
+# Isolated answer diagnostics; local prompts, responses and excerpts remain private.
+!/scripts/prepare_answer_diagnostic.py
+!/scripts/score_answer_diagnostic.py
+!/scripts/build_answer_review.py
+!/src/answer_diagnostic.py
+!/tests/test_answer_diagnostic.py
+
+# Reviewed answer results and plan; no raw answer/context or human ratings.
+!/scripts/summarize_answer_support.py
+!/reports/真实答题诊断与下一步_20261111.txt
+!/reports/current_plan_20261111.json
+!/reports/answer_diagnostic_protocol_20261111.json
+!/reports/answer_diagnostic_summary_20261111.json
+!/reports/answer_diagnostic_items_20261111.json
+!/reports/answer_support_review_20261111.json
+!/reports/answer_agent_registry_20261111.json
+!/reports/answer_responses_lock_20261111.json

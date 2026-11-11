@@ -1,0 +1,326 @@
+[
+  {
+    "item_id": "case01_X",
+    "agent_task_name": "/root/answer_dispatcher/answer_case01_x",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:16:36.1143443Z",
+    "completed_utc": "2026-11-11T13:17:01.4156344Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case01_Y",
+    "agent_task_name": "/root/answer_dispatcher/answer_case01_y",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:16:36.1199647Z",
+    "completed_utc": "2026-11-11T13:17:01.4240587Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case01_Z",
+    "agent_task_name": "/root/answer_dispatcher/answer_case01_z",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:17:01.4248406Z",
+    "completed_utc": "2026-11-11T13:17:33.7878815Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case02_X",
+    "agent_task_name": "/root/answer_dispatcher/answer_case02_x",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:17:14.5187458Z",
+    "completed_utc": "2026-11-11T13:17:48.655319Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case02_Y",
+    "agent_task_name": "/root/answer_dispatcher/answer_case02_y",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:17:33.7941182Z",
+    "completed_utc": "2026-11-11T13:18:04.5017562Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case02_Z",
+    "agent_task_name": "/root/answer_dispatcher/answer_case02_z",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:17:48.6624953Z",
+    "completed_utc": "2026-11-11T13:18:23.6529644Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case03_X",
+    "agent_task_name": "/root/answer_dispatcher/answer_case03_x",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:18:04.508945Z",
+    "completed_utc": "2026-11-11T13:18:40.9423901Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case03_Y",
+    "agent_task_name": "/root/answer_dispatcher/answer_case03_y",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:18:23.6595008Z",
+    "completed_utc": "2026-11-11T13:18:53.2954093Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case03_Z",
+    "agent_task_name": "/root/answer_dispatcher/answer_case03_z",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:18:40.9505423Z",
+    "completed_utc": "2026-11-11T13:19:11.1096543Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case04_X",
+    "agent_task_name": "/root/answer_dispatcher/answer_case04_x",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:18:53.302305Z",
+    "completed_utc": "2026-11-11T13:19:33.4889056Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case04_Y",
+    "agent_task_name": "/root/answer_dispatcher/answer_case04_y",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:19:11.115376Z",
+    "completed_utc": "2026-11-11T13:19:34.1336372Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case04_Z",
+    "agent_task_name": "/root/answer_dispatcher/answer_case04_z",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:19:33.497901Z",
+    "completed_utc": "2026-11-11T13:20:04.1249628Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case05_X",
+    "agent_task_name": "/root/answer_dispatcher/answer_case05_x",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:19:46.0495265Z",
+    "completed_utc": "2026-11-11T13:20:18.6543093Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case05_Y",
+    "agent_task_name": "/root/answer_dispatcher/answer_case05_y",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:20:04.132956Z",
+    "completed_utc": "2026-11-11T13:21:20.8206747Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case05_Z",
+    "agent_task_name": "/root/answer_dispatcher/answer_case05_z",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:20:18.6597661Z",
+    "completed_utc": "2026-11-11T13:20:45.5951683Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case06_X",
+    "agent_task_name": "/root/answer_dispatcher/answer_case06_x",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:20:45.6015777Z",
+    "completed_utc": "2026-11-11T13:21:21.4461877Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case06_Y",
+    "agent_task_name": "/root/answer_dispatcher/answer_case06_y",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:21:20.8267427Z",
+    "completed_utc": "2026-11-11T13:21:46.2481259Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case06_Z",
+    "agent_task_name": "/root/answer_dispatcher/answer_case06_z",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:21:21.4513609Z",
+    "completed_utc": "2026-11-11T13:21:59.3989895Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case07_X",
+    "agent_task_name": "/root/answer_dispatcher/answer_case07_x",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:21:46.2542018Z",
+    "completed_utc": "2026-11-11T13:22:15.6802174Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case07_Y",
+    "agent_task_name": "/root/answer_dispatcher/answer_case07_y",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:21:59.4056468Z",
+    "completed_utc": "2026-11-11T13:22:29.7354171Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case07_Z",
+    "agent_task_name": "/root/answer_dispatcher/answer_case07_z",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:22:15.6862643Z",
+    "completed_utc": "2026-11-11T13:22:52.4103827Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case08_X",
+    "agent_task_name": "/root/answer_dispatcher/answer_case08_x",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:22:29.7425689Z",
+    "completed_utc": "2026-11-11T13:23:03.7385392Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case08_Y",
+    "agent_task_name": "/root/answer_dispatcher/answer_case08_y",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:22:52.4164783Z",
+    "completed_utc": "2026-11-11T13:23:19.3526035Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case08_Z",
+    "agent_task_name": "/root/answer_dispatcher/answer_case08_z",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:23:03.7457057Z",
+    "completed_utc": "2026-11-11T13:24:00.1657651Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case09_X",
+    "agent_task_name": "/root/answer_dispatcher/answer_case09_x",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:23:19.3599332Z",
+    "completed_utc": "2026-11-11T13:24:00.8320088Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case09_Y",
+    "agent_task_name": "/root/answer_dispatcher/answer_case09_y",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:24:00.1718054Z",
+    "completed_utc": "2026-11-11T13:24:25.0163753Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case09_Z",
+    "agent_task_name": "/root/answer_dispatcher/answer_case09_z",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:24:00.836678Z",
+    "completed_utc": "2026-11-11T13:24:36.0081745Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case10_X",
+    "agent_task_name": "/root/answer_dispatcher/answer_case10_x",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:24:25.0237937Z",
+    "completed_utc": "2026-11-11T13:24:54.5413305Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case10_Y",
+    "agent_task_name": "/root/answer_dispatcher/answer_case10_y",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:24:36.0151309Z",
+    "completed_utc": "2026-11-11T13:25:06.3390652Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case10_Z",
+    "agent_task_name": "/root/answer_dispatcher/answer_case10_z",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:24:54.5475193Z",
+    "completed_utc": "2026-11-11T13:25:24.2912482Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case11_X",
+    "agent_task_name": "/root/answer_dispatcher/answer_case11_x",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:25:06.3452175Z",
+    "completed_utc": "2026-11-11T13:25:36.4361297Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case11_Y",
+    "agent_task_name": "/root/answer_dispatcher/answer_case11_y",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:25:24.2973398Z",
+    "completed_utc": "2026-11-11T13:25:54.1209598Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case11_Z",
+    "agent_task_name": "/root/answer_dispatcher/answer_case11_z",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:25:36.4429357Z",
+    "completed_utc": "2026-11-11T13:26:05.6418833Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case12_X",
+    "agent_task_name": "/root/answer_dispatcher/answer_case12_x",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:25:54.126624Z",
+    "completed_utc": "2026-11-11T13:26:35.2368645Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case12_Y",
+    "agent_task_name": "/root/answer_dispatcher/answer_case12_y",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:26:05.6507389Z",
+    "completed_utc": "2026-11-11T13:26:35.8610998Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  },
+  {
+    "item_id": "case12_Z",
+    "agent_task_name": "/root/answer_dispatcher/answer_case12_z",
+    "requested_model": "gpt-6.1-sol",
+    "spawned_utc": "2026-11-11T13:26:35.2430101Z",
+    "completed_utc": "2026-11-11T13:27:00.5761554Z",
+    "output_exists": true,
+    "completion_status": "agent_completed"
+  }
+]

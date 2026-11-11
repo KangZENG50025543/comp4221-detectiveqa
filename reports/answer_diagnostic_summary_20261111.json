@@ -1,0 +1,211 @@
+{
+  "scored_utc": "2026-11-11T13:27:15.586052+00:00",
+  "scope": "Isolated-agent development diagnostic, not the proposed DeepSeek API benchmark or human review",
+  "questions": 12,
+  "outputs": 36,
+  "requested_model": "gpt-6.1-sol",
+  "backend_revision": null,
+  "decoding_parameters": null,
+  "protocol_sha256": "013d2bdcb585935d1456fa5247779ff0211c52e52b3f3f4ccd8b13db69b1bc0f",
+  "response_lock_sha256": "5cfbd1d8b8e1c28348fd0367c0c57871a99849ff7b7656d9d36314c9b6f8f0d7",
+  "datasets": {
+    "detectiveqa": {
+      "conditions": {
+        "A": {
+          "n": 4,
+          "correct": 3,
+          "accuracy_or_em": 0.75,
+          "mean_token_f1": null,
+          "answered": 3,
+          "answer_rate": 0.75,
+          "accuracy_or_em_among_answered": 1.0,
+          "abstained": 1,
+          "invalid_outputs": 0,
+          "citation_count": 9,
+          "invalid_pid_count": 0,
+          "invalid_quote_count": 0,
+          "answered_without_citations": 0,
+          "self_report_sufficient_count": 3
+        },
+        "C": {
+          "n": 4,
+          "correct": 3,
+          "accuracy_or_em": 0.75,
+          "mean_token_f1": null,
+          "answered": 4,
+          "answer_rate": 1.0,
+          "accuracy_or_em_among_answered": 0.75,
+          "abstained": 0,
+          "invalid_outputs": 0,
+          "citation_count": 6,
+          "invalid_pid_count": 0,
+          "invalid_quote_count": 0,
+          "answered_without_citations": 1,
+          "self_report_sufficient_count": 2
+        },
+        "N": {
+          "n": 4,
+          "correct": 0,
+          "accuracy_or_em": 0.0,
+          "mean_token_f1": null,
+          "answered": 0,
+          "answer_rate": 0.0,
+          "accuracy_or_em_among_answered": null,
+          "abstained": 4,
+          "invalid_outputs": 0,
+          "citation_count": 0,
+          "invalid_pid_count": 0,
+          "invalid_quote_count": 0,
+          "answered_without_citations": 0,
+          "self_report_sufficient_count": 0
+        }
+      },
+      "paired_C_minus_A": {
+        "improved": 0,
+        "tied": 4,
+        "worsened": 0,
+        "mean_accuracy_or_em_difference": 0.0,
+        "identical_evidence_questions": 0,
+        "identical_evidence_different_predictions": 0
+      },
+      "unique_source_groups": 3
+    },
+    "musique": {
+      "conditions": {
+        "A": {
+          "n": 4,
+          "correct": 2,
+          "accuracy_or_em": 0.5,
+          "mean_token_f1": 0.6666666666666666,
+          "answered": 4,
+          "answer_rate": 1.0,
+          "accuracy_or_em_among_answered": 0.5,
+          "abstained": 0,
+          "invalid_outputs": 0,
+          "citation_count": 7,
+          "invalid_pid_count": 0,
+          "invalid_quote_count": 0,
+          "answered_without_citations": 0,
+          "self_report_sufficient_count": 1
+        },
+        "C": {
+          "n": 4,
+          "correct": 2,
+          "accuracy_or_em": 0.5,
+          "mean_token_f1": 0.6666666666666666,
+          "answered": 4,
+          "answer_rate": 1.0,
+          "accuracy_or_em_among_answered": 0.5,
+          "abstained": 0,
+          "invalid_outputs": 0,
+          "citation_count": 7,
+          "invalid_pid_count": 0,
+          "invalid_quote_count": 0,
+          "answered_without_citations": 0,
+          "self_report_sufficient_count": 2
+        },
+        "N": {
+          "n": 4,
+          "correct": 1,
+          "accuracy_or_em": 0.25,
+          "mean_token_f1": 0.25,
+          "answered": 2,
+          "answer_rate": 0.5,
+          "accuracy_or_em_among_answered": 0.5,
+          "abstained": 2,
+          "invalid_outputs": 0,
+          "citation_count": 0,
+          "invalid_pid_count": 0,
+          "invalid_quote_count": 0,
+          "answered_without_citations": 2,
+          "self_report_sufficient_count": 0
+        }
+      },
+      "paired_C_minus_A": {
+        "improved": 0,
+        "tied": 4,
+        "worsened": 0,
+        "mean_accuracy_or_em_difference": 0.0,
+        "identical_evidence_questions": 0,
+        "identical_evidence_different_predictions": 0
+      },
+      "unique_source_groups": 4
+    },
+    "quality": {
+      "conditions": {
+        "A": {
+          "n": 4,
+          "correct": 4,
+          "accuracy_or_em": 1.0,
+          "mean_token_f1": null,
+          "answered": 4,
+          "answer_rate": 1.0,
+          "accuracy_or_em_among_answered": 1.0,
+          "abstained": 0,
+          "invalid_outputs": 0,
+          "citation_count": 7,
+          "invalid_pid_count": 0,
+          "invalid_quote_count": 0,
+          "answered_without_citations": 0,
+          "self_report_sufficient_count": 4
+        },
+        "C": {
+          "n": 4,
+          "correct": 4,
+          "accuracy_or_em": 1.0,
+          "mean_token_f1": null,
+          "answered": 4,
+          "answer_rate": 1.0,
+          "accuracy_or_em_among_answered": 1.0,
+          "abstained": 0,
+          "invalid_outputs": 0,
+          "citation_count": 7,
+          "invalid_pid_count": 0,
+          "invalid_quote_count": 0,
+          "answered_without_citations": 0,
+          "self_report_sufficient_count": 4
+        },
+        "N": {
+          "n": 4,
+          "correct": 0,
+          "accuracy_or_em": 0.0,
+          "mean_token_f1": null,
+          "answered": 0,
+          "answer_rate": 0.0,
+          "accuracy_or_em_among_answered": null,
+          "abstained": 4,
+          "invalid_outputs": 0,
+          "citation_count": 0,
+          "invalid_pid_count": 0,
+          "invalid_quote_count": 0,
+          "answered_without_citations": 0,
+          "self_report_sufficient_count": 0
+        }
+      },
+      "paired_C_minus_A": {
+        "improved": 0,
+        "tied": 4,
+        "worsened": 0,
+        "mean_accuracy_or_em_difference": 0.0,
+        "identical_evidence_questions": 0,
+        "identical_evidence_different_predictions": 0
+      },
+      "unique_source_groups": 4
+    }
+  },
+  "human_ratings": null,
+  "semantic_support_review": "pending",
+  "paid_api_calls": 0,
+  "additional_api_cost_cny": 0,
+  "agent_subscription_cost": null,
+  "limitations": [
+    "Four per dataset; DetectiveQA three novels (two questions in book 27); MuSiQue three 2-hop and one 4-hop, no 3-hop; QuALITY four articles. All previously used development items, not a new heldout test.",
+    "Instruction-enforced read restriction in a shared filesystem, not an OS sandbox; parent retains tool traces. Model pretraining exposure unknown.",
+    "One answer per item/condition, no decoding-variance estimate; exact backend revision, sampling parameters, token usage and subscription cost unavailable.",
+    "No-evidence success is prior-answerability, not proof of training contamination or absence of reasoning.",
+    "Self-reported sufficiency and matching citation text do not establish semantic support.",
+    "Original reference answers preserved; post-answer quality findings do not alter these scores.",
+    "Abstention is incorrect in the full-denominator metric; conditional accuracy is secondary.",
+    "Not all instructions are enforced by the response schema; explanation length and semantic honesty need separate review."
+  ]
+}

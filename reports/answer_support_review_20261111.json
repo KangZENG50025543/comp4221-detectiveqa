@@ -1,0 +1,1617 @@
+{
+  "created_utc": "2026-11-11T13:30:58.897706+00:00",
+  "scope": "Single-pass AI support triage, not human ground truth or a validated semantic metric",
+  "review_process": "One new no-history agent per dataset; only masked A/C/N inputs, actual responses and rubric. Reference labels, correctness, method identities and answerer sufficiency self-ratings withheld. No-evidence arm remains visually apparent.",
+  "response_lock_sha256": "5cfbd1d8b8e1c28348fd0367c0c57871a99849ff7b7656d9d36314c9b6f8f0d7",
+  "answer_metrics_sha256": "9ef4c5ecf5b976da2f53c8f9e13d55dab2f358f324b9eab93e883b4c23e359a8",
+  "review_hashes": {
+    "answer_review\\ai_support_detectiveqa.json": "85f51993b00b1b8fd8497aa69df4cb89074115f6a20ef0ccb7c01a836344f772",
+    "answer_review\\ai_support_musique.json": "070eb97dbbf2ba375624595247b29a4f12332c9a95a856e7f62ab399c22a08d7",
+    "answer_review\\ai_support_quality.json": "f3a3bd82b4417d0ed6cb3b552f62215e50044264dd6205da214a8682fd411450"
+  },
+  "rubric_sha256": "562bd1f1989b913868383136d1a2f1289820eb6109d9042a4d818fe3b05c5caa",
+  "datasets": {
+    "detectiveqa": {
+      "A": {
+        "n": 4,
+        "answered": 3,
+        "original_label_correct": 3,
+        "ai_answer_support": {
+          "full": 1,
+          "partial": 2,
+          "not_applicable": 1
+        },
+        "ai_citation_entailment": {
+          "full": 2,
+          "partial": 2
+        },
+        "correct_and_ai_full_answer_support": 1,
+        "correct_but_ai_not_full_answer_support": 2
+      },
+      "C": {
+        "n": 4,
+        "answered": 4,
+        "original_label_correct": 3,
+        "ai_answer_support": {
+          "none": 2,
+          "partial": 2
+        },
+        "ai_citation_entailment": {
+          "no_citations": 1,
+          "partial": 3
+        },
+        "correct_and_ai_full_answer_support": 0,
+        "correct_but_ai_not_full_answer_support": 3
+      },
+      "N": {
+        "n": 4,
+        "answered": 0,
+        "original_label_correct": 0,
+        "ai_answer_support": {
+          "not_applicable": 4
+        },
+        "ai_citation_entailment": {
+          "no_citations": 4
+        },
+        "correct_and_ai_full_answer_support": 0,
+        "correct_but_ai_not_full_answer_support": 0
+      }
+    },
+    "musique": {
+      "A": {
+        "n": 4,
+        "answered": 4,
+        "original_label_correct": 2,
+        "ai_answer_support": {
+          "full": 1,
+          "partial": 3
+        },
+        "ai_citation_entailment": {
+          "full": 1,
+          "partial": 3
+        },
+        "correct_and_ai_full_answer_support": 1,
+        "correct_but_ai_not_full_answer_support": 1
+      },
+      "C": {
+        "n": 4,
+        "answered": 4,
+        "original_label_correct": 2,
+        "ai_answer_support": {
+          "full": 1,
+          "partial": 3
+        },
+        "ai_citation_entailment": {
+          "full": 1,
+          "partial": 3
+        },
+        "correct_and_ai_full_answer_support": 1,
+        "correct_but_ai_not_full_answer_support": 1
+      },
+      "N": {
+        "n": 4,
+        "answered": 2,
+        "original_label_correct": 1,
+        "ai_answer_support": {
+          "none": 2,
+          "not_applicable": 2
+        },
+        "ai_citation_entailment": {
+          "no_citations": 4
+        },
+        "correct_and_ai_full_answer_support": 0,
+        "correct_but_ai_not_full_answer_support": 1
+      }
+    },
+    "quality": {
+      "A": {
+        "n": 4,
+        "answered": 4,
+        "original_label_correct": 4,
+        "ai_answer_support": {
+          "full": 3,
+          "partial": 1
+        },
+        "ai_citation_entailment": {
+          "partial": 2,
+          "full": 2
+        },
+        "correct_and_ai_full_answer_support": 3,
+        "correct_but_ai_not_full_answer_support": 1
+      },
+      "C": {
+        "n": 4,
+        "answered": 4,
+        "original_label_correct": 4,
+        "ai_answer_support": {
+          "full": 3,
+          "partial": 1
+        },
+        "ai_citation_entailment": {
+          "partial": 2,
+          "full": 2
+        },
+        "correct_and_ai_full_answer_support": 3,
+        "correct_but_ai_not_full_answer_support": 1
+      },
+      "N": {
+        "n": 4,
+        "answered": 0,
+        "original_label_correct": 0,
+        "ai_answer_support": {
+          "not_applicable": 4
+        },
+        "ai_citation_entailment": {
+          "no_citations": 4
+        },
+        "correct_and_ai_full_answer_support": 0,
+        "correct_but_ai_not_full_answer_support": 0
+      }
+    }
+  },
+  "items": [
+    {
+      "item_id": "case01_X",
+      "qid": "zh-human-118-4",
+      "dataset": "detectiveqa",
+      "group_id": 118,
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case01_X",
+        "answer_support": "not_applicable",
+        "explanation_support": "full",
+        "citation_entailment": "no_citations",
+        "possible_question_issue": "unclear",
+        "note": "该组evidence为空，无可引用pid；未提供案件材料的弃答理由有支持。"
+      }
+    },
+    {
+      "item_id": "case01_Y",
+      "qid": "zh-human-118-4",
+      "dataset": "detectiveqa",
+      "group_id": 118,
+      "condition": "A",
+      "selected_ids": [
+        69,
+        103,
+        109,
+        154,
+        204
+      ],
+      "source_bge_tokens": 2385,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 3,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case01_Y",
+        "answer_support": "full",
+        "explanation_support": "full",
+        "citation_entailment": "full",
+        "possible_question_issue": "no",
+        "note": "pid2799把化妆涂口红的所谓女子认作男人，并转向大卫点出巧计；pid2801—2802将其与赶火车印象及转移嫌疑连接，支持所选手法。"
+      }
+    },
+    {
+      "item_id": "case01_Z",
+      "qid": "zh-human-118-4",
+      "dataset": "detectiveqa",
+      "group_id": 118,
+      "condition": "C",
+      "selected_ids": [
+        67,
+        124,
+        125,
+        154,
+        201
+      ],
+      "source_bge_tokens": 2384,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case01_Z",
+        "answer_support": "none",
+        "explanation_support": "partial",
+        "citation_entailment": "no_citations",
+        "possible_question_issue": "no",
+        "note": "pid1814—1822、2196—2207涉及否认到访和行踪，未给男扮女装手法；理由承认材料缺口有支持，但援用先验的手法断言无文本支持。"
+      }
+    },
+    {
+      "item_id": "case02_X",
+      "qid": "zh-human-209-2",
+      "dataset": "detectiveqa",
+      "group_id": 209,
+      "condition": "A",
+      "selected_ids": [
+        50,
+        53,
+        83,
+        84,
+        85
+      ],
+      "source_bge_tokens": 2320,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 3,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case02_X",
+        "answer_support": "partial",
+        "explanation_support": "full",
+        "citation_entailment": "partial",
+        "possible_question_issue": "no",
+        "note": "pid1238、1241—1243支持以近视特征提出莉莉身份推论，但只呈现推论，缺少确认同一身份的必要连接；所引三处不能将真实身份坐实。"
+      }
+    },
+    {
+      "item_id": "case02_Y",
+      "qid": "zh-human-209-2",
+      "dataset": "detectiveqa",
+      "group_id": 209,
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case02_Y",
+        "answer_support": "not_applicable",
+        "explanation_support": "full",
+        "citation_entailment": "no_citations",
+        "possible_question_issue": "unclear",
+        "note": "该组evidence为空，无可引用pid；未提供证据而弃答的理由有支持。"
+      }
+    },
+    {
+      "item_id": "case02_Z",
+      "qid": "zh-human-209-2",
+      "dataset": "detectiveqa",
+      "group_id": 209,
+      "condition": "C",
+      "selected_ids": [
+        53,
+        82,
+        83,
+        84,
+        85
+      ],
+      "source_bge_tokens": 2333,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 3,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case02_Z",
+        "answer_support": "partial",
+        "explanation_support": "full",
+        "citation_entailment": "partial",
+        "possible_question_issue": "no",
+        "note": "pid1237—1243将卡朋特太太的视物困难与莉莉厚眼镜照片相连，并提出身份推论；尚无身份确认，特征吻合不能独自确立同一人。"
+      }
+    },
+    {
+      "item_id": "case03_X",
+      "qid": "zh-human-27-2",
+      "dataset": "detectiveqa",
+      "group_id": 27,
+      "condition": "C",
+      "selected_ids": [
+        46,
+        47,
+        50,
+        72,
+        144
+      ],
+      "source_bge_tokens": 2433,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case03_X",
+        "answer_support": "partial",
+        "explanation_support": "partial",
+        "citation_entailment": "partial",
+        "possible_question_issue": "no",
+        "note": "pid1452—1454确实提出书房推论，但pid1455—1460随即质疑其烟斗前提；将这一推论称为已明确的真正现场过强，尚缺排除质疑后的确认。"
+      }
+    },
+    {
+      "item_id": "case03_Y",
+      "qid": "zh-human-27-2",
+      "dataset": "detectiveqa",
+      "group_id": 27,
+      "condition": "A",
+      "selected_ids": [
+        43,
+        46,
+        47,
+        50,
+        144
+      ],
+      "source_bge_tokens": 2458,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 1,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case03_Y",
+        "answer_support": "partial",
+        "explanation_support": "full",
+        "citation_entailment": "partial",
+        "possible_question_issue": "no",
+        "note": "pid1454支持埃勒里提出书房，pid1455—1460支持理由所承认的异议；未给另一地点不等于已确立书房，单引pid1454不足以消除前提争议。"
+      }
+    },
+    {
+      "item_id": "case03_Z",
+      "qid": "zh-human-27-2",
+      "dataset": "detectiveqa",
+      "group_id": 27,
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case03_Z",
+        "answer_support": "not_applicable",
+        "explanation_support": "full",
+        "citation_entailment": "no_citations",
+        "possible_question_issue": "unclear",
+        "note": "该组evidence为空，无可引用pid；缺少案件证据而弃答有支持。"
+      }
+    },
+    {
+      "item_id": "case04_X",
+      "qid": "zh-human-27-6",
+      "dataset": "detectiveqa",
+      "group_id": 27,
+      "condition": "A",
+      "selected_ids": [
+        35,
+        124,
+        139,
+        228,
+        252
+      ],
+      "source_bge_tokens": 2388,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case04_X",
+        "answer_support": "not_applicable",
+        "explanation_support": "full",
+        "citation_entailment": "full",
+        "possible_question_issue": "yes",
+        "note": "pid1285、2509明言克罗萨克的现实身份仍未知，支持弃答解释；题目可能混同被指认的姓名与隐藏身份，选项能否互斥尚不明确。"
+      }
+    },
+    {
+      "item_id": "case04_Y",
+      "qid": "zh-human-27-6",
+      "dataset": "detectiveqa",
+      "group_id": 27,
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case04_Y",
+        "answer_support": "not_applicable",
+        "explanation_support": "full",
+        "citation_entailment": "no_citations",
+        "possible_question_issue": "unclear",
+        "note": "该组evidence为空，无可引用pid；无案情材料而无法可靠判断的理由有支持。"
+      }
+    },
+    {
+      "item_id": "case04_Z",
+      "qid": "zh-human-27-6",
+      "dataset": "detectiveqa",
+      "group_id": 27,
+      "condition": "C",
+      "selected_ids": [
+        35,
+        124,
+        192,
+        228,
+        252
+      ],
+      "source_bge_tokens": 2381,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 1,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case04_Z",
+        "answer_support": "none",
+        "explanation_support": "partial",
+        "citation_entailment": "partial",
+        "possible_question_issue": "yes",
+        "note": "pid1285、2509支持尚未揭露现实身份，却没有保罗·罗曼与凶手相连的证据；引用只支持理由中的缺证据判断，不支持答案。题目可能涉及姓名与隐藏身份的歧义。"
+      }
+    },
+    {
+      "item_id": "case05_X",
+      "qid": "musique:2hop__351275_75487",
+      "dataset": "musique",
+      "group_id": "2hop__351275_75487",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case05_X",
+        "explanation_support": "partial",
+        "citation_entailment": "no_citations",
+        "note": "证据为空（无pid），无法支持Benoit党籍及Harper领导关系；题目确未限定时间，可能有时间歧义。",
+        "possible_question_issue": "yes",
+        "answer_support": "none"
+      }
+    },
+    {
+      "item_id": "case05_Y",
+      "qid": "musique:2hop__351275_75487",
+      "dataset": "musique",
+      "group_id": "2hop__351275_75487",
+      "condition": "A",
+      "selected_ids": [
+        1,
+        4,
+        11,
+        16,
+        19
+      ],
+      "source_bge_tokens": 720,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case05_Y",
+        "explanation_support": "full",
+        "citation_entailment": "full",
+        "note": "pid11确认Benoit属于加拿大保守党，pid1明确2017年选出Scheer；支持回复限定的材料时期，但题目未定时间且pid1列出领袖更替。",
+        "possible_question_issue": "yes",
+        "answer_support": "full"
+      }
+    },
+    {
+      "item_id": "case05_Z",
+      "qid": "musique:2hop__351275_75487",
+      "dataset": "musique",
+      "group_id": "2hop__351275_75487",
+      "condition": "C",
+      "selected_ids": [
+        1,
+        4,
+        8,
+        11,
+        17
+      ],
+      "source_bge_tokens": 768,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case05_Z",
+        "explanation_support": "full",
+        "citation_entailment": "full",
+        "note": "pid11与pid1连通Benoit党籍及2017年Scheer当选；回复已限定材料时期，题目本身仍可能有时间歧义。",
+        "possible_question_issue": "yes",
+        "answer_support": "full"
+      }
+    },
+    {
+      "item_id": "case06_X",
+      "qid": "musique:4hop1__802394_153080_159767_81096",
+      "dataset": "musique",
+      "group_id": "4hop1__802394_153080_159767_81096",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case06_X",
+        "explanation_support": "partial",
+        "citation_entailment": "no_citations",
+        "note": "证据为空（无pid），拒答不作事实答案评判；缺材料与题目无年份可确认，但出生州、首府及多届赛事的断言无文本支持，赛事身份可能不明确。",
+        "possible_question_issue": "yes",
+        "answer_support": "not_applicable"
+      }
+    },
+    {
+      "item_id": "case06_Y",
+      "qid": "musique:4hop1__802394_153080_159767_81096",
+      "dataset": "musique",
+      "group_id": "4hop1__802394_153080_159767_81096",
+      "condition": "A",
+      "selected_ids": [
+        1,
+        2,
+        9,
+        11,
+        13
+      ],
+      "source_bge_tokens": 742,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 3,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case06_Y",
+        "explanation_support": "partial",
+        "citation_entailment": "partial",
+        "note": "pid11、pid2支持Mingus出生州及其首府，pid13支持2016年赛事重启；缺专辑演奏者连接及Dixon夺冠依据，也未唯一确定所问届次。",
+        "possible_question_issue": "yes",
+        "answer_support": "partial"
+      }
+    },
+    {
+      "item_id": "case06_Z",
+      "qid": "musique:4hop1__802394_153080_159767_81096",
+      "dataset": "musique",
+      "group_id": "4hop1__802394_153080_159767_81096",
+      "condition": "C",
+      "selected_ids": [
+        5,
+        9,
+        10,
+        13,
+        16
+      ],
+      "source_bge_tokens": 705,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case06_Z",
+        "explanation_support": "partial",
+        "citation_entailment": "partial",
+        "note": "pid10确认专辑演奏者，pid13仅述2016年重启及其他历史赛事；缺出生州、该州首府和Dixon冠军连接，所问届次可能不明确。",
+        "possible_question_issue": "yes",
+        "answer_support": "partial"
+      }
+    },
+    {
+      "item_id": "case07_X",
+      "qid": "musique:2hop__257831_123283",
+      "dataset": "musique",
+      "group_id": "2hop__257831_123283",
+      "condition": "A",
+      "selected_ids": [
+        0,
+        7,
+        11,
+        15,
+        19
+      ],
+      "source_bge_tokens": 799,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 0.0,
+      "token_f1": 0.6666666666666666,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 1,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case07_X",
+        "explanation_support": "partial",
+        "citation_entailment": "partial",
+        "note": "pid19仅支持1953年电影制片人为Houseman，未给其就读Clifton College或该校所在地；题目未注明作品版本，可能有指代歧义。",
+        "possible_question_issue": "yes",
+        "answer_support": "partial"
+      }
+    },
+    {
+      "item_id": "case07_Y",
+      "qid": "musique:2hop__257831_123283",
+      "dataset": "musique",
+      "group_id": "2hop__257831_123283",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case07_Y",
+        "explanation_support": "partial",
+        "citation_entailment": "no_citations",
+        "note": "证据为空（无pid），支持缺材料而拒答；多个版本的事实断言无可见文本依据，题目未注明版本但无法据材料确认实际歧义。",
+        "possible_question_issue": "unclear",
+        "answer_support": "not_applicable"
+      }
+    },
+    {
+      "item_id": "case07_Z",
+      "qid": "musique:2hop__257831_123283",
+      "dataset": "musique",
+      "group_id": "2hop__257831_123283",
+      "condition": "C",
+      "selected_ids": [
+        2,
+        4,
+        7,
+        16,
+        19
+      ],
+      "source_bge_tokens": 763,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 0.0,
+      "token_f1": 0.6666666666666666,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 1,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case07_Z",
+        "explanation_support": "partial",
+        "citation_entailment": "partial",
+        "note": "pid19确认1953年电影制片人，但没有其求学或任职地点；pid4另涉及同名戏剧，题目所指版本可能不明确，Clifton College细节不受支持。",
+        "possible_question_issue": "yes",
+        "answer_support": "partial"
+      }
+    },
+    {
+      "item_id": "case08_X",
+      "qid": "musique:2hop__132929_120537",
+      "dataset": "musique",
+      "group_id": "2hop__132929_120537",
+      "condition": "C",
+      "selected_ids": [
+        2,
+        7,
+        11,
+        14,
+        15
+      ],
+      "source_bge_tokens": 543,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case08_X",
+        "explanation_support": "partial",
+        "citation_entailment": "partial",
+        "note": "pid14联系Skyflash与British Aerospace；pid7给出BAE Systems成立日期，未明确原公司于同日终止，不能仅凭新公司成立推出废止日期。",
+        "possible_question_issue": "no",
+        "answer_support": "partial"
+      }
+    },
+    {
+      "item_id": "case08_Y",
+      "qid": "musique:2hop__132929_120537",
+      "dataset": "musique",
+      "group_id": "2hop__132929_120537",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case08_Y",
+        "explanation_support": "partial",
+        "citation_entailment": "no_citations",
+        "note": "证据为空（无pid），制造商、合并关系和日期均无文本支持；说明无法由给定证据核验这一点成立。",
+        "possible_question_issue": "no",
+        "answer_support": "none"
+      }
+    },
+    {
+      "item_id": "case08_Z",
+      "qid": "musique:2hop__132929_120537",
+      "dataset": "musique",
+      "group_id": "2hop__132929_120537",
+      "condition": "A",
+      "selected_ids": [
+        3,
+        5,
+        9,
+        14,
+        17
+      ],
+      "source_bge_tokens": 425,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 1,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case08_Z",
+        "explanation_support": "partial",
+        "citation_entailment": "partial",
+        "note": "pid14仅联系Skyflash与British Aerospace，未给公司解散日期；理由正确指出日期缺证，但其具体日期仍来自未获支持的先验。",
+        "possible_question_issue": "no",
+        "answer_support": "partial"
+      }
+    },
+    {
+      "item_id": "case09_X",
+      "qid": "quality:40965_7AWX7OE9_6",
+      "dataset": "quality",
+      "group_id": "40965",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case09_X",
+        "answer_support": "not_applicable",
+        "explanation_support": "full",
+        "citation_entailment": "no_citations",
+        "possible_question_issue": "unclear",
+        "note": "本组evidence为空，无可核验pid；拒答及未提供故事证据的说明有依据。"
+      }
+    },
+    {
+      "item_id": "case09_Y",
+      "qid": "quality:40965_7AWX7OE9_6",
+      "dataset": "quality",
+      "group_id": "40965",
+      "condition": "C",
+      "selected_ids": [
+        3,
+        12,
+        14,
+        16,
+        17
+      ],
+      "source_bge_tokens": 2122,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case09_Y",
+        "answer_support": "full",
+        "explanation_support": "full",
+        "citation_entailment": "partial",
+        "possible_question_issue": "no",
+        "note": "pid107–111支持出发方已有太空飞行，pid422–424及434–439支持另一世界仍期待未来太空旅行；但实际引句437、439省去436的太空旅行主语和世界身份连接，单凭引句不足完整推出A。"
+      }
+    },
+    {
+      "item_id": "case09_Z",
+      "qid": "quality:40965_7AWX7OE9_6",
+      "dataset": "quality",
+      "group_id": "40965",
+      "condition": "A",
+      "selected_ids": [
+        3,
+        9,
+        15,
+        16,
+        17
+      ],
+      "source_bge_tokens": 2124,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case09_Z",
+        "answer_support": "full",
+        "explanation_support": "full",
+        "citation_entailment": "partial",
+        "possible_question_issue": "no",
+        "note": "pid107–111、419–424、434–439共同支持所述两方的差别；实际引句420、437虽相关，但省去421的Aerth身份及436的太空旅行主语，也未引用出发方已有飞行的连接。"
+      }
+    },
+    {
+      "item_id": "case10_X",
+      "qid": "quality:99911_QGCJUM40_5",
+      "dataset": "quality",
+      "group_id": "99911",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case10_X",
+        "answer_support": "not_applicable",
+        "explanation_support": "full",
+        "citation_entailment": "no_citations",
+        "possible_question_issue": "unclear",
+        "note": "本组evidence为空，无可核验pid；无法确定题目所指主因的说明有依据，所列可能因素未被当作已确认的原文事实。"
+      }
+    },
+    {
+      "item_id": "case10_Y",
+      "qid": "quality:99911_QGCJUM40_5",
+      "dataset": "quality",
+      "group_id": "99911",
+      "condition": "C",
+      "selected_ids": [
+        3,
+        4,
+        7,
+        9,
+        13
+      ],
+      "source_bge_tokens": 1941,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case10_Y",
+        "answer_support": "partial",
+        "explanation_support": "full",
+        "citation_entailment": "partial",
+        "possible_question_issue": "yes",
+        "note": "pid15–16直接支持企业缩减是经济原因及WeWork利用该趋势，理由本身成立；但pid18强调并非仅此，pid27、47另述身份与连接因素，材料未确立其为唯一或首要原因，题目主因表述可能过强。"
+      }
+    },
+    {
+      "item_id": "case10_Z",
+      "qid": "quality:99911_QGCJUM40_5",
+      "dataset": "quality",
+      "group_id": "99911",
+      "condition": "A",
+      "selected_ids": [
+        3,
+        4,
+        7,
+        9,
+        12
+      ],
+      "source_bge_tokens": 2124,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case10_Z",
+        "answer_support": "partial",
+        "explanation_support": "partial",
+        "citation_entailment": "partial",
+        "possible_question_issue": "yes",
+        "note": "pid15–17支持缩减业务与WeWork模式成功，实际引用15–16只涵盖这一经济机制；pid18、27、46另述其他动力，将整体增长直接归于这一趋势并据此确定主因仍缺排序依据，题目可能过强。"
+      }
+    },
+    {
+      "item_id": "case11_X",
+      "qid": "quality:51461_OV4JLLBG_4",
+      "dataset": "quality",
+      "group_id": "51461",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case11_X",
+        "answer_support": "not_applicable",
+        "explanation_support": "full",
+        "citation_entailment": "no_citations",
+        "possible_question_issue": "unclear",
+        "note": "本组evidence为空，无可核验pid；拒答及无法识别家庭和沟通方式的说明有依据。"
+      }
+    },
+    {
+      "item_id": "case11_Y",
+      "qid": "quality:51461_OV4JLLBG_4",
+      "dataset": "quality",
+      "group_id": "51461",
+      "condition": "C",
+      "selected_ids": [
+        5,
+        7,
+        14,
+        15,
+        16
+      ],
+      "source_bge_tokens": 2534,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 1,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case11_Y",
+        "answer_support": "full",
+        "explanation_support": "full",
+        "citation_entailment": "full",
+        "possible_question_issue": "no",
+        "note": "pid133–156交代父子穿外出服出门，pid200直接说明碰头盔以便交谈，所引句与A及理由一致。"
+      }
+    },
+    {
+      "item_id": "case11_Z",
+      "qid": "quality:51461_OV4JLLBG_4",
+      "dataset": "quality",
+      "group_id": "51461",
+      "condition": "A",
+      "selected_ids": [
+        1,
+        4,
+        7,
+        8,
+        16
+      ],
+      "source_bge_tokens": 2522,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 1,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case11_Z",
+        "answer_support": "full",
+        "explanation_support": "full",
+        "citation_entailment": "full",
+        "possible_question_issue": "no",
+        "note": "pid130–131交代父亲陪同外出，pid200直接支持碰头盔交谈，pid209–225延续父子身份与返回情境；引用足以支持所述方式。"
+      }
+    },
+    {
+      "item_id": "case12_X",
+      "qid": "quality:51274_8Q2YNHG5_2",
+      "dataset": "quality",
+      "group_id": "51274",
+      "condition": "C",
+      "selected_ids": [
+        0,
+        2,
+        6,
+        13,
+        19
+      ],
+      "source_bge_tokens": 2466,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case12_X",
+        "answer_support": "full",
+        "explanation_support": "full",
+        "citation_entailment": "full",
+        "possible_question_issue": "no",
+        "note": "pid396–397明确将女孩想回去的20世纪称为他的时代，结合pid184的带来此处及553–564的时代对比，支持被带到另一时代；实际引句已包含时间旅行与他的20世纪的关键连接。"
+      }
+    },
+    {
+      "item_id": "case12_Y",
+      "qid": "quality:51274_8Q2YNHG5_2",
+      "dataset": "quality",
+      "group_id": "51274",
+      "condition": "A",
+      "selected_ids": [
+        1,
+        6,
+        7,
+        9,
+        17
+      ],
+      "source_bge_tokens": 2522,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case12_Y",
+        "answer_support": "full",
+        "explanation_support": "full",
+        "citation_entailment": "full",
+        "possible_question_issue": "no",
+        "note": "pid490–491以我的时代和你的时代作对比，pid265提到时间旅行，pid184说明被带来；所引491及265共同支持不同年代及理由，不需将去月球的愿望误作目的地。"
+      }
+    },
+    {
+      "item_id": "case12_Z",
+      "qid": "quality:51274_8Q2YNHG5_2",
+      "dataset": "quality",
+      "group_id": "51274",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null,
+      "ai_support_review": {
+        "item_id": "case12_Z",
+        "answer_support": "not_applicable",
+        "explanation_support": "full",
+        "citation_entailment": "no_citations",
+        "possible_question_issue": "unclear",
+        "note": "本组evidence为空，无可核验pid；拒答及无法依据所给材料确认故事和去向的说明有依据。"
+      }
+    }
+  ],
+  "human_ratings": null,
+  "limitations": [
+    "Same model family answered and reviewed, so correlated mistakes remain possible.",
+    "One AI reviewer per dataset, no inter-rater reliability or human agreement measured.",
+    "Strict support threshold can flag plausible inference or best-choice selection as partial; students must calibrate this judgment.",
+    "Possible question issues are tentative observations on supplied evidence, not corrected labels or removal criteria.",
+    "These post-answer findings do not change any original label, answer, score, source split or earlier protocol."
+  ]
+}

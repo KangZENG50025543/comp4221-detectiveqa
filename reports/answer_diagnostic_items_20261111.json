@@ -1,0 +1,1171 @@
+{
+  "items": [
+    {
+      "item_id": "case01_X",
+      "qid": "zh-human-118-4",
+      "dataset": "detectiveqa",
+      "group_id": 118,
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case01_Y",
+      "qid": "zh-human-118-4",
+      "dataset": "detectiveqa",
+      "group_id": 118,
+      "condition": "A",
+      "selected_ids": [
+        69,
+        103,
+        109,
+        154,
+        204
+      ],
+      "source_bge_tokens": 2385,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 3,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case01_Z",
+      "qid": "zh-human-118-4",
+      "dataset": "detectiveqa",
+      "group_id": 118,
+      "condition": "C",
+      "selected_ids": [
+        67,
+        124,
+        125,
+        154,
+        201
+      ],
+      "source_bge_tokens": 2384,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case02_X",
+      "qid": "zh-human-209-2",
+      "dataset": "detectiveqa",
+      "group_id": 209,
+      "condition": "A",
+      "selected_ids": [
+        50,
+        53,
+        83,
+        84,
+        85
+      ],
+      "source_bge_tokens": 2320,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 3,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case02_Y",
+      "qid": "zh-human-209-2",
+      "dataset": "detectiveqa",
+      "group_id": 209,
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case02_Z",
+      "qid": "zh-human-209-2",
+      "dataset": "detectiveqa",
+      "group_id": 209,
+      "condition": "C",
+      "selected_ids": [
+        53,
+        82,
+        83,
+        84,
+        85
+      ],
+      "source_bge_tokens": 2333,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 3,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case03_X",
+      "qid": "zh-human-27-2",
+      "dataset": "detectiveqa",
+      "group_id": 27,
+      "condition": "C",
+      "selected_ids": [
+        46,
+        47,
+        50,
+        72,
+        144
+      ],
+      "source_bge_tokens": 2433,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case03_Y",
+      "qid": "zh-human-27-2",
+      "dataset": "detectiveqa",
+      "group_id": 27,
+      "condition": "A",
+      "selected_ids": [
+        43,
+        46,
+        47,
+        50,
+        144
+      ],
+      "source_bge_tokens": 2458,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 1,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case03_Z",
+      "qid": "zh-human-27-2",
+      "dataset": "detectiveqa",
+      "group_id": 27,
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case04_X",
+      "qid": "zh-human-27-6",
+      "dataset": "detectiveqa",
+      "group_id": 27,
+      "condition": "A",
+      "selected_ids": [
+        35,
+        124,
+        139,
+        228,
+        252
+      ],
+      "source_bge_tokens": 2388,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case04_Y",
+      "qid": "zh-human-27-6",
+      "dataset": "detectiveqa",
+      "group_id": 27,
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case04_Z",
+      "qid": "zh-human-27-6",
+      "dataset": "detectiveqa",
+      "group_id": 27,
+      "condition": "C",
+      "selected_ids": [
+        35,
+        124,
+        192,
+        228,
+        252
+      ],
+      "source_bge_tokens": 2381,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 1,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case05_X",
+      "qid": "musique:2hop__351275_75487",
+      "dataset": "musique",
+      "group_id": "2hop__351275_75487",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case05_Y",
+      "qid": "musique:2hop__351275_75487",
+      "dataset": "musique",
+      "group_id": "2hop__351275_75487",
+      "condition": "A",
+      "selected_ids": [
+        1,
+        4,
+        11,
+        16,
+        19
+      ],
+      "source_bge_tokens": 720,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case05_Z",
+      "qid": "musique:2hop__351275_75487",
+      "dataset": "musique",
+      "group_id": "2hop__351275_75487",
+      "condition": "C",
+      "selected_ids": [
+        1,
+        4,
+        8,
+        11,
+        17
+      ],
+      "source_bge_tokens": 768,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case06_X",
+      "qid": "musique:4hop1__802394_153080_159767_81096",
+      "dataset": "musique",
+      "group_id": "4hop1__802394_153080_159767_81096",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case06_Y",
+      "qid": "musique:4hop1__802394_153080_159767_81096",
+      "dataset": "musique",
+      "group_id": "4hop1__802394_153080_159767_81096",
+      "condition": "A",
+      "selected_ids": [
+        1,
+        2,
+        9,
+        11,
+        13
+      ],
+      "source_bge_tokens": 742,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 3,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case06_Z",
+      "qid": "musique:4hop1__802394_153080_159767_81096",
+      "dataset": "musique",
+      "group_id": "4hop1__802394_153080_159767_81096",
+      "condition": "C",
+      "selected_ids": [
+        5,
+        9,
+        10,
+        13,
+        16
+      ],
+      "source_bge_tokens": 705,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case07_X",
+      "qid": "musique:2hop__257831_123283",
+      "dataset": "musique",
+      "group_id": "2hop__257831_123283",
+      "condition": "A",
+      "selected_ids": [
+        0,
+        7,
+        11,
+        15,
+        19
+      ],
+      "source_bge_tokens": 799,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 0.0,
+      "token_f1": 0.6666666666666666,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 1,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case07_Y",
+      "qid": "musique:2hop__257831_123283",
+      "dataset": "musique",
+      "group_id": "2hop__257831_123283",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": 0.0,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case07_Z",
+      "qid": "musique:2hop__257831_123283",
+      "dataset": "musique",
+      "group_id": "2hop__257831_123283",
+      "condition": "C",
+      "selected_ids": [
+        2,
+        4,
+        7,
+        16,
+        19
+      ],
+      "source_bge_tokens": 763,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 0.0,
+      "token_f1": 0.6666666666666666,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 1,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case08_X",
+      "qid": "musique:2hop__132929_120537",
+      "dataset": "musique",
+      "group_id": "2hop__132929_120537",
+      "condition": "C",
+      "selected_ids": [
+        2,
+        7,
+        11,
+        14,
+        15
+      ],
+      "source_bge_tokens": 543,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case08_Y",
+      "qid": "musique:2hop__132929_120537",
+      "dataset": "musique",
+      "group_id": "2hop__132929_120537",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case08_Z",
+      "qid": "musique:2hop__132929_120537",
+      "dataset": "musique",
+      "group_id": "2hop__132929_120537",
+      "condition": "A",
+      "selected_ids": [
+        3,
+        5,
+        9,
+        14,
+        17
+      ],
+      "source_bge_tokens": 425,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": 1.0,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 1,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case09_X",
+      "qid": "quality:40965_7AWX7OE9_6",
+      "dataset": "quality",
+      "group_id": "40965",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case09_Y",
+      "qid": "quality:40965_7AWX7OE9_6",
+      "dataset": "quality",
+      "group_id": "40965",
+      "condition": "C",
+      "selected_ids": [
+        3,
+        12,
+        14,
+        16,
+        17
+      ],
+      "source_bge_tokens": 2122,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case09_Z",
+      "qid": "quality:40965_7AWX7OE9_6",
+      "dataset": "quality",
+      "group_id": "40965",
+      "condition": "A",
+      "selected_ids": [
+        3,
+        9,
+        15,
+        16,
+        17
+      ],
+      "source_bge_tokens": 2124,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case10_X",
+      "qid": "quality:99911_QGCJUM40_5",
+      "dataset": "quality",
+      "group_id": "99911",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case10_Y",
+      "qid": "quality:99911_QGCJUM40_5",
+      "dataset": "quality",
+      "group_id": "99911",
+      "condition": "C",
+      "selected_ids": [
+        3,
+        4,
+        7,
+        9,
+        13
+      ],
+      "source_bge_tokens": 1941,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case10_Z",
+      "qid": "quality:99911_QGCJUM40_5",
+      "dataset": "quality",
+      "group_id": "99911",
+      "condition": "A",
+      "selected_ids": [
+        3,
+        4,
+        7,
+        9,
+        12
+      ],
+      "source_bge_tokens": 2124,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case11_X",
+      "qid": "quality:51461_OV4JLLBG_4",
+      "dataset": "quality",
+      "group_id": "51461",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case11_Y",
+      "qid": "quality:51461_OV4JLLBG_4",
+      "dataset": "quality",
+      "group_id": "51461",
+      "condition": "C",
+      "selected_ids": [
+        5,
+        7,
+        14,
+        15,
+        16
+      ],
+      "source_bge_tokens": 2534,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 1,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case11_Z",
+      "qid": "quality:51461_OV4JLLBG_4",
+      "dataset": "quality",
+      "group_id": "51461",
+      "condition": "A",
+      "selected_ids": [
+        1,
+        4,
+        7,
+        8,
+        16
+      ],
+      "source_bge_tokens": 2522,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 1,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case12_X",
+      "qid": "quality:51274_8Q2YNHG5_2",
+      "dataset": "quality",
+      "group_id": "51274",
+      "condition": "C",
+      "selected_ids": [
+        0,
+        2,
+        6,
+        13,
+        19
+      ],
+      "source_bge_tokens": 2466,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case12_Y",
+      "qid": "quality:51274_8Q2YNHG5_2",
+      "dataset": "quality",
+      "group_id": "51274",
+      "condition": "A",
+      "selected_ids": [
+        1,
+        6,
+        7,
+        9,
+        17
+      ],
+      "source_bge_tokens": 2522,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": true,
+      "abstained": false,
+      "exact_match": 1.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "yes",
+      "citation_checks": {
+        "citations": [
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          },
+          {
+            "pid_present": true,
+            "quote_in_visible_fragment": true
+          }
+        ],
+        "citation_count": 2,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    },
+    {
+      "item_id": "case12_Z",
+      "qid": "quality:51274_8Q2YNHG5_2",
+      "dataset": "quality",
+      "group_id": "51274",
+      "condition": "N",
+      "selected_ids": [],
+      "source_bge_tokens": 0,
+      "schema_valid": true,
+      "schema_errors": [],
+      "answered": false,
+      "abstained": true,
+      "exact_match": 0.0,
+      "token_f1": null,
+      "self_reported_evidence_sufficient": "no",
+      "citation_checks": {
+        "citations": [],
+        "citation_count": 0,
+        "invalid_pid_count": 0,
+        "invalid_quote_count": 0
+      },
+      "semantic_support": null
+    }
+  ]
+}
