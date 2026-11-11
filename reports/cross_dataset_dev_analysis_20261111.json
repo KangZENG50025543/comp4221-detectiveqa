@@ -1,0 +1,282 @@
+{
+  "scope": "Independent aggregation of completed development retrieval metrics; no texts or answers read",
+  "source_run": "cross_dataset_dev_20261111_01",
+  "computed_utc": "2026-11-11T11:02:00.524980+00:00",
+  "musique": {
+    "questions": 24,
+    "overall": {
+      "A": {
+        "questions": 24,
+        "mean_full_paragraph_recall": 0.6701388888888888,
+        "all_supports_covered_count": 7,
+        "mean_candidate_full_recall": 0.6701388888888888,
+        "candidate_counts": {
+          "5": 24
+        },
+        "gold_supports_fit_5_chunks_count": 24
+      },
+      "B": {
+        "questions": 24,
+        "mean_full_paragraph_recall": 0.7638888888888888,
+        "all_supports_covered_count": 9,
+        "mean_candidate_full_recall": 0.8090277777777778,
+        "candidate_counts": {
+          "10": 24
+        },
+        "gold_supports_fit_5_chunks_count": 24
+      },
+      "C": {
+        "questions": 24,
+        "mean_full_paragraph_recall": 0.7743055555555555,
+        "all_supports_covered_count": 9,
+        "mean_candidate_full_recall": 1.0,
+        "candidate_counts": {
+          "20": 24
+        },
+        "gold_supports_fit_5_chunks_count": 24
+      }
+    },
+    "by_hop": {
+      "2": {
+        "A": {
+          "questions": 8,
+          "mean_full_paragraph_recall": 0.75,
+          "all_supports_covered_count": 4,
+          "mean_candidate_full_recall": 0.75,
+          "candidate_counts": {
+            "5": 8
+          },
+          "gold_supports_fit_5_chunks_count": 8
+        },
+        "B": {
+          "questions": 8,
+          "mean_full_paragraph_recall": 0.875,
+          "all_supports_covered_count": 6,
+          "mean_candidate_full_recall": 0.875,
+          "candidate_counts": {
+            "10": 8
+          },
+          "gold_supports_fit_5_chunks_count": 8
+        },
+        "C": {
+          "questions": 8,
+          "mean_full_paragraph_recall": 0.875,
+          "all_supports_covered_count": 6,
+          "mean_candidate_full_recall": 1.0,
+          "candidate_counts": {
+            "20": 8
+          },
+          "gold_supports_fit_5_chunks_count": 8
+        }
+      },
+      "3": {
+        "A": {
+          "questions": 8,
+          "mean_full_paragraph_recall": 0.7916666666666666,
+          "all_supports_covered_count": 3,
+          "mean_candidate_full_recall": 0.7916666666666666,
+          "candidate_counts": {
+            "5": 8
+          },
+          "gold_supports_fit_5_chunks_count": 8
+        },
+        "B": {
+          "questions": 8,
+          "mean_full_paragraph_recall": 0.7916666666666666,
+          "all_supports_covered_count": 3,
+          "mean_candidate_full_recall": 0.8333333333333333,
+          "candidate_counts": {
+            "10": 8
+          },
+          "gold_supports_fit_5_chunks_count": 8
+        },
+        "C": {
+          "questions": 8,
+          "mean_full_paragraph_recall": 0.7916666666666666,
+          "all_supports_covered_count": 3,
+          "mean_candidate_full_recall": 1.0,
+          "candidate_counts": {
+            "20": 8
+          },
+          "gold_supports_fit_5_chunks_count": 8
+        }
+      },
+      "4": {
+        "A": {
+          "questions": 8,
+          "mean_full_paragraph_recall": 0.46875,
+          "all_supports_covered_count": 0,
+          "mean_candidate_full_recall": 0.46875,
+          "candidate_counts": {
+            "5": 8
+          },
+          "gold_supports_fit_5_chunks_count": 8
+        },
+        "B": {
+          "questions": 8,
+          "mean_full_paragraph_recall": 0.625,
+          "all_supports_covered_count": 0,
+          "mean_candidate_full_recall": 0.71875,
+          "candidate_counts": {
+            "10": 8
+          },
+          "gold_supports_fit_5_chunks_count": 8
+        },
+        "C": {
+          "questions": 8,
+          "mean_full_paragraph_recall": 0.65625,
+          "all_supports_covered_count": 0,
+          "mean_candidate_full_recall": 1.0,
+          "candidate_counts": {
+            "20": 8
+          },
+          "gold_supports_fit_5_chunks_count": 8
+        }
+      }
+    },
+    "shared_component_question_groups": {
+      "definition": "Selected questions connected if they share any component_id, including transitive links. Different components are not guaranteed independent: paragraphs can still overlap.",
+      "connected_component_count": 21,
+      "maximum_questions_in_component": 4,
+      "size_histogram": {
+        "4": 1,
+        "1": 20
+      },
+      "question_groups": [
+        [
+          "musique:4hop1__236903_153080_159767_81096",
+          "musique:4hop1__802394_153080_159767_81096",
+          "musique:4hop1__813171_153080_159767_81096",
+          "musique:4hop1__813171_153080_33897_81096"
+        ],
+        [
+          "musique:2hop__132929_120537"
+        ],
+        [
+          "musique:2hop__257831_123283"
+        ],
+        [
+          "musique:2hop__351275_75487"
+        ],
+        [
+          "musique:2hop__56806_7298"
+        ],
+        [
+          "musique:2hop__574419_270105"
+        ],
+        [
+          "musique:2hop__77775_162341"
+        ],
+        [
+          "musique:2hop__794999_113442"
+        ],
+        [
+          "musique:2hop__88372_83837"
+        ],
+        [
+          "musique:3hop1__131820_59747_60748"
+        ],
+        [
+          "musique:3hop1__136852_30587_83479"
+        ],
+        [
+          "musique:3hop1__241001_568433_47686"
+        ],
+        [
+          "musique:3hop1__462960_160545_60577"
+        ],
+        [
+          "musique:3hop1__831162_831637_91775"
+        ],
+        [
+          "musique:3hop1__849312_503371_21711"
+        ],
+        [
+          "musique:3hop2__49541_140712_51068"
+        ],
+        [
+          "musique:3hop2__792915_223623_162182"
+        ],
+        [
+          "musique:4hop1__146971_698949_157828_162309"
+        ],
+        [
+          "musique:4hop1__408432_32392_823060_610794"
+        ],
+        [
+          "musique:4hop1__88342_49853_128008_87812"
+        ],
+        [
+          "musique:4hop2__161602_426860_88460_63559"
+        ]
+      ],
+      "reused_component_ids": {
+        "153080": [
+          "musique:4hop1__236903_153080_159767_81096",
+          "musique:4hop1__802394_153080_159767_81096",
+          "musique:4hop1__813171_153080_159767_81096",
+          "musique:4hop1__813171_153080_33897_81096"
+        ],
+        "159767": [
+          "musique:4hop1__236903_153080_159767_81096",
+          "musique:4hop1__802394_153080_159767_81096",
+          "musique:4hop1__813171_153080_159767_81096"
+        ],
+        "81096": [
+          "musique:4hop1__236903_153080_159767_81096",
+          "musique:4hop1__802394_153080_159767_81096",
+          "musique:4hop1__813171_153080_159767_81096",
+          "musique:4hop1__813171_153080_33897_81096"
+        ],
+        "813171": [
+          "musique:4hop1__813171_153080_159767_81096",
+          "musique:4hop1__813171_153080_33897_81096"
+        ]
+      }
+    },
+    "summary_group_count_caution": "summary groups=24 counts question group_ids, not shared-component independent groups."
+  },
+  "quality": {
+    "questions": 12,
+    "distinct_articles": 12,
+    "hard_questions": 6,
+    "retrieval_outputs": 36,
+    "candidate_count_ranges": {
+      "A": {
+        "min": 5,
+        "max": 5
+      },
+      "B": {
+        "min": 7,
+        "max": 10
+      },
+      "C": {
+        "min": 7,
+        "max": 21
+      }
+    },
+    "all_evidence_metrics_null_confirmed": true,
+    "evidence_recall": null,
+    "answer_accuracy": null
+  },
+  "retrieval_lock": {
+    "output_sha256_match": true,
+    "locked_utc": "2026-11-11T11:00:05.118538+00:00",
+    "summary_completed_utc": "2026-11-11T11:00:05.130181+00:00",
+    "lock_precedes_completed_summary": true,
+    "scope": "Hash and timestamp check, not external execution attestation."
+  },
+  "limitations": [
+    "Development diagnostics, not held-out answer accuracy.",
+    "MuSiQue C considered all 20 supplied paragraphs in each selected question. Candidate coverage=100% is expected and not evidence of retrieval skill.",
+    "Shared components cluster MuSiQue questions; preserve sample and do not claim 24 statistically independent observations.",
+    "All selected MuSiQue gold supports fit within five chunks; an impossible five-chunk gold capacity does not explain these cases, unlike a possible concern for long-novel chunks.",
+    "Chunk adapters and text domains differ: cross-dataset changes do not isolate a causal effect of language/domain."
+  ],
+  "source_sha256": {
+    "retrieval\\summary.json": "a1dc7504b2438858655d04664d475fca2c042adc337e732eacfe55b03368c07d",
+    "retrieval\\evidence_metrics.jsonl": "ac99f28d30a1042b746bcab7abb9d76ca350c7ab5d5b06b2e1a633e2dc8a62a5",
+    "prepared\\manifest.json": "b912892cf01a0d85ea0c05ddbd57a51442fbf56cd82cb90abdcc645d71721e2d",
+    "retrieval\\retrieval.lock.json": "ac8a5deee466c075f8f8d7b7e3d6c8fa93cfca4f83ebc677b2573ab7dd6fb03e"
+  }
+}

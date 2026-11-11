@@ -1,0 +1,43 @@
+{
+  "checked_utc": "2026-11-11T10:56:01.025345+00:00",
+  "official_repository": "https://github.com/StonyBrookNLP/musique",
+  "official_script_url": "https://raw.githubusercontent.com/StonyBrookNLP/musique/main/download_data.sh",
+  "attempts": [
+    {
+      "kind": "official_script",
+      "http_status": 200,
+      "bytes": 445
+    },
+    {
+      "kind": "official_archive",
+      "http_status": 200,
+      "content_type": "application/octet-stream",
+      "content_length_header": "272049578",
+      "downloaded_bytes": 272049578,
+      "downloaded_sha256": "98f839bf2fd5319f5c688aed77901a6d5c30b3b9f9f691ab9a8ecafb045ee0cd",
+      "result": "ZIP downloaded"
+    }
+  ],
+  "local_file": "dataset_scout_20261013/raw/musique/musique_ans_v1.0_dev.jsonl",
+  "official_origin_byte_identity_verified": true,
+  "sample_contents_read": false,
+  "files_modified": "Only new cache/provenance_20261111 files and this report",
+  "local_bytes": 30439728,
+  "local_sha256": "15fa63794d18a94ce12411aca6e2327e65b6e83b0b1490efab3f1962e48abf3b",
+  "local_matches_prior_mirror_manifest": true,
+  "official_script_sha256": "3242f928d7c0f8db885296872397af33ce19014e6edab62bbd44bab3d73a09d2",
+  "official_script_contains_expected_file_id": true,
+  "official_archive_url": "https://drive.usercontent.google.com/download?id=1tGdADlNjWFaHLeZZGShh2IRcpO6Lv24h&export=download&confirm=t",
+  "official_dev_member": "data/musique_ans_v1.0_dev.jsonl",
+  "official_dev_bytes": 30439728,
+  "official_dev_sha256": "15fa63794d18a94ce12411aca6e2327e65b6e83b0b1490efab3f1962e48abf3b",
+  "workflow_review": {
+    "decision": "Appropriate for exploratory development-only retrieval pilot, with these limitations",
+    "muSiQue": "24 questions, 8 each of 2/3/4 hops: report each stratum and do not treat pooled score as population estimate. Exclude prior qids; inspect shared single-hop component IDs and record overlap. No hard assurance of unseen text, since documents can be reused.",
+    "quality": "12 questions, 6 hard and 6 non-hard, each from a distinct article and excluding all five previously read article IDs. Keep all questions of those articles in development/exposure group. No native gold evidence spans; retrieval recall must remain null.",
+    "comparison": "Keep identical chunking and final top-5 retrieval policy; record actual min(50,N) candidate counts. This is an adapter/pilot check, not a formally equivalent 50-candidate comparison for native 17-20-paragraph inputs.",
+    "quality_policy": "Retain the predetermined sample and denominator. Mark annotation concerns without silently substituting or excluding questions after seeing outputs.",
+    "reporting": "No paid API or generated answer metrics if only retrieval is run. Exposure register is tracking, not enforcement until code checks it."
+  },
+  "completed_utc": "2026-11-11T10:56:17.127472+00:00"
+}

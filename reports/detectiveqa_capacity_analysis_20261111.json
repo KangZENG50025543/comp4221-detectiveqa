@@ -1,0 +1,478 @@
+{
+  "scope": "Fixed nonoverlapping chunk capacity audit; only source chunk spans and gold paragraph IDs used; no question or answer content inspected",
+  "computed_utc": "2026-11-11T11:02:40.075614+00:00",
+  "source_run": "dev_retrieval_20261111_01",
+  "definition": "Every source character belongs to one fixed chunk. Full paragraph coverage therefore requires selecting every chunk intersecting any gold paragraph. Count unique intersecting chunk IDs. This diagnoses capacity under the existing chunking, not an alternate optimized chunker.",
+  "questions": 20,
+  "five_chunk_capacity": {
+    "fits": 17,
+    "cannot_fit": 3,
+    "minimum_required_chunks": 1,
+    "maximum_required_chunks": 13
+  },
+  "candidate50_complete_but_final_C_incomplete": {
+    "questions": 7,
+    "fits_five_chunks": 6,
+    "cannot_fit_five_chunks": 1,
+    "rows": [
+      {
+        "qid": "zh-human-124-0",
+        "book_id": 124,
+        "gold_paragraph_count": 4,
+        "minimum_chunks_for_full_gold_coverage": 3,
+        "required_chunk_ids": [
+          11,
+          36,
+          37
+        ],
+        "fits_five_chunks": true,
+        "candidate50_full_recall": 1.0,
+        "candidate50_all_gold_covered": true,
+        "final_C_full_recall": 0.75,
+        "final_C_all_gold_covered": false
+      },
+      {
+        "qid": "zh-human-209-1",
+        "book_id": 209,
+        "gold_paragraph_count": 4,
+        "minimum_chunks_for_full_gold_coverage": 2,
+        "required_chunk_ids": [
+          64,
+          65
+        ],
+        "fits_five_chunks": true,
+        "candidate50_full_recall": 1.0,
+        "candidate50_all_gold_covered": true,
+        "final_C_full_recall": 0.75,
+        "final_C_all_gold_covered": false
+      },
+      {
+        "qid": "zh-human-27-0",
+        "book_id": 27,
+        "gold_paragraph_count": 4,
+        "minimum_chunks_for_full_gold_coverage": 3,
+        "required_chunk_ids": [
+          10,
+          14,
+          18
+        ],
+        "fits_five_chunks": true,
+        "candidate50_full_recall": 1.0,
+        "candidate50_all_gold_covered": true,
+        "final_C_full_recall": 0.5,
+        "final_C_all_gold_covered": false
+      },
+      {
+        "qid": "zh-human-209-3",
+        "book_id": 209,
+        "gold_paragraph_count": 2,
+        "minimum_chunks_for_full_gold_coverage": 1,
+        "required_chunk_ids": [
+          101
+        ],
+        "fits_five_chunks": true,
+        "candidate50_full_recall": 1.0,
+        "candidate50_all_gold_covered": true,
+        "final_C_full_recall": 0.0,
+        "final_C_all_gold_covered": false
+      },
+      {
+        "qid": "zh-human-142-0",
+        "book_id": 142,
+        "gold_paragraph_count": 7,
+        "minimum_chunks_for_full_gold_coverage": 6,
+        "required_chunk_ids": [
+          6,
+          37,
+          98,
+          101,
+          141,
+          167
+        ],
+        "fits_five_chunks": false,
+        "candidate50_full_recall": 1.0,
+        "candidate50_all_gold_covered": true,
+        "final_C_full_recall": 0.14285714285714285,
+        "final_C_all_gold_covered": false
+      },
+      {
+        "qid": "zh-human-118-0",
+        "book_id": 118,
+        "gold_paragraph_count": 4,
+        "minimum_chunks_for_full_gold_coverage": 4,
+        "required_chunk_ids": [
+          56,
+          72,
+          75,
+          90
+        ],
+        "fits_five_chunks": true,
+        "candidate50_full_recall": 1.0,
+        "candidate50_all_gold_covered": true,
+        "final_C_full_recall": 0.0,
+        "final_C_all_gold_covered": false
+      },
+      {
+        "qid": "zh-human-118-2",
+        "book_id": 118,
+        "gold_paragraph_count": 3,
+        "minimum_chunks_for_full_gold_coverage": 2,
+        "required_chunk_ids": [
+          7,
+          64
+        ],
+        "fits_five_chunks": true,
+        "candidate50_full_recall": 1.0,
+        "candidate50_all_gold_covered": true,
+        "final_C_full_recall": 0.6666666666666666,
+        "final_C_all_gold_covered": false
+      }
+    ]
+  },
+  "per_question": [
+    {
+      "qid": "zh-human-27-1",
+      "book_id": 27,
+      "gold_paragraph_count": 9,
+      "minimum_chunks_for_full_gold_coverage": 7,
+      "required_chunk_ids": [
+        15,
+        16,
+        59,
+        60,
+        61,
+        68,
+        69
+      ],
+      "fits_five_chunks": false,
+      "candidate50_full_recall": 0.8888888888888888,
+      "candidate50_all_gold_covered": false,
+      "final_C_full_recall": 0.1111111111111111,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-142-4",
+      "book_id": 142,
+      "gold_paragraph_count": 4,
+      "minimum_chunks_for_full_gold_coverage": 3,
+      "required_chunk_ids": [
+        7,
+        34,
+        172
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 0.75,
+      "candidate50_all_gold_covered": false,
+      "final_C_full_recall": 0.0,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-124-0",
+      "book_id": 124,
+      "gold_paragraph_count": 4,
+      "minimum_chunks_for_full_gold_coverage": 3,
+      "required_chunk_ids": [
+        11,
+        36,
+        37
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 1.0,
+      "candidate50_all_gold_covered": true,
+      "final_C_full_recall": 0.75,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-209-1",
+      "book_id": 209,
+      "gold_paragraph_count": 4,
+      "minimum_chunks_for_full_gold_coverage": 2,
+      "required_chunk_ids": [
+        64,
+        65
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 1.0,
+      "candidate50_all_gold_covered": true,
+      "final_C_full_recall": 0.75,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-118-4",
+      "book_id": 118,
+      "gold_paragraph_count": 8,
+      "minimum_chunks_for_full_gold_coverage": 5,
+      "required_chunk_ids": [
+        79,
+        151,
+        152,
+        153,
+        156
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 0.125,
+      "candidate50_all_gold_covered": false,
+      "final_C_full_recall": 0.0,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-27-0",
+      "book_id": 27,
+      "gold_paragraph_count": 4,
+      "minimum_chunks_for_full_gold_coverage": 3,
+      "required_chunk_ids": [
+        10,
+        14,
+        18
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 1.0,
+      "candidate50_all_gold_covered": true,
+      "final_C_full_recall": 0.5,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-142-1",
+      "book_id": 142,
+      "gold_paragraph_count": 6,
+      "minimum_chunks_for_full_gold_coverage": 5,
+      "required_chunk_ids": [
+        35,
+        172,
+        180,
+        182,
+        203
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 0.6666666666666666,
+      "candidate50_all_gold_covered": false,
+      "final_C_full_recall": 0.3333333333333333,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-124-1",
+      "book_id": 124,
+      "gold_paragraph_count": 5,
+      "minimum_chunks_for_full_gold_coverage": 3,
+      "required_chunk_ids": [
+        13,
+        39,
+        148
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 0.8,
+      "candidate50_all_gold_covered": false,
+      "final_C_full_recall": 0.8,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-209-3",
+      "book_id": 209,
+      "gold_paragraph_count": 2,
+      "minimum_chunks_for_full_gold_coverage": 1,
+      "required_chunk_ids": [
+        101
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 1.0,
+      "candidate50_all_gold_covered": true,
+      "final_C_full_recall": 0.0,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-118-3",
+      "book_id": 118,
+      "gold_paragraph_count": 6,
+      "minimum_chunks_for_full_gold_coverage": 5,
+      "required_chunk_ids": [
+        7,
+        64,
+        122,
+        124,
+        130
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 0.5,
+      "candidate50_all_gold_covered": false,
+      "final_C_full_recall": 0.16666666666666666,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-27-6",
+      "book_id": 27,
+      "gold_paragraph_count": 16,
+      "minimum_chunks_for_full_gold_coverage": 13,
+      "required_chunk_ids": [
+        2,
+        24,
+        28,
+        29,
+        41,
+        46,
+        47,
+        69,
+        98,
+        105,
+        127,
+        161,
+        188
+      ],
+      "fits_five_chunks": false,
+      "candidate50_full_recall": 0.3125,
+      "candidate50_all_gold_covered": false,
+      "final_C_full_recall": 0.0,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-142-0",
+      "book_id": 142,
+      "gold_paragraph_count": 7,
+      "minimum_chunks_for_full_gold_coverage": 6,
+      "required_chunk_ids": [
+        6,
+        37,
+        98,
+        101,
+        141,
+        167
+      ],
+      "fits_five_chunks": false,
+      "candidate50_full_recall": 1.0,
+      "candidate50_all_gold_covered": true,
+      "final_C_full_recall": 0.14285714285714285,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-124-3",
+      "book_id": 124,
+      "gold_paragraph_count": 4,
+      "minimum_chunks_for_full_gold_coverage": 3,
+      "required_chunk_ids": [
+        24,
+        25,
+        26
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 1.0,
+      "candidate50_all_gold_covered": true,
+      "final_C_full_recall": 1.0,
+      "final_C_all_gold_covered": true
+    },
+    {
+      "qid": "zh-human-209-2",
+      "book_id": 209,
+      "gold_paragraph_count": 6,
+      "minimum_chunks_for_full_gold_coverage": 4,
+      "required_chunk_ids": [
+        23,
+        77,
+        84,
+        86
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 0.8333333333333334,
+      "candidate50_all_gold_covered": false,
+      "final_C_full_recall": 0.16666666666666666,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-118-0",
+      "book_id": 118,
+      "gold_paragraph_count": 4,
+      "minimum_chunks_for_full_gold_coverage": 4,
+      "required_chunk_ids": [
+        56,
+        72,
+        75,
+        90
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 1.0,
+      "candidate50_all_gold_covered": true,
+      "final_C_full_recall": 0.0,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-27-2",
+      "book_id": 27,
+      "gold_paragraph_count": 7,
+      "minimum_chunks_for_full_gold_coverage": 3,
+      "required_chunk_ids": [
+        147,
+        148,
+        149
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 0.2857142857142857,
+      "candidate50_all_gold_covered": false,
+      "final_C_full_recall": 0.0,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-142-5",
+      "book_id": 142,
+      "gold_paragraph_count": 5,
+      "minimum_chunks_for_full_gold_coverage": 4,
+      "required_chunk_ids": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 1.0,
+      "candidate50_all_gold_covered": true,
+      "final_C_full_recall": 1.0,
+      "final_C_all_gold_covered": true
+    },
+    {
+      "qid": "zh-human-124-2",
+      "book_id": 124,
+      "gold_paragraph_count": 4,
+      "minimum_chunks_for_full_gold_coverage": 2,
+      "required_chunk_ids": [
+        86,
+        87
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 1.0,
+      "candidate50_all_gold_covered": true,
+      "final_C_full_recall": 1.0,
+      "final_C_all_gold_covered": true
+    },
+    {
+      "qid": "zh-human-209-6",
+      "book_id": 209,
+      "gold_paragraph_count": 6,
+      "minimum_chunks_for_full_gold_coverage": 5,
+      "required_chunk_ids": [
+        128,
+        130,
+        131,
+        132,
+        144
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 0.6666666666666666,
+      "candidate50_all_gold_covered": false,
+      "final_C_full_recall": 0.0,
+      "final_C_all_gold_covered": false
+    },
+    {
+      "qid": "zh-human-118-2",
+      "book_id": 118,
+      "gold_paragraph_count": 3,
+      "minimum_chunks_for_full_gold_coverage": 2,
+      "required_chunk_ids": [
+        7,
+        64
+      ],
+      "fits_five_chunks": true,
+      "candidate50_full_recall": 1.0,
+      "candidate50_all_gold_covered": true,
+      "final_C_full_recall": 0.6666666666666666,
+      "final_C_all_gold_covered": false
+    }
+  ],
+  "interpretation": "If supports fit five chunks but C misses full coverage despite full candidate coverage, selection discarded at least one needed chunk. If supports require >5 chunks, full coverage is impossible at this budget regardless of ranker; partial coverage losses may still involve selection. Gold evidence completeness and necessity remain separate human-annotation questions."
+}

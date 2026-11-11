@@ -41,3 +41,19 @@
 !/tests/test_actual_data.py
 !/tests/test_chunking.py
 !/tests/test_data_boundaries.py
+
+# Reviewed development pilot code and metrics (no contexts or gold answers).
+!/scripts/prepare_cross_dataset_dev.py
+!/scripts/run_cross_dataset_pilot.py
+!/scripts/build_cross_dataset_review.py
+!/src/cross_dataset.py
+!/tests/test_cross_dataset.py
+!/reports/musique_provenance_20261111.json
+!/reports/detectiveqa_dev_analysis_20261111.json
+!/reports/cross_dataset_dev_analysis_20261111.json
+!/reports/detectiveqa_capacity_analysis_20261111.json
+!/reports/development_exposure_20261111.json
+!/reports/下一步实验_20261111.txt
+!/reports/retrieval_pilot_20261111.json
+!/reports/cross_dataset_retrieval_20261111.json
+!/reports/cross_dataset_selection_20261111.json

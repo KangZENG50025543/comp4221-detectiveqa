@@ -1,0 +1,887 @@
+{
+  "status": "completed",
+  "completed_utc": "2026-11-11T11:00:05.130181+00:00",
+  "scope": "development-only retrieval diagnostic",
+  "question_count": 36,
+  "retrieval_record_count": 108,
+  "test_questions_run": 0,
+  "paid_api_calls": 0,
+  "answer_accuracy": null,
+  "human_ratings": null,
+  "elapsed_seconds": 22.197716700000456,
+  "torch_version": "2.9.1+cu128",
+  "cuda": "12.8",
+  "precision": "float16 model weights, float32 normalized embedding vectors and scoring",
+  "embedding_peak_allocated_bytes": 1250116608,
+  "reranker_peak_allocated_bytes": 1207006720,
+  "inputs_sha256": "2355d136011b6a25d8b8325dafc5037c3b4153d946d5998798e8cb5e40716912",
+  "gold_sha256": "de236387f0db8bf00f5d9c6ee3fc40f3091d013a000c0c6a0cbbbd63a9aa5edb",
+  "manifest_sha256": "b912892cf01a0d85ea0c05ddbd57a51442fbf56cd82cb90abdcc645d71721e2d",
+  "protocol_sha256": "0e174e7c9bd4616b202a15ec11481902d314ae294be282a092f6f80920bdf840",
+  "adapters": {
+    "musique": "Each native paragraph is a separate evidence document. Split a document at the token cap; never pack separate documents together. Input text includes the source title when supplied by preparation.",
+    "quality": "Pack the ordinary article paragraphs/lines in source order using the existing lossless chunker. Local paragraph IDs are not official evidence annotations."
+  },
+  "datasets": {
+    "musique": {
+      "questions": 24,
+      "groups": 24,
+      "conditions": {
+        "A": {
+          "questions": 24,
+          "evidence_annotated_questions": 24,
+          "mean_selected_bge_tokens": 672.7083333333334,
+          "candidate_count_histogram": {
+            "5": 24
+          },
+          "selected_count_histogram": {
+            "5": 24
+          },
+          "evidence_metrics": {
+            "full_paragraph_recall": 0.6701388888888888,
+            "any_overlap_paragraph_recall": 0.6701388888888888,
+            "mean_paragraph_character_coverage": 0.6701388888888888,
+            "all_explicit_evidence_covered": 0.2916666666666667
+          },
+          "candidate_evidence_metrics": {
+            "full_paragraph_recall": 0.6701388888888888,
+            "any_overlap_paragraph_recall": 0.6701388888888888,
+            "all_explicit_evidence_covered": 0.2916666666666667
+          },
+          "mean_retention_given_candidates": {
+            "full_support_retention_given_candidates": 1.0,
+            "any_overlap_support_retention_given_candidates": 1.0
+          }
+        },
+        "B": {
+          "questions": 24,
+          "evidence_annotated_questions": 24,
+          "mean_selected_bge_tokens": 718.7083333333334,
+          "candidate_count_histogram": {
+            "10": 24
+          },
+          "selected_count_histogram": {
+            "5": 24
+          },
+          "evidence_metrics": {
+            "full_paragraph_recall": 0.7638888888888888,
+            "any_overlap_paragraph_recall": 0.7638888888888888,
+            "mean_paragraph_character_coverage": 0.7638888888888888,
+            "all_explicit_evidence_covered": 0.375
+          },
+          "candidate_evidence_metrics": {
+            "full_paragraph_recall": 0.8090277777777778,
+            "any_overlap_paragraph_recall": 0.8090277777777778,
+            "all_explicit_evidence_covered": 0.5
+          },
+          "mean_retention_given_candidates": {
+            "full_support_retention_given_candidates": 0.9548611111111112,
+            "any_overlap_support_retention_given_candidates": 0.9548611111111112
+          }
+        },
+        "C": {
+          "questions": 24,
+          "evidence_annotated_questions": 24,
+          "mean_selected_bge_tokens": 694.125,
+          "candidate_count_histogram": {
+            "20": 24
+          },
+          "selected_count_histogram": {
+            "5": 24
+          },
+          "evidence_metrics": {
+            "full_paragraph_recall": 0.7743055555555555,
+            "any_overlap_paragraph_recall": 0.7743055555555555,
+            "mean_paragraph_character_coverage": 0.7743055555555555,
+            "all_explicit_evidence_covered": 0.375
+          },
+          "candidate_evidence_metrics": {
+            "full_paragraph_recall": 1.0,
+            "any_overlap_paragraph_recall": 1.0,
+            "all_explicit_evidence_covered": 1.0
+          },
+          "mean_retention_given_candidates": {
+            "full_support_retention_given_candidates": 0.7743055555555555,
+            "any_overlap_support_retention_given_candidates": 0.7743055555555555
+          }
+        }
+      }
+    },
+    "quality": {
+      "questions": 12,
+      "groups": 12,
+      "conditions": {
+        "A": {
+          "questions": 12,
+          "evidence_annotated_questions": 0,
+          "mean_selected_bge_tokens": 2309.75,
+          "candidate_count_histogram": {
+            "5": 12
+          },
+          "selected_count_histogram": {
+            "5": 12
+          },
+          "evidence_metrics": {
+            "full_paragraph_recall": null,
+            "any_overlap_paragraph_recall": null,
+            "mean_paragraph_character_coverage": null,
+            "all_explicit_evidence_covered": null
+          },
+          "candidate_evidence_metrics": {
+            "full_paragraph_recall": null,
+            "any_overlap_paragraph_recall": null,
+            "all_explicit_evidence_covered": null
+          },
+          "mean_retention_given_candidates": {
+            "full_support_retention_given_candidates": null,
+            "any_overlap_support_retention_given_candidates": null
+          }
+        },
+        "B": {
+          "questions": 12,
+          "evidence_annotated_questions": 0,
+          "mean_selected_bge_tokens": 2329.75,
+          "candidate_count_histogram": {
+            "10": 9,
+            "9": 2,
+            "7": 1
+          },
+          "selected_count_histogram": {
+            "5": 12
+          },
+          "evidence_metrics": {
+            "full_paragraph_recall": null,
+            "any_overlap_paragraph_recall": null,
+            "mean_paragraph_character_coverage": null,
+            "all_explicit_evidence_covered": null
+          },
+          "candidate_evidence_metrics": {
+            "full_paragraph_recall": null,
+            "any_overlap_paragraph_recall": null,
+            "all_explicit_evidence_covered": null
+          },
+          "mean_retention_given_candidates": {
+            "full_support_retention_given_candidates": null,
+            "any_overlap_support_retention_given_candidates": null
+          }
+        },
+        "C": {
+          "questions": 12,
+          "evidence_annotated_questions": 0,
+          "mean_selected_bge_tokens": 2333.6666666666665,
+          "candidate_count_histogram": {
+            "21": 1,
+            "20": 2,
+            "18": 3,
+            "9": 2,
+            "14": 1,
+            "7": 1,
+            "19": 1,
+            "12": 1
+          },
+          "selected_count_histogram": {
+            "5": 12
+          },
+          "evidence_metrics": {
+            "full_paragraph_recall": null,
+            "any_overlap_paragraph_recall": null,
+            "mean_paragraph_character_coverage": null,
+            "all_explicit_evidence_covered": null
+          },
+          "candidate_evidence_metrics": {
+            "full_paragraph_recall": null,
+            "any_overlap_paragraph_recall": null,
+            "all_explicit_evidence_covered": null
+          },
+          "mean_retention_given_candidates": {
+            "full_support_retention_given_candidates": null,
+            "any_overlap_support_retention_given_candidates": null
+          }
+        }
+      }
+    }
+  },
+  "stages": [
+    {
+      "qid": "musique:2hop__574419_270105",
+      "dataset": "musique",
+      "group_id": "2hop__574419_270105",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.694967599993106,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.06344410000019707,
+      "rerank_C_seconds": 0.10595519999333192
+    },
+    {
+      "qid": "musique:2hop__257831_123283",
+      "dataset": "musique",
+      "group_id": "2hop__257831_123283",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.15271650000067893,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.059439600008772686,
+      "rerank_C_seconds": 0.09834470000350848
+    },
+    {
+      "qid": "musique:2hop__132929_120537",
+      "dataset": "musique",
+      "group_id": "2hop__132929_120537",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.10989010000776034,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.06451149999338668,
+      "rerank_C_seconds": 0.10360889999719802
+    },
+    {
+      "qid": "musique:2hop__56806_7298",
+      "dataset": "musique",
+      "group_id": "2hop__56806_7298",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.1259150999976555,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.07812959999137092,
+      "rerank_C_seconds": 0.12236579999444075
+    },
+    {
+      "qid": "musique:2hop__794999_113442",
+      "dataset": "musique",
+      "group_id": "2hop__794999_113442",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.09350439999252558,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.07377910001378041,
+      "rerank_C_seconds": 0.14205840000067838
+    },
+    {
+      "qid": "musique:2hop__351275_75487",
+      "dataset": "musique",
+      "group_id": "2hop__351275_75487",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.09301089998916723,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.0813514000037685,
+      "rerank_C_seconds": 0.1254449999978533
+    },
+    {
+      "qid": "musique:2hop__77775_162341",
+      "dataset": "musique",
+      "group_id": "2hop__77775_162341",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.09551569999894127,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.07873490000201855,
+      "rerank_C_seconds": 0.10529320000205189
+    },
+    {
+      "qid": "musique:2hop__88372_83837",
+      "dataset": "musique",
+      "group_id": "2hop__88372_83837",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.11531300000206102,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.07508559999405406,
+      "rerank_C_seconds": 0.12340389999735635
+    },
+    {
+      "qid": "musique:3hop1__241001_568433_47686",
+      "dataset": "musique",
+      "group_id": "3hop1__241001_568433_47686",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.09711760000209324,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.0753604999918025,
+      "rerank_C_seconds": 0.10412230000656564
+    },
+    {
+      "qid": "musique:3hop2__792915_223623_162182",
+      "dataset": "musique",
+      "group_id": "3hop2__792915_223623_162182",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.07416420000663493,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.06985860000713728,
+      "rerank_C_seconds": 0.09413610000046901
+    },
+    {
+      "qid": "musique:3hop1__136852_30587_83479",
+      "dataset": "musique",
+      "group_id": "3hop1__136852_30587_83479",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.11000260000582784,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.06367020000470802,
+      "rerank_C_seconds": 0.09913699999742676
+    },
+    {
+      "qid": "musique:3hop1__131820_59747_60748",
+      "dataset": "musique",
+      "group_id": "3hop1__131820_59747_60748",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.0998325999971712,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.056974899998749606,
+      "rerank_C_seconds": 0.09429419999651145
+    },
+    {
+      "qid": "musique:3hop2__49541_140712_51068",
+      "dataset": "musique",
+      "group_id": "3hop2__49541_140712_51068",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.10182120000536088,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.052701400010846555,
+      "rerank_C_seconds": 0.09292520000599325
+    },
+    {
+      "qid": "musique:3hop1__849312_503371_21711",
+      "dataset": "musique",
+      "group_id": "3hop1__849312_503371_21711",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.09247779998986516,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.05873049999354407,
+      "rerank_C_seconds": 0.09544869999808725
+    },
+    {
+      "qid": "musique:3hop1__462960_160545_60577",
+      "dataset": "musique",
+      "group_id": "3hop1__462960_160545_60577",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.08619959998759441,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.0574303999892436,
+      "rerank_C_seconds": 0.08529180000186898
+    },
+    {
+      "qid": "musique:3hop1__831162_831637_91775",
+      "dataset": "musique",
+      "group_id": "3hop1__831162_831637_91775",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.09889540000585839,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.05792360000486951,
+      "rerank_C_seconds": 0.08615930000087246
+    },
+    {
+      "qid": "musique:4hop1__146971_698949_157828_162309",
+      "dataset": "musique",
+      "group_id": "4hop1__146971_698949_157828_162309",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.11763700000301469,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.055958800003281794,
+      "rerank_C_seconds": 0.09496520001266617
+    },
+    {
+      "qid": "musique:4hop1__802394_153080_159767_81096",
+      "dataset": "musique",
+      "group_id": "4hop1__802394_153080_159767_81096",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.09303020000515971,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.05639620000147261,
+      "rerank_C_seconds": 0.09601399999519344
+    },
+    {
+      "qid": "musique:4hop1__813171_153080_159767_81096",
+      "dataset": "musique",
+      "group_id": "4hop1__813171_153080_159767_81096",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.08650499999930616,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.05101759999524802,
+      "rerank_C_seconds": 0.09688259998802096
+    },
+    {
+      "qid": "musique:4hop1__813171_153080_33897_81096",
+      "dataset": "musique",
+      "group_id": "4hop1__813171_153080_33897_81096",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.10774390000733547,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.0541123000002699,
+      "rerank_C_seconds": 0.09074179999879561
+    },
+    {
+      "qid": "musique:4hop1__236903_153080_159767_81096",
+      "dataset": "musique",
+      "group_id": "4hop1__236903_153080_159767_81096",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.0987950999988243,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.06345259999216069,
+      "rerank_C_seconds": 0.10077459999592975
+    },
+    {
+      "qid": "musique:4hop1__408432_32392_823060_610794",
+      "dataset": "musique",
+      "group_id": "4hop1__408432_32392_823060_610794",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.11434320000989828,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.05675869999686256,
+      "rerank_C_seconds": 0.1111211999959778
+    },
+    {
+      "qid": "musique:4hop2__161602_426860_88460_63559",
+      "dataset": "musique",
+      "group_id": "4hop2__161602_426860_88460_63559",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.09584029999678023,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.06683920000796206,
+      "rerank_C_seconds": 0.09303650000947528
+    },
+    {
+      "qid": "musique:4hop1__88342_49853_128008_87812",
+      "dataset": "musique",
+      "group_id": "4hop1__88342_49853_128008_87812",
+      "source_paragraphs": 20,
+      "chunk_count": 20,
+      "dense_seconds": 0.11877450000611134,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.07425550000334624,
+      "rerank_C_seconds": 0.13489649999246467
+    },
+    {
+      "qid": "quality:22346_3ZEMUJFW_9",
+      "dataset": "quality",
+      "group_id": "22346",
+      "source_paragraphs": 987,
+      "chunk_count": 21,
+      "dense_seconds": 0.6694797000091057,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.09833750000689179,
+      "rerank_C_seconds": 0.2123518000007607
+    },
+    {
+      "qid": "quality:51274_8Q2YNHG5_2",
+      "dataset": "quality",
+      "group_id": "51274",
+      "source_paragraphs": 573,
+      "chunk_count": 20,
+      "dense_seconds": 0.48102510000171605,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.09336309999343939,
+      "rerank_C_seconds": 0.17538800000329502
+    },
+    {
+      "qid": "quality:52845_75VB1ISR_4",
+      "dataset": "quality",
+      "group_id": "52845",
+      "source_paragraphs": 462,
+      "chunk_count": 18,
+      "dense_seconds": 0.4487869000004139,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.11747070000274107,
+      "rerank_C_seconds": 0.19392469999729656
+    },
+    {
+      "qid": "quality:20029_8FG4YEDB_2",
+      "dataset": "quality",
+      "group_id": "20029",
+      "source_paragraphs": 15,
+      "chunk_count": 9,
+      "dense_seconds": 0.1412936999986414,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.08746929999324493,
+      "rerank_C_seconds": 0.08741930000542197
+    },
+    {
+      "qid": "quality:50826_B2WQILEB_10",
+      "dataset": "quality",
+      "group_id": "50826",
+      "source_paragraphs": 510,
+      "chunk_count": 18,
+      "dense_seconds": 0.5071666999865556,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.09499060000234749,
+      "rerank_C_seconds": 0.16056989999196958
+    },
+    {
+      "qid": "quality:40965_7AWX7OE9_6",
+      "dataset": "quality",
+      "group_id": "40965",
+      "source_paragraphs": 452,
+      "chunk_count": 18,
+      "dense_seconds": 0.3976528000057442,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.09507140000641812,
+      "rerank_C_seconds": 0.1705625000031432
+    },
+    {
+      "qid": "quality:52855_3OS4Y95O_6",
+      "dataset": "quality",
+      "group_id": "52855",
+      "source_paragraphs": 510,
+      "chunk_count": 20,
+      "dense_seconds": 0.45237649999035057,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.09915690000343602,
+      "rerank_C_seconds": 0.1734839999990072
+    },
+    {
+      "qid": "quality:99911_QGCJUM40_5",
+      "dataset": "quality",
+      "group_id": "99911",
+      "source_paragraphs": 49,
+      "chunk_count": 14,
+      "dense_seconds": 0.18954270001268014,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.09865920001175255,
+      "rerank_C_seconds": 0.13429010000254493
+    },
+    {
+      "qid": "quality:20027_IAG6VJYS_8",
+      "dataset": "quality",
+      "group_id": "20027",
+      "source_paragraphs": 52,
+      "chunk_count": 9,
+      "dense_seconds": 0.14353859999391716,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.10691089999454562,
+      "rerank_C_seconds": 0.09789819999423344
+    },
+    {
+      "qid": "quality:20075_C7JKTVJC_5",
+      "dataset": "quality",
+      "group_id": "20075",
+      "source_paragraphs": 93,
+      "chunk_count": 7,
+      "dense_seconds": 0.13557049998780712,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.06618300000263844,
+      "rerank_C_seconds": 0.06661069999972824
+    },
+    {
+      "qid": "quality:51461_OV4JLLBG_4",
+      "dataset": "quality",
+      "group_id": "51461",
+      "source_paragraphs": 497,
+      "chunk_count": 19,
+      "dense_seconds": 0.4428325000044424,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.09080279999761842,
+      "rerank_C_seconds": 0.17016130000411067
+    },
+    {
+      "qid": "quality:99927_6CQ363XM_6",
+      "dataset": "quality",
+      "group_id": "99927",
+      "source_paragraphs": 54,
+      "chunk_count": 12,
+      "dense_seconds": 0.17631249999976717,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.10244729999976698,
+      "rerank_C_seconds": 0.11695130000589415
+    }
+  ],
+  "prespecified_strata": [
+    {
+      "qid": "musique:2hop__574419_270105",
+      "hops": 2,
+      "component_ids": [
+        574419,
+        270105
+      ]
+    },
+    {
+      "qid": "musique:2hop__257831_123283",
+      "hops": 2,
+      "component_ids": [
+        257831,
+        123283
+      ]
+    },
+    {
+      "qid": "musique:2hop__132929_120537",
+      "hops": 2,
+      "component_ids": [
+        132929,
+        120537
+      ]
+    },
+    {
+      "qid": "musique:2hop__56806_7298",
+      "hops": 2,
+      "component_ids": [
+        56806,
+        7298
+      ]
+    },
+    {
+      "qid": "musique:2hop__794999_113442",
+      "hops": 2,
+      "component_ids": [
+        794999,
+        113442
+      ]
+    },
+    {
+      "qid": "musique:2hop__351275_75487",
+      "hops": 2,
+      "component_ids": [
+        351275,
+        75487
+      ]
+    },
+    {
+      "qid": "musique:2hop__77775_162341",
+      "hops": 2,
+      "component_ids": [
+        77775,
+        162341
+      ]
+    },
+    {
+      "qid": "musique:2hop__88372_83837",
+      "hops": 2,
+      "component_ids": [
+        88372,
+        83837
+      ]
+    },
+    {
+      "qid": "musique:3hop1__241001_568433_47686",
+      "hops": 3,
+      "component_ids": [
+        241001,
+        568433,
+        47686
+      ]
+    },
+    {
+      "qid": "musique:3hop2__792915_223623_162182",
+      "hops": 3,
+      "component_ids": [
+        792915,
+        223623,
+        162182
+      ]
+    },
+    {
+      "qid": "musique:3hop1__136852_30587_83479",
+      "hops": 3,
+      "component_ids": [
+        136852,
+        30587,
+        83479
+      ]
+    },
+    {
+      "qid": "musique:3hop1__131820_59747_60748",
+      "hops": 3,
+      "component_ids": [
+        131820,
+        59747,
+        60748
+      ]
+    },
+    {
+      "qid": "musique:3hop2__49541_140712_51068",
+      "hops": 3,
+      "component_ids": [
+        49541,
+        140712,
+        51068
+      ]
+    },
+    {
+      "qid": "musique:3hop1__849312_503371_21711",
+      "hops": 3,
+      "component_ids": [
+        849312,
+        503371,
+        21711
+      ]
+    },
+    {
+      "qid": "musique:3hop1__462960_160545_60577",
+      "hops": 3,
+      "component_ids": [
+        462960,
+        160545,
+        60577
+      ]
+    },
+    {
+      "qid": "musique:3hop1__831162_831637_91775",
+      "hops": 3,
+      "component_ids": [
+        831162,
+        831637,
+        91775
+      ]
+    },
+    {
+      "qid": "musique:4hop1__146971_698949_157828_162309",
+      "hops": 4,
+      "component_ids": [
+        146971,
+        698949,
+        157828,
+        162309
+      ]
+    },
+    {
+      "qid": "musique:4hop1__802394_153080_159767_81096",
+      "hops": 4,
+      "component_ids": [
+        802394,
+        153080,
+        159767,
+        81096
+      ]
+    },
+    {
+      "qid": "musique:4hop1__813171_153080_159767_81096",
+      "hops": 4,
+      "component_ids": [
+        813171,
+        153080,
+        159767,
+        81096
+      ]
+    },
+    {
+      "qid": "musique:4hop1__813171_153080_33897_81096",
+      "hops": 4,
+      "component_ids": [
+        813171,
+        153080,
+        33897,
+        81096
+      ]
+    },
+    {
+      "qid": "musique:4hop1__236903_153080_159767_81096",
+      "hops": 4,
+      "component_ids": [
+        236903,
+        153080,
+        159767,
+        81096
+      ]
+    },
+    {
+      "qid": "musique:4hop1__408432_32392_823060_610794",
+      "hops": 4,
+      "component_ids": [
+        408432,
+        32392,
+        823060,
+        610794
+      ]
+    },
+    {
+      "qid": "musique:4hop2__161602_426860_88460_63559",
+      "hops": 4,
+      "component_ids": [
+        161602,
+        426860,
+        88460,
+        63559
+      ]
+    },
+    {
+      "qid": "musique:4hop1__88342_49853_128008_87812",
+      "hops": 4,
+      "component_ids": [
+        88342,
+        49853,
+        128008,
+        87812
+      ]
+    },
+    {
+      "qid": "quality:22346_3ZEMUJFW_9",
+      "article_id": "22346",
+      "hard": true
+    },
+    {
+      "qid": "quality:51274_8Q2YNHG5_2",
+      "article_id": "51274",
+      "hard": true
+    },
+    {
+      "qid": "quality:52845_75VB1ISR_4",
+      "article_id": "52845",
+      "hard": true
+    },
+    {
+      "qid": "quality:20029_8FG4YEDB_2",
+      "article_id": "20029",
+      "hard": true
+    },
+    {
+      "qid": "quality:50826_B2WQILEB_10",
+      "article_id": "50826",
+      "hard": true
+    },
+    {
+      "qid": "quality:40965_7AWX7OE9_6",
+      "article_id": "40965",
+      "hard": true
+    },
+    {
+      "qid": "quality:52855_3OS4Y95O_6",
+      "article_id": "52855",
+      "hard": false
+    },
+    {
+      "qid": "quality:99911_QGCJUM40_5",
+      "article_id": "99911",
+      "hard": false
+    },
+    {
+      "qid": "quality:20027_IAG6VJYS_8",
+      "article_id": "20027",
+      "hard": false
+    },
+    {
+      "qid": "quality:20075_C7JKTVJC_5",
+      "article_id": "20075",
+      "hard": false
+    },
+    {
+      "qid": "quality:51461_OV4JLLBG_4",
+      "article_id": "51461",
+      "hard": false
+    },
+    {
+      "qid": "quality:99927_6CQ363XM_6",
+      "article_id": "99927",
+      "hard": false
+    }
+  ],
+  "limitations": [
+    "Gold evidence quality is not certified by coverage metrics.",
+    "QuALITY evidence recall is null because no native source-span gold is provided.",
+    "Actual B/C pools may coincide when fewer than 11 chunks exist; no padding with artificial distractors.",
+    "Complete paragraph coverage is stricter than semantic evidence sufficiency.",
+    "No answer-generation or human evaluation has occurred in this run."
+  ]
+}

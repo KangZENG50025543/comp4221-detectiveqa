@@ -2,6 +2,23 @@
 
 **我们想知道：让模型先多找一些候选段落，再从中挑出最有用的 5 段，能不能帮它找齐破案线索、答得更准？** 比如，一段交代了作案时间，另一段才给出人物行踪。只找到其中一段，模型即使选对了嫌疑人，我们也要问：它拿到的证据真的够吗？
 
+## 2026-11-11：已完成一轮跨数据集开发实验
+
+新增 **20 道小说题、24 道 MuSiQue、12 道 QuALITY** 的检索试跑（小说包含之前试过的开发题），共 168 组证据输出。没有生成问答结果，也没有代填人工评分。
+
+| 完整标注段落召回（按题平均） | A 直接选5 | B 最多10选5 | C 最多50选5 |
+|---|---:|---:|---:|
+| DetectiveQA，20题/5本小说 | 34.65% | 36.91% | 36.94% |
+| MuSiQue，24题 | 67.01% | 76.39% | 77.43% |
+
+这不是答案准确率。MuSiQue 的 C 实际只处理原生 20 块；QuALITY 的 C 处理 7—21 块，没有证据金标，所以没有编造召回率。MuSiQue 的 24 题共享组成问题后连成 21 组，不能当作 24 个独立案例。
+
+**值得继续查的是：线索已经进入候选池，为什么最后没留下来？** 小说中有 7 题候选已找齐、最终却丢失；其中 6 题的标注证据本来能装进 5 块，1 题装不下。需要结合人工审查判断标注和筛选各有什么问题。详见[本轮中文记录](reports/下一步实验_20261111.txt)、[小说分书统计](reports/detectiveqa_dev_analysis_20261111.json)、[容量检查](reports/detectiveqa_capacity_analysis_20261111.json)和[跨数据集统计](reports/cross_dataset_dev_analysis_20261111.json)。
+
+已生成 12 题离线复核包，每种材料 4 题。每题两人先独立判断，第三人处理分歧并轮换；方法匿名为 X/Y/Z，初始评分全部留空。表单含原文，仅在本地保存，仓库提供[生成脚本](scripts/build_cross_dataset_review.py)。
+
+MuSiQue 的官方文件一致性也已[验证成功](reports/musique_provenance_20261111.json)；10 月 13 日报告中的未核实状态是历史记录。
+
 组员可以从这里开始，不需要安装环境：
 
 | 想了解什么 | 从哪里看 |
@@ -22,7 +39,7 @@
 
 | 补充验证 | 检查的能力 | 2026-10-13 助手开发集盲答 |
 |---|---|---:|
-| [MuSiQue](https://github.com/StonyBrookNLP/musique) | 跨材料连起多条证据；个别题会混淆同名实体。本轮为已校验的社区镜像，未与官方原包比对。 | 5/9，3 道留空 |
+| [MuSiQue](https://github.com/StonyBrookNLP/musique) | 跨材料连起多条证据；个别题会混淆同名实体。10月13日使用社区镜像；11月11日已与官方原包核对一致。 | 5/9，3 道留空 |
 | [QuALITY](https://github.com/nyu-mll/quality) | 长文章中的人物动机和语气；有些选项都有文本依据。 | 5/5 |
 | [DetectBench](https://github.com/MikeGu721/DetectBench) | 短谜题和隐含线索；发现缺失证言、题干泄露答案等问题，暂不纳入正式评分。 | 4/6，2 道留空 |
 
@@ -45,3 +62,22 @@ New-Item -ItemType Directory -Force -Path $env:TEMP | Out-Null
 ```
 
 重新试跑时使用新的运行名。`manual` 可在本机生成开发集核验表；`prepare-api` 只生成待检查的请求，不发送。小说全文、带原文的请求和阅读表、模型、密钥及含组员学号的课程提交件均未收入共享仓库。
+
+
+## 补充数据开发流程
+
+在本地下载官方 MuSiQue dev 和 QuALITY v1.0.1 dev，将它们分别放到
+`dataset_scout_20261013/raw/musique/musique_ans_v1.0_dev.jsonl` 和
+`dataset_scout_20261013/raw/quality/QuALITY.v1.0.1.htmlstripped.dev`。
+来源与版本见 [登记表](scout/dataset_registry.json)，本轮实际文件哈希见[固定抽样清单](reports/cross_dataset_selection_20261111.json)。将 `scout/exposure_registry.json` 复制到 `dataset_scout_20261013/exposure_registry.json`，以排除此前探索样本。原始文件不上传仓库。
+
+在已有本地环境和模型后运行：
+```powershell
+. ./scripts/environment.ps1
+& $dqPython scripts/prepare_cross_dataset_dev.py --run-name cross_dataset_dev_20261111_01
+& $dqPython scripts/run_cross_dataset_pilot.py --run-name cross_dataset_dev_20261111_01
+& $dqPython scripts/run_retrieval_pilot.py --limit 20 --run-name dev_retrieval_20261111_01
+& $dqPython scripts/build_cross_dataset_review.py
+```
+
+这些命令拒绝覆盖既有结果；已有同名运行时应查看其文件，或给两个运行换名并使用复核脚本的参数指定路径。新流程拒绝非开发集标记及含金标字段的普通输入，并校验固定文件哈希。正式测试集方案仍未冻结。本轮开发使用题号、文章/小说及组成问题记录在[曝光登记](reports/development_exposure_20261111.json)。

@@ -1,0 +1,215 @@
+{
+  "scope": "development pipeline pilot, not held-out research results",
+  "questions": 20,
+  "books": 5,
+  "test_questions_run": 0,
+  "paid_api_requests": 0,
+  "answer_accuracy": null,
+  "elapsed_seconds": 48.246426199999405,
+  "torch_version": "2.9.1+cu128",
+  "precision": "float16 weights, float32 normalized vectors and scores",
+  "cuda": "12.8",
+  "embedding_peak_allocated_bytes": 1250132992,
+  "reranker_peak_allocated_bytes": 1202298880,
+  "protocol_sha256": "0e174e7c9bd4616b202a15ec11481902d314ae294be282a092f6f80920bdf840",
+  "split_sha256": "1a7beaedac87a963bc20574a15be09473a924ba7436d11ad8e5bdabeb24f2184",
+  "aggregate_evidence_metrics": {
+    "A": {
+      "full_paragraph_recall": 0.34650793650793654,
+      "mean_paragraph_character_coverage": 0.34650793650793654,
+      "all_explicit_evidence_covered": 0.1
+    },
+    "B": {
+      "full_paragraph_recall": 0.3690873015873016,
+      "mean_paragraph_character_coverage": 0.3690873015873016,
+      "all_explicit_evidence_covered": 0.2
+    },
+    "C": {
+      "full_paragraph_recall": 0.3693650793650794,
+      "mean_paragraph_character_coverage": 0.3693650793650794,
+      "all_explicit_evidence_covered": 0.15
+    }
+  },
+  "stages": [
+    {
+      "qid": "zh-human-27-1",
+      "prefix_paragraphs": 1880,
+      "chunks": 190,
+      "dense_seconds": 1.1997124000045005,
+      "embedding_cache_hit": true,
+      "rerank_B_seconds": 0.09353630000259727,
+      "rerank_C_seconds": 0.3916495000012219
+    },
+    {
+      "qid": "zh-human-142-4",
+      "prefix_paragraphs": 3316,
+      "chunks": 215,
+      "dense_seconds": 1.4904317000036826,
+      "embedding_cache_hit": true,
+      "rerank_B_seconds": 0.08870680000109132,
+      "rerank_C_seconds": 0.42497999999613967
+    },
+    {
+      "qid": "zh-human-124-0",
+      "prefix_paragraphs": 610,
+      "chunks": 38,
+      "dense_seconds": 0.22316669998690486,
+      "embedding_cache_hit": true,
+      "rerank_B_seconds": 0.10492169999633916,
+      "rerank_C_seconds": 0.3287846999883186
+    },
+    {
+      "qid": "zh-human-209-1",
+      "prefix_paragraphs": 918,
+      "chunks": 67,
+      "dense_seconds": 0.8368494000023929,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.08880240000144113,
+      "rerank_C_seconds": 0.40096439998887945
+    },
+    {
+      "qid": "zh-human-118-4",
+      "prefix_paragraphs": 2803,
+      "chunks": 206,
+      "dense_seconds": 2.6102791000012076,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.08098859999154229,
+      "rerank_C_seconds": 0.4036659999983385
+    },
+    {
+      "qid": "zh-human-27-0",
+      "prefix_paragraphs": 1880,
+      "chunks": 190,
+      "dense_seconds": 0.8275998000026448,
+      "embedding_cache_hit": true,
+      "rerank_B_seconds": 0.08488610001222696,
+      "rerank_C_seconds": 0.3948823000100674
+    },
+    {
+      "qid": "zh-human-142-1",
+      "prefix_paragraphs": 3316,
+      "chunks": 215,
+      "dense_seconds": 1.4127205999975558,
+      "embedding_cache_hit": true,
+      "rerank_B_seconds": 0.07723229999828618,
+      "rerank_C_seconds": 0.3845605999958934
+    },
+    {
+      "qid": "zh-human-124-1",
+      "prefix_paragraphs": 2336,
+      "chunks": 157,
+      "dense_seconds": 2.0158319999900414,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.08379409999179188,
+      "rerank_C_seconds": 0.38984740000159945
+    },
+    {
+      "qid": "zh-human-209-3",
+      "prefix_paragraphs": 2974,
+      "chunks": 189,
+      "dense_seconds": 2.792072800002643,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.08774170000106096,
+      "rerank_C_seconds": 0.3912189999973634
+    },
+    {
+      "qid": "zh-human-118-3",
+      "prefix_paragraphs": 1918,
+      "chunks": 132,
+      "dense_seconds": 1.599757200005115,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.09065899999404792,
+      "rerank_C_seconds": 0.4052707999944687
+    },
+    {
+      "qid": "zh-human-27-6",
+      "prefix_paragraphs": 2587,
+      "chunks": 265,
+      "dense_seconds": 3.127431600005366,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.081492099998286,
+      "rerank_C_seconds": 0.38400379999075085
+    },
+    {
+      "qid": "zh-human-142-0",
+      "prefix_paragraphs": 3367,
+      "chunks": 218,
+      "dense_seconds": 2.98473899999226,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.08208949999243487,
+      "rerank_C_seconds": 0.38347760000033304
+    },
+    {
+      "qid": "zh-human-124-3",
+      "prefix_paragraphs": 1275,
+      "chunks": 85,
+      "dense_seconds": 1.0223154999985127,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.08518629999889527,
+      "rerank_C_seconds": 0.43335380000644363
+    },
+    {
+      "qid": "zh-human-209-2",
+      "prefix_paragraphs": 1247,
+      "chunks": 87,
+      "dense_seconds": 1.064880300007644,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.09443020001344848,
+      "rerank_C_seconds": 0.43808170000556856
+    },
+    {
+      "qid": "zh-human-118-0",
+      "prefix_paragraphs": 1260,
+      "chunks": 92,
+      "dense_seconds": 1.058056599998963,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.10653579999052454,
+      "rerank_C_seconds": 0.41168599999218713
+    },
+    {
+      "qid": "zh-human-27-2",
+      "prefix_paragraphs": 1512,
+      "chunks": 152,
+      "dense_seconds": 1.6858052000025054,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.08341150000342168,
+      "rerank_C_seconds": 0.38222260000475217
+    },
+    {
+      "qid": "zh-human-142-5",
+      "prefix_paragraphs": 127,
+      "chunks": 8,
+      "dense_seconds": 0.11303220000991132,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.0636501999979373,
+      "rerank_C_seconds": 0.06089810001139995
+    },
+    {
+      "qid": "zh-human-124-2",
+      "prefix_paragraphs": 1323,
+      "chunks": 89,
+      "dense_seconds": 1.0843558000051416,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.08401989999401849,
+      "rerank_C_seconds": 0.4147863999969559
+    },
+    {
+      "qid": "zh-human-209-6",
+      "prefix_paragraphs": 2326,
+      "chunks": 145,
+      "dense_seconds": 2.0769064000051003,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.08959519999916665,
+      "rerank_C_seconds": 0.401669300001231
+    },
+    {
+      "qid": "zh-human-118-2",
+      "prefix_paragraphs": 906,
+      "chunks": 67,
+      "dense_seconds": 0.7728760999889346,
+      "embedding_cache_hit": false,
+      "rerank_B_seconds": 0.09580860000278335,
+      "rerank_C_seconds": 0.4381250000005821
+    }
+  ]
+}

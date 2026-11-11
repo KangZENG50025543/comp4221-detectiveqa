@@ -1,0 +1,327 @@
+{
+  "date": "2026-11-11",
+  "purpose": "development retrieval and forthcoming human review, not held-out answering",
+  "detectiveqa": {
+    "source_split": "dev",
+    "question_ids": [
+      "zh-human-27-1",
+      "zh-human-142-4",
+      "zh-human-124-0",
+      "zh-human-209-1",
+      "zh-human-118-4",
+      "zh-human-27-0",
+      "zh-human-142-1",
+      "zh-human-124-1",
+      "zh-human-209-3",
+      "zh-human-118-3",
+      "zh-human-27-6",
+      "zh-human-142-0",
+      "zh-human-124-3",
+      "zh-human-209-2",
+      "zh-human-118-0",
+      "zh-human-27-2",
+      "zh-human-142-5",
+      "zh-human-124-2",
+      "zh-human-209-6",
+      "zh-human-118-2"
+    ],
+    "book_ids": [
+      27,
+      142,
+      124,
+      209,
+      118
+    ],
+    "run": "dev_retrieval_20261111_01"
+  },
+  "supplemental": {
+    "source_split": "dev",
+    "samples": [
+      {
+        "qid": "musique:2hop__574419_270105",
+        "hops": 2,
+        "component_ids": [
+          574419,
+          270105
+        ]
+      },
+      {
+        "qid": "musique:2hop__257831_123283",
+        "hops": 2,
+        "component_ids": [
+          257831,
+          123283
+        ]
+      },
+      {
+        "qid": "musique:2hop__132929_120537",
+        "hops": 2,
+        "component_ids": [
+          132929,
+          120537
+        ]
+      },
+      {
+        "qid": "musique:2hop__56806_7298",
+        "hops": 2,
+        "component_ids": [
+          56806,
+          7298
+        ]
+      },
+      {
+        "qid": "musique:2hop__794999_113442",
+        "hops": 2,
+        "component_ids": [
+          794999,
+          113442
+        ]
+      },
+      {
+        "qid": "musique:2hop__351275_75487",
+        "hops": 2,
+        "component_ids": [
+          351275,
+          75487
+        ]
+      },
+      {
+        "qid": "musique:2hop__77775_162341",
+        "hops": 2,
+        "component_ids": [
+          77775,
+          162341
+        ]
+      },
+      {
+        "qid": "musique:2hop__88372_83837",
+        "hops": 2,
+        "component_ids": [
+          88372,
+          83837
+        ]
+      },
+      {
+        "qid": "musique:3hop1__241001_568433_47686",
+        "hops": 3,
+        "component_ids": [
+          241001,
+          568433,
+          47686
+        ]
+      },
+      {
+        "qid": "musique:3hop2__792915_223623_162182",
+        "hops": 3,
+        "component_ids": [
+          792915,
+          223623,
+          162182
+        ]
+      },
+      {
+        "qid": "musique:3hop1__136852_30587_83479",
+        "hops": 3,
+        "component_ids": [
+          136852,
+          30587,
+          83479
+        ]
+      },
+      {
+        "qid": "musique:3hop1__131820_59747_60748",
+        "hops": 3,
+        "component_ids": [
+          131820,
+          59747,
+          60748
+        ]
+      },
+      {
+        "qid": "musique:3hop2__49541_140712_51068",
+        "hops": 3,
+        "component_ids": [
+          49541,
+          140712,
+          51068
+        ]
+      },
+      {
+        "qid": "musique:3hop1__849312_503371_21711",
+        "hops": 3,
+        "component_ids": [
+          849312,
+          503371,
+          21711
+        ]
+      },
+      {
+        "qid": "musique:3hop1__462960_160545_60577",
+        "hops": 3,
+        "component_ids": [
+          462960,
+          160545,
+          60577
+        ]
+      },
+      {
+        "qid": "musique:3hop1__831162_831637_91775",
+        "hops": 3,
+        "component_ids": [
+          831162,
+          831637,
+          91775
+        ]
+      },
+      {
+        "qid": "musique:4hop1__146971_698949_157828_162309",
+        "hops": 4,
+        "component_ids": [
+          146971,
+          698949,
+          157828,
+          162309
+        ]
+      },
+      {
+        "qid": "musique:4hop1__802394_153080_159767_81096",
+        "hops": 4,
+        "component_ids": [
+          802394,
+          153080,
+          159767,
+          81096
+        ]
+      },
+      {
+        "qid": "musique:4hop1__813171_153080_159767_81096",
+        "hops": 4,
+        "component_ids": [
+          813171,
+          153080,
+          159767,
+          81096
+        ]
+      },
+      {
+        "qid": "musique:4hop1__813171_153080_33897_81096",
+        "hops": 4,
+        "component_ids": [
+          813171,
+          153080,
+          33897,
+          81096
+        ]
+      },
+      {
+        "qid": "musique:4hop1__236903_153080_159767_81096",
+        "hops": 4,
+        "component_ids": [
+          236903,
+          153080,
+          159767,
+          81096
+        ]
+      },
+      {
+        "qid": "musique:4hop1__408432_32392_823060_610794",
+        "hops": 4,
+        "component_ids": [
+          408432,
+          32392,
+          823060,
+          610794
+        ]
+      },
+      {
+        "qid": "musique:4hop2__161602_426860_88460_63559",
+        "hops": 4,
+        "component_ids": [
+          161602,
+          426860,
+          88460,
+          63559
+        ]
+      },
+      {
+        "qid": "musique:4hop1__88342_49853_128008_87812",
+        "hops": 4,
+        "component_ids": [
+          88342,
+          49853,
+          128008,
+          87812
+        ]
+      },
+      {
+        "qid": "quality:22346_3ZEMUJFW_9",
+        "article_id": "22346",
+        "hard": true
+      },
+      {
+        "qid": "quality:51274_8Q2YNHG5_2",
+        "article_id": "51274",
+        "hard": true
+      },
+      {
+        "qid": "quality:52845_75VB1ISR_4",
+        "article_id": "52845",
+        "hard": true
+      },
+      {
+        "qid": "quality:20029_8FG4YEDB_2",
+        "article_id": "20029",
+        "hard": true
+      },
+      {
+        "qid": "quality:50826_B2WQILEB_10",
+        "article_id": "50826",
+        "hard": true
+      },
+      {
+        "qid": "quality:40965_7AWX7OE9_6",
+        "article_id": "40965",
+        "hard": true
+      },
+      {
+        "qid": "quality:52855_3OS4Y95O_6",
+        "article_id": "52855",
+        "hard": false
+      },
+      {
+        "qid": "quality:99911_QGCJUM40_5",
+        "article_id": "99911",
+        "hard": false
+      },
+      {
+        "qid": "quality:20027_IAG6VJYS_8",
+        "article_id": "20027",
+        "hard": false
+      },
+      {
+        "qid": "quality:20075_C7JKTVJC_5",
+        "article_id": "20075",
+        "hard": false
+      },
+      {
+        "qid": "quality:51461_OV4JLLBG_4",
+        "article_id": "51461",
+        "hard": false
+      },
+      {
+        "qid": "quality:99927_6CQ363XM_6",
+        "article_id": "99927",
+        "hard": false
+      }
+    ],
+    "run": "cross_dataset_dev_20261111_01",
+    "manifest_sha256": "b912892cf01a0d85ea0c05ddbd57a51442fbf56cd82cb90abdcc645d71721e2d"
+  },
+  "prior_record": "dataset_scout_20261013/exposure_registry.json",
+  "limits": [
+    "This records development use; humans have not supplied ratings yet.",
+    "Prior MuSiQue component IDs were excluded, but paragraphs may recur and newly selected questions can share components.",
+    "QuALITY articles, not just sampled question IDs, should remain in development after review.",
+    "No guarantee of absence from model pretraining."
+  ]
+}

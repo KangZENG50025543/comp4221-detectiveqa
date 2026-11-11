@@ -1,0 +1,416 @@
+{
+  "prepared_utc": "2026-11-11T10:56:39.901880+00:00",
+  "source_split": "dev",
+  "seed": "COMP4221-cross-dev-20261111-4221",
+  "selection_rule": "SHA256(seed:dataset:source_id), take fixed 8 per 2/3/4-hop and 6 per hard/non-hard; one QuALITY question per article; no performance filtering",
+  "counts": {
+    "musique": 24,
+    "quality": 12
+  },
+  "sample_ids": [
+    "musique:2hop__574419_270105",
+    "musique:2hop__257831_123283",
+    "musique:2hop__132929_120537",
+    "musique:2hop__56806_7298",
+    "musique:2hop__794999_113442",
+    "musique:2hop__351275_75487",
+    "musique:2hop__77775_162341",
+    "musique:2hop__88372_83837",
+    "musique:3hop1__241001_568433_47686",
+    "musique:3hop2__792915_223623_162182",
+    "musique:3hop1__136852_30587_83479",
+    "musique:3hop1__131820_59747_60748",
+    "musique:3hop2__49541_140712_51068",
+    "musique:3hop1__849312_503371_21711",
+    "musique:3hop1__462960_160545_60577",
+    "musique:3hop1__831162_831637_91775",
+    "musique:4hop1__146971_698949_157828_162309",
+    "musique:4hop1__802394_153080_159767_81096",
+    "musique:4hop1__813171_153080_159767_81096",
+    "musique:4hop1__813171_153080_33897_81096",
+    "musique:4hop1__236903_153080_159767_81096",
+    "musique:4hop1__408432_32392_823060_610794",
+    "musique:4hop2__161602_426860_88460_63559",
+    "musique:4hop1__88342_49853_128008_87812",
+    "quality:22346_3ZEMUJFW_9",
+    "quality:51274_8Q2YNHG5_2",
+    "quality:52845_75VB1ISR_4",
+    "quality:20029_8FG4YEDB_2",
+    "quality:50826_B2WQILEB_10",
+    "quality:40965_7AWX7OE9_6",
+    "quality:52855_3OS4Y95O_6",
+    "quality:99911_QGCJUM40_5",
+    "quality:20027_IAG6VJYS_8",
+    "quality:20075_C7JKTVJC_5",
+    "quality:51461_OV4JLLBG_4",
+    "quality:99927_6CQ363XM_6"
+  ],
+  "strata": [
+    {
+      "qid": "musique:2hop__574419_270105",
+      "hops": 2,
+      "component_ids": [
+        574419,
+        270105
+      ]
+    },
+    {
+      "qid": "musique:2hop__257831_123283",
+      "hops": 2,
+      "component_ids": [
+        257831,
+        123283
+      ]
+    },
+    {
+      "qid": "musique:2hop__132929_120537",
+      "hops": 2,
+      "component_ids": [
+        132929,
+        120537
+      ]
+    },
+    {
+      "qid": "musique:2hop__56806_7298",
+      "hops": 2,
+      "component_ids": [
+        56806,
+        7298
+      ]
+    },
+    {
+      "qid": "musique:2hop__794999_113442",
+      "hops": 2,
+      "component_ids": [
+        794999,
+        113442
+      ]
+    },
+    {
+      "qid": "musique:2hop__351275_75487",
+      "hops": 2,
+      "component_ids": [
+        351275,
+        75487
+      ]
+    },
+    {
+      "qid": "musique:2hop__77775_162341",
+      "hops": 2,
+      "component_ids": [
+        77775,
+        162341
+      ]
+    },
+    {
+      "qid": "musique:2hop__88372_83837",
+      "hops": 2,
+      "component_ids": [
+        88372,
+        83837
+      ]
+    },
+    {
+      "qid": "musique:3hop1__241001_568433_47686",
+      "hops": 3,
+      "component_ids": [
+        241001,
+        568433,
+        47686
+      ]
+    },
+    {
+      "qid": "musique:3hop2__792915_223623_162182",
+      "hops": 3,
+      "component_ids": [
+        792915,
+        223623,
+        162182
+      ]
+    },
+    {
+      "qid": "musique:3hop1__136852_30587_83479",
+      "hops": 3,
+      "component_ids": [
+        136852,
+        30587,
+        83479
+      ]
+    },
+    {
+      "qid": "musique:3hop1__131820_59747_60748",
+      "hops": 3,
+      "component_ids": [
+        131820,
+        59747,
+        60748
+      ]
+    },
+    {
+      "qid": "musique:3hop2__49541_140712_51068",
+      "hops": 3,
+      "component_ids": [
+        49541,
+        140712,
+        51068
+      ]
+    },
+    {
+      "qid": "musique:3hop1__849312_503371_21711",
+      "hops": 3,
+      "component_ids": [
+        849312,
+        503371,
+        21711
+      ]
+    },
+    {
+      "qid": "musique:3hop1__462960_160545_60577",
+      "hops": 3,
+      "component_ids": [
+        462960,
+        160545,
+        60577
+      ]
+    },
+    {
+      "qid": "musique:3hop1__831162_831637_91775",
+      "hops": 3,
+      "component_ids": [
+        831162,
+        831637,
+        91775
+      ]
+    },
+    {
+      "qid": "musique:4hop1__146971_698949_157828_162309",
+      "hops": 4,
+      "component_ids": [
+        146971,
+        698949,
+        157828,
+        162309
+      ]
+    },
+    {
+      "qid": "musique:4hop1__802394_153080_159767_81096",
+      "hops": 4,
+      "component_ids": [
+        802394,
+        153080,
+        159767,
+        81096
+      ]
+    },
+    {
+      "qid": "musique:4hop1__813171_153080_159767_81096",
+      "hops": 4,
+      "component_ids": [
+        813171,
+        153080,
+        159767,
+        81096
+      ]
+    },
+    {
+      "qid": "musique:4hop1__813171_153080_33897_81096",
+      "hops": 4,
+      "component_ids": [
+        813171,
+        153080,
+        33897,
+        81096
+      ]
+    },
+    {
+      "qid": "musique:4hop1__236903_153080_159767_81096",
+      "hops": 4,
+      "component_ids": [
+        236903,
+        153080,
+        159767,
+        81096
+      ]
+    },
+    {
+      "qid": "musique:4hop1__408432_32392_823060_610794",
+      "hops": 4,
+      "component_ids": [
+        408432,
+        32392,
+        823060,
+        610794
+      ]
+    },
+    {
+      "qid": "musique:4hop2__161602_426860_88460_63559",
+      "hops": 4,
+      "component_ids": [
+        161602,
+        426860,
+        88460,
+        63559
+      ]
+    },
+    {
+      "qid": "musique:4hop1__88342_49853_128008_87812",
+      "hops": 4,
+      "component_ids": [
+        88342,
+        49853,
+        128008,
+        87812
+      ]
+    },
+    {
+      "qid": "quality:22346_3ZEMUJFW_9",
+      "article_id": "22346",
+      "hard": true
+    },
+    {
+      "qid": "quality:51274_8Q2YNHG5_2",
+      "article_id": "51274",
+      "hard": true
+    },
+    {
+      "qid": "quality:52845_75VB1ISR_4",
+      "article_id": "52845",
+      "hard": true
+    },
+    {
+      "qid": "quality:20029_8FG4YEDB_2",
+      "article_id": "20029",
+      "hard": true
+    },
+    {
+      "qid": "quality:50826_B2WQILEB_10",
+      "article_id": "50826",
+      "hard": true
+    },
+    {
+      "qid": "quality:40965_7AWX7OE9_6",
+      "article_id": "40965",
+      "hard": true
+    },
+    {
+      "qid": "quality:52855_3OS4Y95O_6",
+      "article_id": "52855",
+      "hard": false
+    },
+    {
+      "qid": "quality:99911_QGCJUM40_5",
+      "article_id": "99911",
+      "hard": false
+    },
+    {
+      "qid": "quality:20027_IAG6VJYS_8",
+      "article_id": "20027",
+      "hard": false
+    },
+    {
+      "qid": "quality:20075_C7JKTVJC_5",
+      "article_id": "20075",
+      "hard": false
+    },
+    {
+      "qid": "quality:51461_OV4JLLBG_4",
+      "article_id": "51461",
+      "hard": false
+    },
+    {
+      "qid": "quality:99927_6CQ363XM_6",
+      "article_id": "99927",
+      "hard": false
+    }
+  ],
+  "excluded_prior_question_ids": [
+    "detectbench:109",
+    "detectbench:1289",
+    "detectbench:1706",
+    "detectbench:1795",
+    "detectbench:3267",
+    "detectbench:3772",
+    "musique:2hop__20256_74481",
+    "musique:2hop__648648_173389",
+    "musique:2hop__785711_63853",
+    "musique:3hop1__210639_147339_51423",
+    "musique:3hop1__248929_160713_77246",
+    "musique:3hop2__368986_89048_66294",
+    "musique:4hop1__638988_17130_70784_79935",
+    "musique:4hop1__89530_624859_355213_203322",
+    "musique:4hop3__39836_29339_508306_70744",
+    "quality:20006_VZW02G1T_7",
+    "quality:20041_E0WD00T4_1",
+    "quality:51256_MZNDC998_6",
+    "quality:62382_O6HCHTPL_3",
+    "quality:99905_QYORRUOH_10"
+  ],
+  "excluded_quality_article_ids": [
+    "20006",
+    "20041",
+    "51256",
+    "62382",
+    "99905"
+  ],
+  "excluded_musique_component_ids": [
+    17130,
+    20256,
+    29339,
+    39836,
+    51423,
+    63853,
+    66294,
+    70744,
+    70784,
+    74481,
+    77246,
+    79935,
+    89048,
+    89530,
+    147339,
+    160713,
+    173389,
+    203322,
+    210639,
+    248929,
+    355213,
+    368986,
+    508306,
+    624859,
+    638988,
+    648648,
+    785711
+  ],
+  "chunk_adapters": {
+    "musique": "title+body; preserve distinct document boundaries, split only over 512 tokens",
+    "quality": "pack nonempty article lines in original order into <=512-token chunks; local pid, not gold evidence"
+  },
+  "conditions": {
+    "A": "dense top5",
+    "B": "dense min(10,N), rerank top5",
+    "C": "dense min(50,N), rerank top5"
+  },
+  "output_order": "selected chunks in original source order",
+  "budget": "five chunks; actual token totals recorded, not token-matched across datasets",
+  "evidence_metrics": "MuSiQue gold paragraph coverage only; QuALITY evidence metrics null pending human review",
+  "answer_generation": false,
+  "paid_api_calls": 0,
+  "formal_protocol_changed": false,
+  "provenance_caution": "MuSiQue mirror identity must be checked against separate provenance report; missing confirmation limits interpretation",
+  "hashes": {
+    "inputs.jsonl": "2355d136011b6a25d8b8325dafc5037c3b4153d946d5998798e8cb5e40716912",
+    "gold.jsonl": "de236387f0db8bf00f5d9c6ee3fc40f3091d013a000c0c6a0cbbbd63a9aa5edb",
+    "protocol.json": "0e174e7c9bd4616b202a15ec11481902d314ae294be282a092f6f80920bdf840"
+  },
+  "sources": [
+    {
+      "file": "raw\\musique\\musique_ans_v1.0_dev.jsonl",
+      "sha256": "15fa63794d18a94ce12411aca6e2327e65b6e83b0b1490efab3f1962e48abf3b"
+    },
+    {
+      "file": "raw\\quality\\QuALITY.v1.0.1.htmlstripped.dev",
+      "sha256": "99852d874994078e4b4112b71ceca4dd35aa3a24ff6d3a35c051be25295b4fef"
+    }
+  ],
+  "usage": "Development pilot only. Record exposure; do not claim fresh final validation or task-isolated causal effects."
+}

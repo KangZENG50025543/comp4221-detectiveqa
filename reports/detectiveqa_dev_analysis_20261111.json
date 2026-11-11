@@ -1,0 +1,386 @@
+{
+  "source_run": "dev_retrieval_20261111_01",
+  "computed_utc": "2026-11-11T10:58:59.046199+00:00",
+  "scope": "Read only existing metric files; no answers or original texts inspected",
+  "questions": 20,
+  "books": [
+    {
+      "book_id": 27,
+      "questions": 4,
+      "mean": {
+        "A": {
+          "full_paragraph_recall": 0.2986111111111111,
+          "mean_paragraph_character_coverage": 0.2986111111111111,
+          "all_explicit_evidence_covered": 0.0
+        },
+        "B": {
+          "full_paragraph_recall": 0.2013888888888889,
+          "mean_paragraph_character_coverage": 0.2013888888888889,
+          "all_explicit_evidence_covered": 0.0
+        },
+        "C": {
+          "full_paragraph_recall": 0.1527777777777778,
+          "mean_paragraph_character_coverage": 0.1527777777777778,
+          "all_explicit_evidence_covered": 0.0
+        }
+      },
+      "C_minus_A_full_paragraph_recall_counts": {
+        "improved": 0,
+        "tied": 2,
+        "worsened": 2
+      }
+    },
+    {
+      "book_id": 118,
+      "questions": 4,
+      "mean": {
+        "A": {
+          "full_paragraph_recall": 0.0625,
+          "mean_paragraph_character_coverage": 0.0625,
+          "all_explicit_evidence_covered": 0.0
+        },
+        "B": {
+          "full_paragraph_recall": 0.08333333333333333,
+          "mean_paragraph_character_coverage": 0.08333333333333333,
+          "all_explicit_evidence_covered": 0.0
+        },
+        "C": {
+          "full_paragraph_recall": 0.20833333333333331,
+          "mean_paragraph_character_coverage": 0.20833333333333331,
+          "all_explicit_evidence_covered": 0.0
+        }
+      },
+      "C_minus_A_full_paragraph_recall_counts": {
+        "improved": 2,
+        "tied": 1,
+        "worsened": 1
+      }
+    },
+    {
+      "book_id": 124,
+      "questions": 4,
+      "mean": {
+        "A": {
+          "full_paragraph_recall": 0.775,
+          "mean_paragraph_character_coverage": 0.775,
+          "all_explicit_evidence_covered": 0.25
+        },
+        "B": {
+          "full_paragraph_recall": 0.8375,
+          "mean_paragraph_character_coverage": 0.8375,
+          "all_explicit_evidence_covered": 0.5
+        },
+        "C": {
+          "full_paragraph_recall": 0.8875,
+          "mean_paragraph_character_coverage": 0.8875,
+          "all_explicit_evidence_covered": 0.5
+        }
+      },
+      "C_minus_A_full_paragraph_recall_counts": {
+        "improved": 2,
+        "tied": 2,
+        "worsened": 0
+      }
+    },
+    {
+      "book_id": 142,
+      "questions": 4,
+      "mean": {
+        "A": {
+          "full_paragraph_recall": 0.30476190476190473,
+          "mean_paragraph_character_coverage": 0.30476190476190473,
+          "all_explicit_evidence_covered": 0.0
+        },
+        "B": {
+          "full_paragraph_recall": 0.43154761904761907,
+          "mean_paragraph_character_coverage": 0.43154761904761907,
+          "all_explicit_evidence_covered": 0.25
+        },
+        "C": {
+          "full_paragraph_recall": 0.36904761904761907,
+          "mean_paragraph_character_coverage": 0.36904761904761907,
+          "all_explicit_evidence_covered": 0.25
+        }
+      },
+      "C_minus_A_full_paragraph_recall_counts": {
+        "improved": 1,
+        "tied": 2,
+        "worsened": 1
+      }
+    },
+    {
+      "book_id": 209,
+      "questions": 4,
+      "mean": {
+        "A": {
+          "full_paragraph_recall": 0.2916666666666667,
+          "mean_paragraph_character_coverage": 0.2916666666666667,
+          "all_explicit_evidence_covered": 0.25
+        },
+        "B": {
+          "full_paragraph_recall": 0.2916666666666667,
+          "mean_paragraph_character_coverage": 0.2916666666666667,
+          "all_explicit_evidence_covered": 0.25
+        },
+        "C": {
+          "full_paragraph_recall": 0.22916666666666666,
+          "mean_paragraph_character_coverage": 0.22916666666666666,
+          "all_explicit_evidence_covered": 0.0
+        }
+      },
+      "C_minus_A_full_paragraph_recall_counts": {
+        "improved": 0,
+        "tied": 3,
+        "worsened": 1
+      }
+    }
+  ],
+  "overall": {
+    "A": {
+      "full_paragraph_recall": 0.34650793650793654,
+      "mean_paragraph_character_coverage": 0.34650793650793654,
+      "all_explicit_evidence_covered": 0.1
+    },
+    "B": {
+      "full_paragraph_recall": 0.3690873015873016,
+      "mean_paragraph_character_coverage": 0.3690873015873016,
+      "all_explicit_evidence_covered": 0.2
+    },
+    "C": {
+      "full_paragraph_recall": 0.3693650793650794,
+      "mean_paragraph_character_coverage": 0.3693650793650794,
+      "all_explicit_evidence_covered": 0.15
+    }
+  },
+  "C_minus_A_counts": {
+    "full_paragraph_recall": {
+      "improved": 5,
+      "tied": 10,
+      "worsened": 5
+    },
+    "mean_paragraph_character_coverage": {
+      "improved": 5,
+      "tied": 10,
+      "worsened": 5
+    },
+    "all_explicit_evidence_covered": {
+      "improved": 2,
+      "tied": 17,
+      "worsened": 1
+    }
+  },
+  "candidate_vs_final": {
+    "mean_candidate10_full_recall": 0.48357142857142854,
+    "mean_candidate50_full_recall": 0.791438492063492,
+    "candidate50_vs_10_counts": {
+      "improved": 15,
+      "tied": 5,
+      "worsened": 0
+    },
+    "mean_candidate10_to_B_loss": 0.11448412698412698,
+    "mean_candidate50_to_C_loss": 0.42207341269841275,
+    "C_vs_B_counts": {
+      "improved": 4,
+      "tied": 13,
+      "worsened": 3
+    },
+    "questions_with_candidate_gain_but_no_C_over_B_gain": 11,
+    "questions_with_candidate_gain_and_C_over_B_gain": 4,
+    "candidate50_all_evidence_complete_count": 10,
+    "final_C_all_evidence_complete_count": 3
+  },
+  "per_question_metrics": [
+    {
+      "qid": "zh-human-27-1",
+      "book_id": 27,
+      "A": 0.4444444444444444,
+      "B": 0.5555555555555556,
+      "C": 0.1111111111111111,
+      "candidate10": 0.6666666666666666,
+      "candidate50": 0.8888888888888888
+    },
+    {
+      "qid": "zh-human-142-4",
+      "book_id": 142,
+      "A": 0.0,
+      "B": 0.25,
+      "C": 0.0,
+      "candidate10": 0.25,
+      "candidate50": 0.75
+    },
+    {
+      "qid": "zh-human-124-0",
+      "book_id": 124,
+      "A": 0.75,
+      "B": 0.75,
+      "C": 0.75,
+      "candidate10": 1.0,
+      "candidate50": 1.0
+    },
+    {
+      "qid": "zh-human-209-1",
+      "book_id": 209,
+      "A": 1.0,
+      "B": 1.0,
+      "C": 0.75,
+      "candidate10": 1.0,
+      "candidate50": 1.0
+    },
+    {
+      "qid": "zh-human-118-4",
+      "book_id": 118,
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.0,
+      "candidate10": 0.0,
+      "candidate50": 0.125
+    },
+    {
+      "qid": "zh-human-27-0",
+      "book_id": 27,
+      "A": 0.75,
+      "B": 0.25,
+      "C": 0.5,
+      "candidate10": 0.75,
+      "candidate50": 1.0
+    },
+    {
+      "qid": "zh-human-142-1",
+      "book_id": 142,
+      "A": 0.3333333333333333,
+      "B": 0.3333333333333333,
+      "C": 0.3333333333333333,
+      "candidate10": 0.5,
+      "candidate50": 0.6666666666666666
+    },
+    {
+      "qid": "zh-human-124-1",
+      "book_id": 124,
+      "A": 0.6,
+      "B": 0.6,
+      "C": 0.8,
+      "candidate10": 0.6,
+      "candidate50": 0.8
+    },
+    {
+      "qid": "zh-human-209-3",
+      "book_id": 209,
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.0,
+      "candidate10": 0.0,
+      "candidate50": 1.0
+    },
+    {
+      "qid": "zh-human-118-3",
+      "book_id": 118,
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.16666666666666666,
+      "candidate10": 0.0,
+      "candidate50": 0.5
+    },
+    {
+      "qid": "zh-human-27-6",
+      "book_id": 27,
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.0,
+      "candidate10": 0.0,
+      "candidate50": 0.3125
+    },
+    {
+      "qid": "zh-human-142-0",
+      "book_id": 142,
+      "A": 0.2857142857142857,
+      "B": 0.14285714285714285,
+      "C": 0.14285714285714285,
+      "candidate10": 0.5714285714285714,
+      "candidate50": 1.0
+    },
+    {
+      "qid": "zh-human-124-3",
+      "book_id": 124,
+      "A": 0.75,
+      "B": 1.0,
+      "C": 1.0,
+      "candidate10": 1.0,
+      "candidate50": 1.0
+    },
+    {
+      "qid": "zh-human-209-2",
+      "book_id": 209,
+      "A": 0.16666666666666666,
+      "B": 0.16666666666666666,
+      "C": 0.16666666666666666,
+      "candidate10": 0.3333333333333333,
+      "candidate50": 0.8333333333333334
+    },
+    {
+      "qid": "zh-human-118-0",
+      "book_id": 118,
+      "A": 0.25,
+      "B": 0.0,
+      "C": 0.0,
+      "candidate10": 0.5,
+      "candidate50": 1.0
+    },
+    {
+      "qid": "zh-human-27-2",
+      "book_id": 27,
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.0,
+      "candidate10": 0.0,
+      "candidate50": 0.2857142857142857
+    },
+    {
+      "qid": "zh-human-142-5",
+      "book_id": 142,
+      "A": 0.6,
+      "B": 1.0,
+      "C": 1.0,
+      "candidate10": 1.0,
+      "candidate50": 1.0
+    },
+    {
+      "qid": "zh-human-124-2",
+      "book_id": 124,
+      "A": 1.0,
+      "B": 1.0,
+      "C": 1.0,
+      "candidate10": 1.0,
+      "candidate50": 1.0
+    },
+    {
+      "qid": "zh-human-209-6",
+      "book_id": 209,
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.0,
+      "candidate10": 0.16666666666666666,
+      "candidate50": 0.6666666666666666
+    },
+    {
+      "qid": "zh-human-118-2",
+      "book_id": 118,
+      "A": 0.0,
+      "B": 0.3333333333333333,
+      "C": 0.6666666666666666,
+      "candidate10": 0.3333333333333333,
+      "candidate50": 1.0
+    }
+  ],
+  "limits": [
+    "Development set only: 20 questions clustered in five books, not independent 20 stories.",
+    "Selection and reranking both interact with a fixed five-chunk budget. Candidate-to-final losses alone cannot identify the reranker as sole cause.",
+    "Gold paragraph annotations may be incomplete or erroneous; these are annotation-based retrieval metrics, not answer accuracy.",
+    "This run includes previously tried development questions; this is not fresh blind generalization.",
+    "Do not select a winning method or change held-out sample based only on these results."
+  ],
+  "source_sha256": {
+    "summary.json": "494cd587352cc57943b57bc3afe12d4d5293640ed4972b4bb067d4f52555f048",
+    "evidence_metrics.jsonl": "04287dc83aa31167c687713abedcb45437ea92706bc1a06b226801ae643f2aef",
+    "candidate_coverage.json": "a21529d6295f968f590f8e92b00be553d4192b65941948ea79079b373b2e08fc"
+  }
+}
